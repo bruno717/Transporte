@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="line_11_coral_luz_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Praça da Luz, nº 01</item>
+    </string-array>
+
+    <string-array name="line_11_coral_luz_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Transferência interna gratuita</item>
+        <item>Transferência gratuita CPTM-Metro</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_11_coral_bras_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Praça Agente Cícero, s/nº</item>
+    </string-array>
+
+    <string-array name="line_11_coral_bras_at_the_station">
+        <item>Programa Acessa São Paulo de Inclusão Social</item>
+        <item>Transferência interna gratuita</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Transferência gratuita CPTM-Metro</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_11_coral_tatuape_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Catiguá, s/nº</item>
+    </string-array>
+
+    <string-array name="line_11_coral_tatuape_at_the_station">
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Programa Acessa São Paulo de Inclusão Social</item>
+        <item>Transferência paga entre CPTM e Metrô</item>
+        <item>Transferência interna gratuita</item>
+        <item>Piso Tátil</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_11_coral_corinthians_itaquera_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua do Contorno, 60</item>
+    </string-array>
+
+    <string-array name="line_11_coral_corinthians_itaquera_at_the_station">
+        <item>Terminal Urnabo de Ônibus</item>
+        <item>Transferência gratuita CPTM-Metro</item>
+        <item>Piso Tátil</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_11_coral_dom_bosco_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Sábbado D\'angelo, 1024</item>
+    </string-array>
+
+    <string-array name="line_11_coral_dom_bosco_at_the_station">
+        <item>Programa Acessa São Paulo de Inclusão Social</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+    </string-array>
+
+    <string-array name="line_11_coral_jose_bonifacio_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Serafim Constantino, 51</item>
+    </string-array>
+
+    <string-array name="line_11_coral_jose_bonifacio_at_the_station">
+        <item>Programa Acessa São Paulo de Inclusão Social</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Rampa</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+    </string-array>
+
+    <string-array name="line_11_coral_guaianases_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida Salvador Gianetti, s/nº</item>
+    </string-array>
+
+    <string-array name="line_11_coral_guaianases_at_the_station">
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Tranferência interna gratuita</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+    </string-array>
+
+    <string-array name="line_11_coral_antonio_gianetti_neto_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida Governador Jânio Quadros, 1200</item>
+    </string-array>
+
+    <string-array name="line_11_coral_antonio_gianetti_neto_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Acesso elevador</item>
+        <item>Piso Tátil</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+    </string-array>
+
+    <string-array name="line_11_coral_ferraz_de_vasconcelos_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Praça da Independência, s/nº</item>
+    </string-array>
+
+    <string-array name="line_11_coral_ferraz_de_vasconcelos_at_the_station">
+        <item>Terminal Interurbano de Ônibus</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_11_coral_poa_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida Brasil, s/nº</item>
+    </string-array>
+
+    <string-array name="line_11_coral_poa_at_the_station">
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Telefone para surdos</item>
+        <item>Rampa</item>
+    </string-array>
+
+    <string-array name="line_11_coral_calmon_viana_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida Brasil, s/nºº</item>
+    </string-array>
+
+    <string-array name="line_11_coral_calmon_viana_at_the_station">
+        <item>Bicicletário</item>
+        <item>Transferência interna gratuita</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Transposição de plataformas</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_11_coral_suzano_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Major Pinheiros Fróes, 55</item>
+    </string-array>
+
+    <string-array name="line_11_coral_suzano_at_the_station">
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_11_coral_jundiapeba_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Capitão José Gallo, s/nº</item>
+    </string-array>
+
+    <string-array name="line_11_coral_jundiapeba_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Rampa</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+    </string-array>
+
+    <string-array name="line_11_coral_bras_cubas_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida Anchieta, 1355</item>
+    </string-array>
+
+    <string-array name="line_11_coral_bras_cubas_at_the_station">
+        <item>Telefone para surdos</item>
+        <item>Rampa</item>
+    </string-array>
+
+    <string-array name="line_11_coral_mogi_das_cruzes_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Praça Sacadura Cabral, s/nº</item>
+    </string-array>
+
+    <string-array name="line_11_coral_mogi_das_cruzes_at_the_station">
+        <item>Programa Acessa São Paulo de Inclusão Social</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Sanitário Unissex Acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+    </string-array>
+
+    <string-array name="line_11_coral_estudantes_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Álvaro Pavan, s/nº</item>
+    </string-array>
+
+    <string-array name="line_11_coral_estudantes_at_the_station">
+        <item>Terminal Interurbano de Ônibus</item>
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Telefone para surdos</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+    </string-array>
+
+    <string-array name="line_11_coral_direction">
+        <item>Luz</item>
+        <item>Guaianases</item>
+        <item>Estudantes</item>
+    </string-array>
+
+</resources>

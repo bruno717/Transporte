@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="line_8_diamond_julio_prestes_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Praça da Luz, nº 01</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_julio_prestes_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Rampa</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_palmeiras_barra_funda_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida Auro Soares de Moura Andrade, 664</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_palmeiras_barra_funda_at_the_station">
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Programa Acessa São Paulo de Inclusão Social</item>
+        <item>Transferência interna gratuita</item>
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Transferência paga entre CPTM e Metrô</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_lapa_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Guaicurus, 1438</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_lapa_at_the_station">
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Sanitário Unissex Acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_domingos_de_moraes_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua João Tibiriçá, s/nº</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_domingos_de_moraes_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Sanitário Unissex Acessível</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Piso Tátil</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_imperatriz_leopoldina_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Major Paladino, 08</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_imperatriz_leopoldina_at_the_station" />
+
+    <string-array name="line_8_diamond_presidente_altino_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Abílio Mendes, 08</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_presidente_altino_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Transferência interna gratuita</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_osasco_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Praça Antonio Menck, s/nº</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_osasco_at_the_station">
+        <item>Terminal Interurbano de Ônibus</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Transferência interna gratuita</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Acesso elevador</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_comandante_sampaio_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida dos Autonomistas, 5.100</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_comandante_sampaio_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Telefone para surdos</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_quitauna_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Praça Antonio Raposo Tavares, s/nº</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_quitauna_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Rampa</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_general_miguel_costa_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida dos Autonomistas, s/nº</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_general_miguel_costa_at_the_station">
+        <item>Terminal Urbano de Ônibus</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_carapicuiba_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Max Zandron, s/nº</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_carapicuiba_at_the_station">
+        <item>Terminal Urnano de Ônibus</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Acesso elevador</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_santa_terezinha_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Dep. Emílio Carlos, 900</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_santa_terezinha_at_the_station" />
+
+    <string-array name="line_8_diamond_antonio_joao_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Acre, s/nº</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_antonio_joao_at_the_station">
+        <item>Sanitário Unissex Acessível</item>
+        <item>Transposição de plataformas</item>
+        <item>Rampa</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_barueri_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Praça São João Batista, 30</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_barueri_at_the_station">
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Integração entre CPTM e Ônibus</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_jardim_belval_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida Grupo Bandeirantes, s/nº</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_jardim_belval_at_the_station" />
+
+    <string-array name="line_8_diamond_jardim_silveira_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Fernão Dias Pais Leme, s/nº</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_jardim_silveira_at_the_station">
+        <item>Paraciclo</item>
+        <item>Integração entre CPTM e Ônibus</item>
+        <item>Terminal Urbano de Ônibus</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_jandira_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua João Balhesteiro, 50</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_jandira_at_the_station">
+        <item>Bicicletário</item>
+        <item>Integração entre CPTM e Ônibus</item>
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Acesso elevador</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_sagrado_coracao_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Francisco José Longo, 402</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_sagrado_coracao_at_the_station">
+        <item>Paraciclo</item>
+        <item>Banheiro masculino e feminino</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_eng_cardoso_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Francisco José Longo, 402</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_eng_cardoso_at_the_station">
+        <item>Bicicletário</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Transposição de plataformas</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_itapevi_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Pires de Oliveira, 51</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_itapevi_at_the_station">
+        <item>Bicicletário</item>
+        <item>Integração entre CPTM e Ônibus</item>
+        <item>Transferência interna gratuita</item>
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_santa_rita_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rodovia Engenheiro Renê Benedito da Silva, 1850</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_santa_rita_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Rampa</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Transposição de plataformas</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_amador_bueno_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida Bambina Chaluppe, s/nº</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_amador_bueno_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Rampa</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Transposição de plataformas</item>
+    </string-array>
+
+    <string-array name="line_8_diamond_direction">
+        <item>Júlio Prestes</item>
+        <item>Itapevi</item>
+        <item>Amador Bueno</item>
+    </string-array>
+
+</resources>

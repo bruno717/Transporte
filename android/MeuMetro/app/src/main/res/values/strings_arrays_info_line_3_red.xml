@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Line 3 Red -->
+    <string-array name="line_3_red_corinthians_itaquera_information">
+        <item>04h40 às 00h19 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. PROJETADA, 1900</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_3_red_corinthians_itaquera_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Wi-fi</item>
+        <item>Caixa de Sugestões</item>
+        <item>Estacionamento de Carro Integrado</item>
+    </string-array>
+
+    <string-array name="line_3_red_artur_alvin_information">
+        <item>04h40 às 00h21 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. DR. LUIZ AIRES, 1800</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_3_red_artur_alvin_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+        <item>Paraciclos</item>
+    </string-array>
+
+    <string-array name="line_3_red_patriarca_information">
+        <item>04h40 às 00h23 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. ANTONIO E. CARVALHO, 1990</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_3_red_patriarca_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_3_red_guilhermina_esperanca_information">
+        <item>04h40 às 00h25 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>RUA ASTORGA, 800</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_3_red_guilhermina_esperanca_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_3_red_vila_matilde_information">
+        <item>04h40 às 00h27 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>RUA CEL. PEDRO DIAS DE CAMPOS, 1173</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_3_red_vila_matilde_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+        <item>Paraciclos</item>
+    </string-array>
+
+    <string-array name="line_3_red_penha_information">
+        <item>04h40 às 00h29 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. CONDE DE FRONTIN, S/Nº</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_3_red_penha_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+        <item>Paraciclos</item>
+    </string-array>
+
+    <string-array name="line_3_red_carrao_information">
+        <item>04h40 às 00h31 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. RADIAL LESTE, S/Nº (ESQUINA COM RUA APUCARANA)</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_3_red_carrao_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_3_red_tatuape_information">
+        <item>04h40 às 00h33 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>RUA MELO FREIRE, S/Nº (ESQUINA COM A RUA TUIUTI)</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_3_red_tatuape_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+        <item>Telefone do Usuário</item>
+        <item>Biblioteca</item>
+    </string-array>
+
+    <string-array name="line_3_red_belem_information">
+        <item>04h40 às 00h35 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. ALCÂNTARA MACHADO, S/Nº</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_3_red_belem_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+        <item>Paraciclos</item>
+    </string-array>
+
+    <string-array name="line_3_red_bresser_mooca_information">
+        <item>04h40 às 00h35 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>RUA DO HIPÓDROMO, S/Nº</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_3_red_bresser_mooca_at_the_station">
+        <item>Elevador</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_3_red_bras_information">
+        <item>04h40 às 00h33 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>RUA DOMINGOS PAIVA, S/Nº</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_3_red_bras_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_3_red_pedro_ii_information">
+        <item>04h40 às 00h31 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>RUA DA FIGUEIRA, S/Nº</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_3_red_pedro_ii_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_3_red_se_information">
+        <item>04h40 às 00h29 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>PRAÇA DA SÉ, S/Nº</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_3_red_se_at_the_station">
+        <item>Balcão de Informações</item>
+        <item>Telefone do Usuário</item>
+        <item>Achados e Perdidos</item>
+        <item>Central de Serviços - Atendimento Pessoal</item>
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+        <item>Wi-fi</item>
+    </string-array>
+
+    <string-array name="line_3_red_anhangabau_information">
+        <item>04h40 às 00h27 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>RUA FORMOSA, S/Nº</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_3_red_anhangabau_at_the_station">
+        <item>Elevador</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_3_red_republica_information">
+        <item>04h40 às 00h25 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>RUA DO AROUCHE, 24</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_3_red_republica_at_the_station">
+        <item>Balcão de Informações</item>
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_3_red_santa_cecilia_information">
+        <item>04h40 às 00h23 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>LARGO SANTA CECÍLIA, S/Nº</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_3_red_santa_cecilia_at_the_station">
+        <item>Elevador</item>
+        <item>Caixa de Sugestões</item>
+        <item>Biblioteca</item>
+    </string-array>
+
+    <string-array name="line_3_red_marechal_deodoro_information">
+        <item>04h40 às 00h21 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>PRAÇA MARECHAL DEODORO, S/Nº</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_3_red_marechal_deodoro_at_the_station">
+        <item>Balcão de Informações</item>
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_3_red_palmeiras_barra_funda_information">
+        <item>04h40 às 00h19 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>RUA BENTO TEOBALDO FERRAZ,119</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_3_red_palmeiras_barra_funda_at_the_station">
+        <item>Balcão de Informações</item>
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_3_red_direction">
+        <item>Palmeiras-Barra funda</item>
+        <item>Corinthians-Itaquera</item>
+    </string-array>
+
+</resources>

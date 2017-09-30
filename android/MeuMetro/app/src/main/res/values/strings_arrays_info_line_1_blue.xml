@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Line 1 Blue -->
+    <string-array name="line_1_blue_jabaquara_information">
+        <item>04h40 às 00h06 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>RUA DOS JEQUITIBÁS, 80</item>
+        <item>Estação enterrada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente.\n\nPossui integração com Terminal de Ônibus Urbano e acesso ao Terminal Intermunicipal do Jabaquara.</item>
+    </string-array>
+
+    <string-array name="line_1_blue_jabaquara_at_the_station">
+        <item>Balcão de Informações</item>
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+        <item>Wi-fi</item>
+    </string-array>
+
+    <string-array name="line_1_blue_conceicao_information">
+        <item>04h40 às 00h08 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. ENG. ARMANDO DE ARRUDA PEREIRA, 919</item>
+        <item>Estação enterrada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente.</item>
+    </string-array>
+
+    <string-array name="line_1_blue_conceicao_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_1_blue_sao_judas_information">
+        <item>04h40 às 00h10 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. JABAQUARA, 2438</item>
+        <item>Estação enterrada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente.</item>
+    </string-array>
+
+    <string-array name="line_1_blue_sao_judas_at_the_station">
+        <item>Elevador</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_1_blue_saude_information">
+        <item>04h40 às 00h12 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. JABAQUARA, 1634</item>
+        <item>Estação enterrada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente.</item>
+    </string-array>
+
+    <string-array name="line_1_blue_saude_at_the_station">
+        <item>Elevador</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_1_blue_praca_da_arvore_information">
+        <item>04h40 às 00h14 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>PRAÇA DA ÁRVORE, 39</item>
+        <item>Estação enterrada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente.</item>
+    </string-array>
+
+    <string-array name="line_1_blue_praca_da_arvore_at_the_station">
+        <item>Elevador</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_1_blue_santa_cruz_information">
+        <item>04h40 às 00h16 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>RUA DOMINGOS DE MORAIS, 2564</item>
+        <item>Estação enterrada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente.\n\nPossui integração com Terminal de Ônibus Urbano e acesso ao Shopping Center.</item>
+    </string-array>
+
+    <string-array name="line_1_blue_santa_cruz_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_1_blue_vila_mariana_information">
+        <item>04h40 às 00h18 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. PROF. NOÉ AZEVEDO, 255</item>
+        <item>Estação enterrada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente.\n\nPossui integração com Terminal de Ônibus Urbano.</item>
+    </string-array>
+
+    <string-array name="line_1_blue_vila_mariana_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_1_blue_ana_rosa_information">
+        <item>04h40 às 00h20 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>RUA DOMINGOS DE MORAIS, 505</item>
+        <item>Estação enterrada de Integração da Linha 1-Azul e Linha 2-Verde.\n\nComposta por mezanino de distribuição e uma plataforma central para cada linha com estrutura em concreto aparente. Possui acesso para pessoas portadoras de deficiência e integração com Terminal de Ônibus Urbano e Estacionamento.</item>
+    </string-array>
+
+    <string-array name="line_1_blue_ana_rosa_at_the_station">
+        <item>Balcão de Informações</item>
+        <item>Elevador</item>
+        <item>Wi-fi</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_1_blue_paraiso_information">
+        <item>04h40 às 00h22 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>RUA VERGUEIRO, 1456</item>
+        <item>Estação enterrada de Integração da Linha 1-Azul e Linha 2-Verde.\n\nComposta por mezanino de distribuição e dos níveis sobrepostos com plataforma central e laterais na Linha 1-Azul e plataforma central na Linha 2-Verde, estrutura em concreto aparente. O principal acesso integra-se com a praça no nível do passeio.</item>
+    </string-array>
+
+    <string-array name="line_1_blue_paraiso_at_the_station">
+        <item>Balcão de Informações</item>
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+        <item>Biblioteca</item>
+        <item>Wi-fi</item>
+    </string-array>
+
+    <string-array name="line_1_blue_vergueiro_information">
+        <item>04h40 às 00h24 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>RUA VERGUEIRO, 790</item>
+        <item>Estação enterrada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente.</item>
+    </string-array>
+
+    <string-array name="line_1_blue_vergueiro_at_the_station">
+        <item>Elevador</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_1_blue_sao_joaquim_information">
+        <item>04h40 às 00h26 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. LIBERDADE, 1033</item>
+        <item>Estação enterrada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente.</item>
+    </string-array>
+
+    <string-array name="line_1_blue_sao_joaquim_at_the_station">
+        <item>Elevador</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_1_blue_liberdade_information">
+        <item>04h40 às 00h28 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>PRAÇA DA LIBERDADE, 133</item>
+        <item>Estação enterrada com dois mezaninos de distribuição (superior e inferior) e plataformas laterais com estrutura em concreto aparente.\n\nO principal acesso integra-se com a praça no nível do passeio.</item>
+    </string-array>
+
+    <string-array name="line_1_blue_liberdade_at_the_station">
+        <item>Elevador</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_1_blue_se_information">
+        <item>04h40 às 00h29 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>PRAÇA DA SÉ, S/Nº</item>
+        <item>Estação enterrada de integração da Linha 1-Azul e Linha 3-Vermelha.\n\nComposta por mezanino de distribuição e dois níveis sobrepostos com duas plataformas laterais e uma central (um conjunto por linha) com estrutura em concreto aparente e aberturas para iluminação natural. O principal acesso integra-se com a praça no nível do passeio.</item>
+    </string-array>
+
+    <string-array name="line_1_blue_se_at_the_station">
+        <item>Balcão de Informações</item>
+        <item>Telefone do Usuário</item>
+        <item>Achados e Perdidos</item>
+        <item>Central de Serviços - Atendimento Pessoal</item>
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+        <item>Wi-fi</item>
+    </string-array>
+
+    <string-array name="line_1_blue_sao_bento_information">
+        <item>04h40 às 00h32 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>LARGO SÃO BENTO, 109</item>
+        <item>Estação enterrada com mezanino de conexão e duas plataformas laterais sobrepostas, estrutura em concreto aparente.\n\nO principal acesso integra-se com o largo no nível do passeio.</item>
+    </string-array>
+
+    <string-array name="line_1_blue_sao_bento_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_1_blue_luz_information">
+        <item>04h40 às 00h30 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. PRESTES MAIA, 925</item>
+        <item>Estação enterrada com mezanino de distribuição e plataformas central e laterais com estrutura em concreto aparente.\n\nIntegração com a Linha 4-Amarela e com a CPTM.\n\nA estação possui acesso adequado para pessoas com deficiência física e mobilidade reduzida na rua Brigadeiro Tobias, altura do número 731.</item>
+    </string-array>
+
+    <string-array name="line_1_blue_luz_at_the_station">
+        <item>Balcão de Informações</item>
+        <item>Elevador</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_1_blue_tiradentes_information">
+        <item>04h40 às 00h28 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. TIRADENTES, 551</item>
+        <item>Estação enterrada com mezanino de distribuição e plataforma central com estrutura em concreto aparente.</item>
+    </string-array>
+
+    <string-array name="line_1_blue_tiradentes_at_the_station">
+        <item>Elevador</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_1_blue_armenia_information">
+        <item>04h40 às 00h26 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>RUA PEDRO VICENTE, 47</item>
+        <item>Estação elevada com plataformas laterais, estrutura em concreto aparente e cobertura pré-fabricada de concreto.\n\nPossui integração com Terminal de Ônibus Intermunicipal e Urbano.</item>
+    </string-array>
+
+    <string-array name="line_1_blue_armenia_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_1_blue_portuguesa_tiete_information">
+        <item>04h40 às 00h24 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. CRUZEIRO DO SUL, 1777</item>
+        <item>Estação elevada com plataformas laterais, estrutura em concreto aparente e cobertura pré-fabricada de concreto.\n\nPossui integração com Terminal de Ônibus Urbano, Terminal Rodoviário e estacionamento.</item>
+    </string-array>
+
+    <string-array name="line_1_blue_portuguesa_tiete_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_1_blue_carandiru_information">
+        <item>04h40 às 00h22 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. CRUZEIRO DO SUL, 2487</item>
+        <item>Estação elevada com plataformas laterais, estrutura em concreto aparente e cobertura pré-fabricada de concreto.</item>
+    </string-array>
+
+    <string-array name="line_1_blue_carandiru_at_the_station">
+        <item>Elevador</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_1_blue_santana_information">
+        <item>04h40 às 00h20 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. CRUZEIRO DO SUL, 3173</item>
+        <item>Estação elevada com plataformas laterais, estrutura em concreto aparente e cobertura pré-fabricada de concreto.\n\nPossui integração com Terminal de Ônibus Urbano.</item>
+    </string-array>
+
+    <string-array name="line_1_blue_santana_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_1_blue_jardim_sao_paulo_ayrton_senna_information">
+        <item>04h40 às 00h18 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. LEÔNCIO DE MAGALHÃES, 1000</item>
+        <item>Estação enterrada com mezanino de distribuição e plataforma central com estrutura em concreto aparente e aberturas para iluminação natural.\n\nPossui paisagismo de praça sob a cobertura e acesso para pessoas portadoras de deficiência.</item>
+    </string-array>
+
+    <string-array name="line_1_blue_jardim_sao_paulo_ayrton_senna_at_the_station">
+        <item>Elevador</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_1_blue_parada_inglesa_information">
+        <item>04h40 às 00h16 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. LUÍS DUMONT VILLARES, 1721</item>
+        <item>Estação elevada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente e cobertura metálica.\n\nPossui acesso para pessoas portadoras de deficiência e integração com Terminal de Ônibus Urbano.</item>
+    </string-array>
+
+    <string-array name="line_1_blue_parada_inglesa_at_the_station">
+        <item>Elevador</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_1_blue_tucuruvi_information">
+        <item>04h40 às 00h14 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. DR. ANTONIO MARIA DE LAET, 100</item>
+        <item>Estação semi-enterrada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente.\n\nPossui acesso para pessoas portadoras de deficiência, integração com Terminal de Ônibus Urbano e acesso ao shopping center.</item>
+    </string-array>
+
+    <string-array name="line_1_blue_tucuruvi_at_the_station">
+        <item>Elevador</item>
+        <item>Caixa de Sugestões</item>
+        <item>Telefone do Usuário</item>
+    </string-array>
+
+    <string-array name="line_1_blue_direction">
+        <item>Jabaquara</item>
+        <item>Tucuruvi</item>
+    </string-array>
+
+</resources>

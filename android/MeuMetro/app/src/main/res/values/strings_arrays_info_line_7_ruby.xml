@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="line_7_ruby_luz_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Praça da Luz, nº 01</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_luz_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Transferência interna gratuita</item>
+        <item>Transferência gratuita CPTM-Metro</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_palmeiras_barra_funda_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida Auro Soares de Moura Andrade, 664</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_palmeiras_barra_funda_at_the_station">
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Programa Acessa São Paulo de Inclusão Social</item>
+        <item>Transferência interna gratuita</item>
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Transferência paga entre CPTM e Metrô</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_agua_branca_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida Santa Marina, s/nº</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_agua_branca_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_lapa_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua William Speers, s/nº</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_lapa_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Telefone para surdos</item>
+        <item>Sanitário Unissex Acessível</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_piqueri_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua José Peres Campelo, s/nº</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_piqueri_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Telefone para surdos</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_pirituba_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Camarões, s/nº - Pirituba</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_pirituba_at_the_station">
+        <item>Integração entre CPTM e Ônibus</item>
+        <item>Telefone para surdos</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_vila_clarice_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua São Gonçalo do Rio das Pedras, 1.200</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_vila_clarice_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Telefone para surdos</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_jaragua_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Estrada de Taipas, s/nº</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_jaragua_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Rampa</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_vila_aurora_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Francisco da Cunha Menezes, 1066</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_vila_aurora_at_the_station">
+        <item>Bicicletário</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Integração entre CPTM e Ônibus</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_perus_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida Dr. Silvio de Campos, s/nº</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_perus_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Rampa</item>
+        <item>Sanitário masculino e feminino acessível</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_caieiras_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rodovia Tancredo de Almeida Neves, Km 34</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_caieiras_at_the_station">
+        <item>Bicicletário</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Transposição de plataformas</item>
+        <item>Rampa</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_franco_da_rocha_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Cavalheiro Ângelo Sestini, 200</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_franco_da_rocha_at_the_station">
+        <item>Bicicletário</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_baltazar_fidelis_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida Israel, s/nº</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_baltazar_fidelis_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_francisco_morato_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Gerônimo Caetano Garcia, s/nº</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_francisco_morato_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Transferência interna gratuita</item>
+        <item>Sanitário Unissex Acessível</item>
+        <item>Rampa</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_botujuru_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Bela Vista, s/nº</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_botujuru_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Rampa</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_campo_limpo_paulista_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Felice Pereira Pinto, s/nº</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_campo_limpo_paulista_at_the_station">
+        <item>Terminal Interurbano de ônibus</item>
+        <item>Terminal Urnano de Ônibus</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Rampa</item>
+        <item>Sanitário Unissex Acessível</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_varzea_paulista_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Antonio Feres Sada, s/nº</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_varzea_paulista_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_jundiai_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida União dos Ferroviários s/nº</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_jundiai_at_the_station">
+        <item>Terminal Urnano de Ônibus</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_direction">
+        <item>Luz</item>
+        <item>Francisco Morato</item>
+        <item>Jundiaí</item>
+    </string-array>
+
+</resources>

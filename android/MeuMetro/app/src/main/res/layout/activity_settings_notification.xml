@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@id/meu_metro_toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="?attr/colorPrimary"-->
+        <!--android:elevation="4dp"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />-->
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:focusable="true"-->
+            <!--android:focusableInTouchMode="true"-->
+            <!--android:orientation="vertical"-->
+            <!--android:padding="16dp">-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:layout_marginLeft="2dp"-->
+                    <!--android:layout_marginStart="2dp"-->
+                    <!--android:text="@string/activity_settings_notification_hint_switch_official"-->
+                    <!--android:textColor="@android:color/black"-->
+                    <!--android:textSize="16sp" />-->
+
+                <!--<android.support.v7.widget.SwitchCompat-->
+                    <!--android:id="@id/activity_config_notification_switch_official"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:layout_marginEnd="16dp"-->
+                    <!--android:layout_marginRight="16dp"-->
+                    <!--android:checked="false" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:layout_marginLeft="2dp"-->
+                    <!--android:layout_marginStart="2dp"-->
+                    <!--android:text="@string/activity_settings_notification_hint_switch_by_user"-->
+                    <!--android:textColor="@android:color/black"-->
+                    <!--android:textSize="16sp" />-->
+
+                <!--<android.support.v7.widget.SwitchCompat-->
+                    <!--android:id="@id/activity_config_notification_switch_by_user"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:layout_marginEnd="16dp"-->
+                    <!--android:layout_marginRight="16dp"-->
+                    <!--android:checked="false" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="8dp">-->
+
+                <!--<android.support.design.widget.TextInputLayout-->
+                    <!--android:id="@id/activity_config_notification_input_lines_days_notification"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColorHint="@color/silver_light_hint">-->
+
+                    <!--<android.support.design.widget.TextInputEditText-->
+                        <!--style="@style/AppEditText"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:hint="@string/activity_settings_notification_hint_lines_days_utilization"-->
+                        <!--android:textColor="@android:color/black" />-->
+
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+                <!--<Button-->
+                    <!--android:id="@id/activity_config_notification_button_lines_days_notification"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="?android:attr/selectableItemBackground" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="8dp">-->
+
+                <!--<android.support.design.widget.TextInputLayout-->
+                    <!--android:id="@id/activity_config_notification_input_lines_hours_notification"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColorHint="@color/silver_light_hint">-->
+
+                    <!--<android.support.design.widget.TextInputEditText-->
+                        <!--style="@style/AppEditText"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:hint="@string/activity_settings_notification_hint_lines_hours_utilization"-->
+                        <!--android:textColor="@android:color/black" />-->
+
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+                <!--<Button-->
+                    <!--android:id="@id/activity_config_notification_button_lines_hours_notification"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="?android:attr/selectableItemBackground" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="8dp">-->
+
+                <!--<android.support.design.widget.TextInputLayout-->
+                    <!--android:id="@id/activity_config_notification_input_lines_notification"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColorHint="@color/silver_light_hint">-->
+
+                    <!--<android.support.design.widget.TextInputEditText-->
+                        <!--style="@style/AppEditText"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:hint="@string/activity_settings_notification_hint_lines"-->
+                        <!--android:textColor="@android:color/black" />-->
+
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+                <!--<Button-->
+                    <!--android:id="@id/activity_config_notification_button_lines_notification"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="?android:attr/selectableItemBackground" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout&ndash;&gt;-->
+            <!--android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--android:layout_marginTop="8dp">&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<android.support.design.widget.TextInputLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@id/activity_config_notification_input_lines_metro"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColorHint="@color/silver_light_hint">&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<android.support.design.widget.TextInputEditText&ndash;&gt;-->
+            <!--&lt;!&ndash;style="@style/AppEditText"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:hint="@string/activity_config_notification_hint_lines_metro"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@android:color/black" />&ndash;&gt;-->
+
+            <!--</android.support.design.widget.TextInputLayout>&ndash;&gt;-->
+
+            <!--<Button&ndash;&gt;-->
+            <!--android:id="@id/activity_config_notification_button_lines_metro"&ndash;&gt;-->
+            <!--android:layout_width="match_parent"&ndash;&gt;-->
+            <!--android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--android:background="?android:attr/selectableItemBackground" />&ndash;&gt;-->
+
+            <!--</RelativeLayout>&ndash;&gt;-->
+
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+</LinearLayout>

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="line_9_emerald_osasco_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Praça Antonio Menck, s/nº</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_osasco_at_the_station">
+        <item>Terminal Interurbano de Ônibus</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Transferência interna gratuita</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Acesso elevador</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_presidente_altino_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Abílio Mendes, 08</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_presidente_altino_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Transferência interna gratuita</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_ceasa_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida das Nações Unidas, 1.390</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_ceasa_at_the_station">
+        <item>Bicicletário</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Acesso elevador</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_villa_lobos_jaguare_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida das Nações Unidas, 2.100</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_villa_lobos_jaguare_at_the_station">
+        <item>Bicicletário</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Acesso elevador</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_cidade_universitaria_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida das Nações Unidas, 6.202</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_cidade_universitaria_at_the_station">
+        <item>Bicicletário</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Acesso elevador</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_pinheiros_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Capri, 145</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_pinheiros_at_the_station">
+        <item>Terminal Interurbano de Ônibus</item>
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Bicicletário</item>
+        <item>Programa Acessa São Paulo de Inclusão Social</item>
+        <item>Transferência gratuita CPTM-Metro</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone para surdos</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_hebraica_reboucas_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Ofélia, 255</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_hebraica_reboucas_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_cidade_jardim_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Prof. Artur Ramos, 787</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_cidade_jardim_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_vila_olimpia_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Praça Antonio Raposo Tavares, s/nº</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_vila_olimpia_at_the_station">
+        <item>Bicicletário</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_berrini_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida das Nações Unidas, 12.771</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_berrini_at_the_station">
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Integração entre CPTM e Ônibus</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_morumbi_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida das Nações Unidas, 14.171</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_morumbi_at_the_station">
+        <item>Integração entre CPTM e Ônibus</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Acesso elevador</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_granja_julieta_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Dep. Emílio Carlos, 900</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_granja_julieta_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_santo_amaro_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida das Nações Unidas, s/nº</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_santo_amaro_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Integração entre CPTM e Ônibus</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_socorro_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Praça São João Batista, 30</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_socorro_at_the_station">
+        <item>Programa Acessa São Apulo de Inclusão Social</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_jurubatuba_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Octalles Marcondes Ferreira, 391</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_jurubatuba_at_the_station">
+        <item>Bicicletário</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_autodromo_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Plínio Schmidt, 307</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_autodromo_at_the_station">
+        <item>Bicicletário</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Piso Tátil</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Sanitário Unissex Acessível</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_primavera_interlagos_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Francisco José Longo, 402</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_primavera_interlagos_at_the_station">
+        <item>Bicicletário</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Piso Tátil</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone para surdos</item>
+        <item>Acesso elevador</item>
+        <item>Sanitário Unissex Acessível</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_grajau_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Francisco José Longo, 402</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_grajau_at_the_station">
+        <item>Bicicletário</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_direction">
+        <item>Osasco</item>
+        <item>Grajaú</item>
+    </string-array>
+
+</resources>

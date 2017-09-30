@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- METRO -->
+    <string-array name="line_1_blue">
+        <item>Jabaquara</item>
+        <item>Conceição</item>
+        <item>São Judas</item>
+        <item>Saúde</item>
+        <item>Praça da Árvore</item>
+        <item>Santa Cruz</item>
+        <item>Vila Mariana</item>
+        <item>Ana Rosa</item>
+        <item>Paraíso</item>
+        <item>Vergueiro</item>
+        <item>São Joaquim</item>
+        <item>Liberdade</item>
+        <item>Sé</item>
+        <item>São Bento</item>
+        <item>Luz</item>
+        <item>Tiradentes</item>
+        <item>Armênia</item>
+        <item>Portuguesa-Tietê</item>
+        <item>Carandiru</item>
+        <item>Santana</item>
+        <item>Jardim São Paulo-Ayrton Senna</item>
+        <item>Parada Inglesa</item>
+        <item>Tucuruvi</item>
+    </string-array>
+
+    <string-array name="line_2_green">
+        <item>Vila Prudente</item>
+        <item>Tamanduateí</item>
+        <item>Sacomã</item>
+        <item>Alto do Ipiranga</item>
+        <item>Santos-Imigrantes</item>
+        <item>Chácara Klabin</item>
+        <item>Ana Rosa</item>
+        <item>Paraíso</item>
+        <item>Brigadeiro</item>
+        <item>Trianon-Masp</item>
+        <item>Consolação</item>
+        <item>Clínicas</item>
+        <item>S. N. Sra. de Fátima-Sumaré</item>
+        <item>Vila Madalena</item>
+    </string-array>
+
+    <string-array name="line_3_red">
+        <item>Corinthians-Itaquera</item>
+        <item>Artur Alvim</item>
+        <item>Patriarca</item>
+        <item>Guilhermina-Esperança</item>
+        <item>Vila Matilde</item>
+        <item>Penha</item>
+        <item>Carrão</item>
+        <item>Tatuapé</item>
+        <item>Belém</item>
+        <item>Bresser-Mooca</item>
+        <item>Brás</item>
+        <item>Pedro II</item>
+        <item>Sé</item>
+        <item>Anhangabaú</item>
+        <item>República</item>
+        <item>Santa Cecília</item>
+        <item>Marechal Deodoro</item>
+        <item>Palmeiras-Barra Funda</item>
+    </string-array>
+
+    <string-array name="line_4_yellow">
+        <item>Luz</item>
+        <item>República</item>
+        <item>Paulista</item>
+        <item>Fradique Coutinho</item>
+        <item>Faria Lima</item>
+        <item>Pinheiros</item>
+        <item>Butantã</item>
+    </string-array>
+
+    <string-array name="line_5_lilac">
+        <item>Capão Redondo</item>
+        <item>Campo Limpo</item>
+        <item>Vila das Belezas</item>
+        <item>Giovanni Gronchi</item>
+        <item>Santo Amaro</item>
+        <item>Largo Treze</item>
+        <item>Adolfo Pinheiro</item>
+    </string-array>
+
+    <string-array name="line_15_silver">
+        <item>Vila Prudente</item>
+        <item>Oratório</item>
+    </string-array>
+
+    <!-- CPTM -->
+    <string-array name="line_7_ruby">
+        <item>Luz</item>
+        <item>Palmeiras-Barra Funda</item>
+        <item>Água Branca</item>
+        <item>Lapa</item>
+        <item>Piqueri</item>
+        <item>Pirituba</item>
+        <item>Vila Clarice</item>
+        <item>Jaraguá</item>
+        <item>Vila Aurora</item>
+        <item>Perus</item>
+        <item>Caieiras</item>
+        <item>Franco da Rocha</item>
+        <item>Baltazar Fidelis</item>
+        <item>Francisco Morato</item>
+        <item>Botujuru</item>
+        <item>Campo Limpo Paulista</item>
+        <item>Várzea Paulista</item>
+        <item>Jundiaí</item>
+    </string-array>
+
+    <string-array name="line_8_diamond">
+        <item>Júlio Prestes</item>
+        <item>Palmeiras-Barra Funda</item>
+        <item>Lapa</item>
+        <item>Domingos de Moraes</item>
+        <item>Imperatriz Leopoldina</item>
+        <item>Presidente Altino</item>
+        <item>Osasco</item>
+        <item>Comandante Sampaio</item>
+        <item>Quitaúna</item>
+        <item>General Miguel Costa</item>
+        <item>Carapicuíba</item>
+        <item>Santa Terezinha</item>
+        <item>Antonio João</item>
+        <item>Barueri</item>
+        <item>Jardim Belval</item>
+        <item>Jardim Silveira</item>
+        <item>Jandira</item>
+        <item>Sagrado Coração</item>
+        <item>Eng. Cardoso</item>
+        <item>Itapevi</item>
+        <item>Santa Rita</item>
+        <item>Amador Bueno</item>
+    </string-array>
+
+    <string-array name="line_9_emerald">
+        <item>Osasco</item>
+        <item>Presidente Altino</item>
+        <item>Ceasa</item>
+        <item>Villa Lobos-Jaguaré</item>
+        <item>Cidade Universitária</item>
+        <item>Pinheiros</item>
+        <item>Hebraica-Rebouças</item>
+        <item>Cidade Jardim</item>
+        <item>Vila Olímpia</item>
+        <item>Berrini</item>
+        <item>Morumbi</item>
+        <item>Granja Julieta</item>
+        <item>Santo Amaro</item>
+        <item>Socorro</item>
+        <item>Jurubatuba</item>
+        <item>Autódromo</item>
+        <item>Primavera-Interlagos</item>
+        <item>Grajaú</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise">
+        <item>Brás</item>
+        <item>Juventus-Mooca</item>
+        <item>Ipiranga</item>
+        <item>Tamanduateí</item>
+        <item>São Caetano do Sul - Pref. Walter Braido</item>
+        <item>Utinga</item>
+        <item>Prefeito Saladino</item>
+        <item>Pref. Celso Daniel-Santo André</item>
+        <item>Capuava</item>
+        <item>Mauá</item>
+        <item>Guapituba</item>
+        <item>Ribeirão Pires</item>
+        <item>Rio Grande da Serra</item>
+    </string-array>
+
+    <string-array name="line_11_coral">
+        <item>Luz</item>
+        <item>Brás</item>
+        <item>Tatuapé</item>
+        <item>Corinthians-Itaquera</item>
+        <item>Dom Bosco</item>
+        <item>José Bonifácio</item>
+        <item>Guaianases</item>
+        <item>Antonio Gianetti Neto</item>
+        <item>Ferraz de Vasconcelos</item>
+        <item>Poá</item>
+        <item>Calmon Viana</item>
+        <item>Suzano</item>
+        <item>Jundiapeba</item>
+        <item>Brás Cubas</item>
+        <item>Mogi das Cruzes</item>
+        <item>Estudantes</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire">
+        <item>Brás</item>
+        <item>Tatuapé</item>
+        <item>Eng. Goulart</item>
+        <item>USP Leste</item>
+        <item>Comendador Ermelino</item>
+        <item>São Miguel Paulista</item>
+        <item>Jardim Helena-Vila Mara</item>
+        <item>Itaim Paulista</item>
+        <item>Jardim Romano</item>
+        <item>Eng. Manoel Feio</item>
+        <item>Itaquaquecetuba</item>
+        <item>Aracaré</item>
+        <item>Calmon Viana</item>
+    </string-array>
+
+</resources>

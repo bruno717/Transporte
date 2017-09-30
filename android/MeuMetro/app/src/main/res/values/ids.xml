@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ids default app -->
+    <item name="meu_metro_container_fragment" type="id" />
+    <item name="meu_metro_toolbar" type="id" />
+    <item name="meu_metro_recycler_view" type="id" />
+    <item name="meu_metro_swipe_refresh" type="id" />
+    <item name="meu_metro_main_view" type="id" />
+    <item name="meu_metro_tab_layout" type="id" />
+    <item name="meu_metro_view_pager" type="id" />
+
+    <!-- Menu -->
+    <item name="menu_edit" type="id" />
+    <item name="menu_done" type="id" />
+
+    <!-- Navigation Drawer -->
+    <item name="navigation_drawer_header_text_view_integer_price" type="id" />
+    <item name="navigation_drawer_header_text_view_half_price" type="id" />
+    <item name="navigation_drawer_header_text_view_integration_price" type="id" />
+    <item name="navigation_drawer_item_transport_map" type="id" />
+    <item name="navigation_drawer_item_sms_denunciation" type="id" />
+    <item name="navigation_drawer_item_settings" type="id" />
+
+    <!-- Status Line Official Adapter -->
+    <item name="cell_status_line_official_text_view_line_name" type="id" />
+    <item name="cell_status_line_official_linear_layout_line_description" type="id" />
+    <item name="cell_status_line_official_text_view_line_description" type="id" />
+    <item name="cell_status_line_official_text_view_line_description_invisible" type="id" />
+    <item name="cell_status_line_official_text_view_line_status" type="id" />
+    <item name="cell_status_line_official_view_line_color" type="id" />
+    <item name="cell_status_line_official_view_line_color_status" type="id" />
+    <item name="cell_status_line_official_button_show_details" type="id" />
+
+    <item name="cell_status_line_official_company_image_view" type="id" />
+    <item name="cell_status_line_official_company_text_view" type="id" />
+
+
+    <!-- Station of the Line Adapter -->
+    <item name="cell_station_of_the_line_view_line_vertical" type="id" />
+    <item name="cell_station_of_the_line_text_view_line" type="id" />
+
+    <!-- Information Station Fragment -->
+    <item name="frag_information_station_text_view_operation_sunday_friday" type="id" />
+    <item name="frag_information_station_text_view_operation_saturday" type="id" />
+    <item name="frag_information_station_text_view_localization" type="id" />
+    <item name="frag_information_station_text_view_has_in_the_station" type="id" />
+
+    <!-- Has In The Station Adapter -->
+    <item name="cell_has_in_the_station_text_view" type="id" />
+
+    <!-- SMS Denunciation Fragment -->
+    <item name="frag_sms_denunciation_input_line" type="id" />
+    <item name="frag_sms_denunciation_input_direction_train" type="id" />
+    <item name="frag_sms_denunciation_input_next_station" type="id" />
+    <item name="frag_sms_denunciation_input_car_number" type="id" />
+    <item name="frag_sms_denunciation_input_subject" type="id" />
+    <item name="frag_sms_denunciation_input_details" type="id" />
+    <item name="frag_sms_denunciation_radio_button_metro" type="id" />
+    <item name="frag_sms_denunciation_radio_button_cptm" type="id" />
+    <item name="frag_sms_denunciation_button_lines" type="id" />
+    <item name="frag_sms_denunciation_button_direction" type="id" />
+    <item name="frag_sms_denunciation_button_next_station" type="id" />
+    <item name="frag_sms_denunciation_button_subject" type="id" />
+
+    <!-- Status Line By User Fragment -->
+    <item name="frag_line_by_user_floating_button" type="id" />
+
+    <!-- Edit Status Activity -->
+    <item name="activity_edit_status_input_line" type="id" />
+    <item name="activity_edit_status_button_line" type="id" />
+    <item name="activity_edit_status_input_status" type="id" />
+    <item name="activity_edit_status_button_status" type="id" />
+    <item name="activity_edit_status_input_description" type="id" />
+
+    <!-- Config Notification Activity -->
+    <item name="activity_config_notification_switch_official" type="id" />
+    <item name="activity_config_notification_switch_by_user" type="id" />
+    <item name="activity_config_notification_button_lines_days_notification" type="id" />
+    <item name="activity_config_notification_button_lines_hours_notification" type="id" />
+    <item name="activity_config_notification_button_lines_notification" type="id" />
+    <item name="activity_config_notification_button_lines_cptm" type="id" />
+    <item name="activity_config_notification_button_lines_metro" type="id" />
+    <item name="activity_config_notification_recycler_view_days" type="id" />
+    <item name="activity_config_notification_recycler_view_hours" type="id" />
+    <item name="activity_config_notification_recycler_view_lines" type="id" />
+    <item name="activity_config_notification_relative_layout_days" type="id" />
+    <item name="activity_config_notification_relative_layout_hours" type="id" />
+    <item name="activity_config_notification_relative_layout_lines" type="id" />
+
+    <!-- Settings Adapter -->
+    <item name="cell_settings_text_view" type="id" />
+    <item name="cell_settings_image_button_remove" type="id" />
+
+
+</resources>

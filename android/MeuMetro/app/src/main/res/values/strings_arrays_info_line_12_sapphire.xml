@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="line_12_sapphire_bras_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Praça Agente Cícero, s/nº</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_bras_at_the_station">
+        <item>Programa Acessa São Paulo de Inclusão Social</item>
+        <item>Transferência interna gratuita</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Transferência gratuita CPTM-Metro</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_tatuape_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Catiguá, s/nº</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_tatuape_at_the_station">
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Programa Acessa São Paulo de Inclusão Social</item>
+        <item>Transferência paga entre CPTM e Metrô</item>
+        <item>Transferência interna gratuita</item>
+        <item>Piso Tátil</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_eng_goulart_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida Dr. Assis Ribeiro, 169</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_eng_goulart_at_the_station" />
+
+    <string-array name="line_12_sapphire_usp_leste_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida Dr. Assis Ribeiro, 6.081</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_usp_leste_at_the_station">
+        <item>Bicicletário</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_comendador_ermelino_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida Dr. Assis Ribeiro, 8.454</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_comendador_ermelino_at_the_station">
+        <item>Bicicletário</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_sao_miguel_paulista_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Beraldo Marcondes, 136</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_sao_miguel_paulista_at_the_station">
+        <item>Bicicletário</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_jardim_helena_vila_mara_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua São Gonçalo do Rio das Pedras, 1.200</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_jardim_helena_vila_mara_at_the_station">
+        <item>Bicicletário</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_itaim_paulista_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Rafael Correa da Silva, 13</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_itaim_paulista_at_the_station">
+        <item>Bicicletário</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Programa Acessa São Paulo de Inclusão Social</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_jardim_romano_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua José Alvares Moreira, 349</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_jardim_romano_at_the_station">
+        <item>Bicicletário</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_eng_manoel_feio_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Av. Eldorado, s/nº</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_eng_manoel_feio_at_the_station">
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Telefone para surdos</item>
+        <item>Rampa</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_itaquaquecetuba_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida Presidente Tancredo Neves, 746</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_itaquaquecetuba_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_aracare_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Rio de Janeiro, s/nº</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_aracare_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Telefone para surdos</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_calmon_viana_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida Brasil, s/nºº</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_calmon_viana_at_the_station">
+        <item>Bicicletário</item>
+        <item>Transferência interna gratuita</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Transposição de plataformas</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_12_sapphire_direction">
+        <item>Brás</item>
+        <item>Calmon Viana</item>
+    </string-array>
+
+</resources>

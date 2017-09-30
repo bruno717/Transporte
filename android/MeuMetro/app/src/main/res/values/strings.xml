@@ -1,0 +1,169 @@
+<resources>
+    <!-- Default App -->
+    <string name="meu_metro_name">Meu Metro</string>
+    <string name="meu_metro_metro">Metrô</string>
+    <string name="meu_metro_cptm">CPTM</string>
+    <string name="meu_metro_snack_bar_action_try_again">Tentar novamente</string>
+    <string name="meu_metro_message_positive">OK</string>
+    <string name="meu_metro_message_negative">Cancelar</string>
+    <string name="meu_metro_message_no_connection">Você está sem conexão no momento!</string>
+    <string name="meu_metro_progress_dialog_title_wait">Aguarde</string>
+
+    <string name="meu_metro_integer_price">3,80</string>
+    <string name="meu_metro_half_price">1,90</string>
+    <string name="meu_metro_integration_price">3,00</string>
+
+    <!-- Navigation Drawer -->
+    <string name="navigation_drawer_text_view_price">Tarifas</string>
+    <string name="navigation_drawer_text_view_integer_price">Inteira: R$ %s</string>
+    <string name="navigation_drawer_text_view_half_price">Meia: R$ %s</string>
+    <string name="navigation_drawer_text_view_integration_price">Integração trens/ônibus: R$ %s</string>
+
+    <!-- Main Activity -->
+    <string name="activity_main_toolbar_title">Situação das linhas</string>
+    <string name="activity_main_tab_layout_official">Oficial</string>
+    <string name="activity_main_tab_layout_user">Usuário</string>
+
+    <!-- Navigation Drawer -->
+    <string name="navigation_drawer_transport_map">Mapa</string>
+    <string name="navigation_drawer_sms_denunciation">SMS denúncia</string>
+    <string name="navigation_drawer_settings">Configurações</string>
+
+    <!-- Information Station Fragment -->
+    <string name="frag_information_station_text_view_operation">Funcionamento</string>
+    <string name="frag_information_station_text_view_localization">Localização</string>
+    <string name="frag_information_station_text_view_has_in_the_station">Tem na estação</string>
+
+    <!-- SMS Denunciation Fragment -->
+    <string name="frag_sms_denunciation_toolbar_title">Sms denúncia</string>
+    <string name="frag_sms_denunciation_input_hint_lines">Linha*</string>
+    <string name="frag_sms_denunciation_input_hint_direction_train">Sentido do trem*</string>
+    <string name="frag_sms_denunciation_input_hint_next_station">Próxima estação*</string>
+    <string name="frag_sms_denunciation_input_hint_car_number">Número do carro (vagão)</string>
+    <string name="frag_sms_denunciation_input_hint_subject">Assunto*</string>
+    <string name="frag_sms_denunciation_input_hint_details">Detalhes da denúncia</string>
+    <string name="frag_sms_denunciation_details_button_send">Enviar</string>
+    <string name="frag_sms_denunciation_empty_field_line">Selecione uma linha</string>
+    <string name="frag_sms_denunciation_empty_field_direction">Selecione o sentido do trem</string>
+    <string name="frag_sms_denunciation_empty_field_next_station">Selecione a próxima estação</string>
+    <string name="frag_sms_denunciation_empty_field_subject">Selecione o assunto</string>
+    <string name="frag_sms_denunciation_message_max_length">O detalhe da denúncia excedeu o tamanho limite!</string>
+    <string name="frag_sms_denunciation_message_error_send_sms">Não foi possível enviar a menssagem sms, tente novamente mais tarde!</string>
+    <string name="frag_sms_denunciation_message_success">Menssagem enviada!</string>
+    <string name="frag_sms_denunciation_dialog_content">Enviando SMS denúncia…</string>
+
+    <string-array name="frag_sms_denunciation_subject">
+        <item>Ambulante</item>
+        <item>Ar Condicionado</item>
+        <item>Assento Preferencial</item>
+        <item>Pedinte</item>
+        <item>Pregação Religiosa</item>
+        <item>Som Alto</item>
+        <item>Vandalismo</item>
+    </string-array>
+
+    <!-- Edit Status Activity -->
+    <string name="activity_edit_status_toolbar_title">Editar situação da linha</string>
+    <string name="activity_edit_status_input_hint_line">Linha*</string>
+    <string name="activity_edit_status_input_hint_status">Situação*</string>
+    <string name="activity_edit_status_input_hint_description">Descrição</string>
+    <string name="activity_edit_status_input_line_error_empty">Escolha uma linha</string>
+    <string name="activity_edit_status_input_status_error_empty">Qual a situação da linha?</string>
+    <string name="activity_edit_status_dialog_message_refreshing_status">Atualizando o status da linha…</string>
+    <string name="activity_edit_status_message_error">Não foi possível salvar situação da linha!</string>
+
+    <string-array name="activity_edit_status_list_lines">
+        <item>Linha 1 Azul</item>
+        <item>Linha 2 Verde</item>
+        <item>Linha 3 Vermelha</item>
+        <item>Linha 4 Amarela</item>
+        <item>Linha 5 Lilás</item>
+        <item>Linha 7 Rubi</item>
+        <item>Linha 8 Diamante</item>
+        <item>Linha 9 Esmeralda</item>
+        <item>Linha 10 Turquesa</item>
+        <item>Linha 11 Coral</item>
+        <item>Linha 12 Safira</item>
+        <item>Linha 15 Prata</item>
+    </string-array>
+
+    <string-array name="activity_edit_status_list_status">
+        <item>Operação Normal</item>
+        <item>Velocidade Reduzida</item>
+        <item>Operação Parcial</item>
+        <item>Paralisada</item>
+        <item>Operação Diferenciada</item>
+        <item>Lentidão</item>
+    </string-array>
+
+    <!-- Status Line Official Fragment -->
+    <string name="frag_status_line_official_button_show_details">Ver detalhes</string>
+    <string name="frag_status_line_official_button_hide_details">Esconder detalhes</string>
+    <string name="frag_status_line_official_button_without_details">Sem detalhes</string>
+    <string name="frag_status_line_official_load_error">Não foi possível carregar a situação das linhas!</string>
+
+    <!-- Status Line By User Fragment -->
+    <string name="frag_status_line_by_user_load_error">Não foi possível carregar a situação das linhas segundo os usuário!</string>
+
+    <!-- Notification Status Service -->
+    <string name="service_notification_status_normal_operation">Operação normal</string>
+    <string name="service_notification_status_paralyzed_operation">Paralisada</string>
+    <string name="service_notification_status_finish_operation">Encerrada</string>
+    <string name="service_notification_status_change_status">Há mudanças no status de algumas linhas!</string>
+
+    <!-- Config Notification Activity -->
+    <string name="activity_settings_notification_toolbar_title">Configurações</string>
+    <string name="activity_settings_notification_hint_switch_official">Notificações do status oficial</string>
+    <string name="activity_settings_notification_hint_switch_by_user">Notificações do status pelo usuário</string>
+    <string name="activity_settings_notification_hint_lines">Linhas em que desejo ser notificado*</string>
+    <string name="activity_settings_notification_hint_lines_cptm">Linhas da CPTM utilizadas*</string>
+    <string name="activity_settings_notification_hint_lines_metro">Linhas do Metrô utilizadas*</string>
+    <string name="activity_settings_notification_hint_lines_days_utilization">Dias em que desejo ser notificado*</string>
+    <string name="activity_settings_notification_hint_lines_hours_utilization">Horários em que desejo ser notificado*</string>
+    <string name="activity_settings_notification_input_days_error_empty">Escolha um dia</string>
+    <string name="activity_settings_notification_input_hours_error_empty">Escolha um horário</string>
+    <string name="activity_settings_notification_input_lines_error_empty">Escolha uma linha</string>
+    <string name="activity_settings_notification_progress_dialog_saving_settings">Salvando as configurações de notificação…</string>
+    <string name="activity_settings_notification_message_settings_saved">Suas novas configurações foram salvas!</string>
+
+    <string-array name="activity_settings_notification_list_days">
+        <item>Domingo</item>
+        <item>Segunda-feira</item>
+        <item>Terça-feira</item>
+        <item>Quarta-feira</item>
+        <item>Quinta-feira</item>
+        <item>Sexta-feira</item>
+        <item>Sábado</item>
+    </string-array>
+
+    <string-array name="activity_settings_notification_list_hours">
+        <item>4h</item>
+        <item>5h</item>
+        <item>6h</item>
+        <item>7h</item>
+        <item>8h</item>
+        <item>9h</item>
+        <item>10h</item>
+        <item>11h</item>
+        <item>12h</item>
+        <item>13h</item>
+        <item>14h</item>
+        <item>15h</item>
+        <item>16h</item>
+        <item>17h</item>
+        <item>18h</item>
+        <item>19h</item>
+        <item>20h</item>
+        <item>21h</item>
+        <item>22h</item>
+        <item>23h</item>
+        <item>00h</item>
+    </string-array>
+
+    <!-- Status Line Official Adapter -->
+    <string name="cell_status_line_official_button_show_details">Ver detalhes</string>
+
+    <!-- Transport Map Activity -->
+    <string name="activity_transport_map_toolbar_title">Mapa</string>
+
+</resources>

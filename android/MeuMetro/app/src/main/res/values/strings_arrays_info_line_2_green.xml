@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Line 2 Green -->
+    <string-array name="line_2_green_vila_prudente_information">
+        <item>04h40 às 00h07 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AVENIDA PROFESSOR LUIZ INÁCIO DE ANHAIA MELLO, 1.359</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_2_green_vila_prudente_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Wi-fi</item>
+        <item>Caixa de Sugestões</item>
+        <item>Paraciclos</item>
+    </string-array>
+
+    <string-array name="line_2_green_tamanduatei_information">
+        <item>04h40 às 00h09 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Entre a Avenida Presidente Wilson e a Rua Guamiranga.</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_2_green_tamanduatei_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Paraciclos</item>
+        <item>Caixa de Sugestões</item>
+        <item>Wi-fi</item>
+    </string-array>
+
+    <string-array name="line_2_green_sacoma_information">
+        <item>04h40 às 00h11 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Sob a rua Greenfeld, entre as ruas Bom Pastor e Lino Coutinho.</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_2_green_sacoma_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_2_green_alto_do_ipiranga_information">
+        <item>04h40 às 00h13 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Dr. Gentil de Moura, esquina com Rua Visconde de Pirajá.</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_2_green_alto_do_ipiranga_at_the_station">
+        <item>Elevador</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_2_green_santos_imigrantes_information">
+        <item>04h40 às 00h16 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Paralela ao Viaduto Saioá e perpendicular à Av. Dr. Ricardo Jafet</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_2_green_santos_imigrantes_at_the_station">
+        <item>Elevador</item>
+        <item>Caixa de Sugestões</item>
+        <item>Estacionamento de Carro Integrado</item>
+    </string-array>
+
+    <string-array name="line_2_green_chacara_klabin_information">
+        <item>04h40 às 00h18 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Vergueiro em frente ao Instituto de Ensino Liceu Pasteur.</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_2_green_chacara_klabin_at_the_station">
+        <item>Elevador</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_2_green_ana_rosa_information">
+        <item>04h40 às 00h20 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>RUA DOMINGOS DE MORAIS, 505</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_2_green_ana_rosa_at_the_station">
+        <item>Balcão de Informações</item>
+        <item>Elevador</item>
+        <item>Wi-fi</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_2_green_paraiso_information">
+        <item>04h40 às 00h22 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>RUA VERGUEIRO, 1456</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_2_green_paraiso_at_the_station">
+        <item>Balcão de Informações</item>
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+        <item>Biblioteca</item>
+        <item>Wi-fi</item>
+    </string-array>
+
+    <string-array name="line_2_green_brigadeiro_information">
+        <item>04h40 às 00h24 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. PAULISTA, S/Nº (EM FRENTE AO Nº 447)</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_2_green_brigadeiro_at_the_station">
+        <item>Elevador</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_2_green_trianon_masp_information">
+        <item>04h40 às 00h22 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. PAULISTA, S/Nº (EM FRENTE AO Nº 1485)</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_2_green_trianon_masp_at_the_station">
+        <item>Elevador</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_2_green_consolacao_information">
+        <item>04h40 às 00h20 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. PAULISTA, S/Nº (EM FRENTE AO Nº 1485)</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_2_green_consolacao_at_the_station">
+        <item>Balcão de Informações</item>
+        <item>Elevador</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_2_green_clinicas_information">
+        <item>04h40 às 00h18 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. DR. ARNALDO, 555</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_2_green_clinicas_at_the_station">
+        <item>Elevador</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_2_green_snsra_de_fatima_information">
+        <item>04h40 às 00h16 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. DR.ARNALDO, 1470</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_2_green_snsra_de_fatima_at_the_station">
+        <item>Elevador</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_2_green_vila_madalena_information">
+        <item>04h40 às 00h14 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>PRAÇA AMÉRICO JACOMINO, 30</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_2_green_vila_madalena_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_2_green_direction">
+        <item>Vila Prudente</item>
+        <item>Vila Madalena</item>
+    </string-array>
+
+</resources>

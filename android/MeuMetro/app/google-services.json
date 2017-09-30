@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "932522839298",
+    "firebase_url": "https://meu-metro.firebaseio.com",
+    "project_id": "meu-metro",
+    "storage_bucket": "meu-metro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932522839298:android:c5cc32e963dbeb39",
+        "android_client_info": {
+          "package_name": "br.com.bruno.meumetro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932522839298-78hc6bdnudhmenjjfemobiku1mj36qov.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.bruno.meumetro",
+            "certificate_hash": "1d94e3b182b03eb66a879d2d978c82fab85238ea"
+          }
+        },
+        {
+          "client_id": "932522839298-kiis2i9dnj6b4co3u39epngc30h57qrr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoZuo0dcx94xLrBQg75QZfr919z9V3j7I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932522839298-kiis2i9dnj6b4co3u39epngc30h57qrr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

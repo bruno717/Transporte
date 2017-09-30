@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Line 15 Silver -->
+    <string-array name="line_15_silver_vila_prudente_information">
+        <item>06h00 às 20h00 DOMINGO A SÁBADO</item>
+        <item></item>
+        <item>AV. PROF. LUIZ IGNÁCIO DE ANHAIA MELLO, 1359</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_15_silver_vila_prudente_at_the_station">
+        <item>Elevador</item>
+        <item>Paraciclos</item>
+        <item>Caixa de Sugestões</item>
+    </string-array>
+
+    <string-array name="line_15_silver_oratorio_information">
+        <item>06h00 às 20h00 DOMINGO A SÁBADO</item>
+        <item></item>
+        <item>AV. DO ORATÓRIO, 165</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_15_silver_oratorio_at_the_station">
+        <item>Elevador</item>
+        <item>Paraciclos</item>
+        <item>Caixa de Sugestões</item>
+        <item>Sanitários</item>
+    </string-array>
+
+    <string-array name="line_15_silver_direction">
+        <item>Vila Prudente</item>
+        <item>Oratório</item>
+    </string-array>
+
+</resources>

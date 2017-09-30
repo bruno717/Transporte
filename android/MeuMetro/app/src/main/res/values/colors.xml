@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#355987</color>
+    <color name="primary_dark">#264062</color>
+    <color name="colorAccent">@android:color/white</color>
+
+    <color name="cell_divider">#F1F1F1</color>
+    <color name="background_transparent">#77000000</color>
+    <color name="background_transparent_dark">#DD000000</color>
+
+    <color name="background_notification_blue">#208cd0</color>
+
+    <color name="silver_light_hint">#828282</color>
+
+    <!-- Color lines -->
+    <color name="line_1_blue">#114B9C</color>
+    <color name="line_2_green">#1E7E6C</color>
+    <color name="line_3_red">#DE3E32</color>
+    <color name="line_4_yellow">#F8C918</color>
+    <color name="line_5_lilac">#8C3583</color>
+    <color name="line_15_silver">#90908D</color>
+
+
+    <color name="line_7_ruby">#A8034F</color>
+    <color name="line_8_diamond">#A39E8C</color>
+    <color name="line_9_emerald">#00AA9E</color>
+    <color name="line_10_turquoise">#00829B</color>
+    <color name="line_11_coral">#F55F1A</color>
+    <color name="line_12_sapphire">#1C146B</color>
+
+    <color name="grey_item_disabled_transparent">#55d3d3d3</color>
+    <color name="grey_item_disabled">#d3d3d3</color>
+
+    <color name="toggle_off_color">#ddd</color>
+
+    <!-- Color status -->
+    <color name="green_status_ok">#008000</color>
+    <color name="yellow_status_slow">#FFFF00</color>
+    <color name="red_status_stopped">#FF0000</color>
+
+</resources>

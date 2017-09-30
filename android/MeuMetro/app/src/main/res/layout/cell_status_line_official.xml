@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@id/cell_status_line_official_text_view_line_description_invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/silver_light_hint"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        tools:text="Por motivo de Obras , os trens da linha 7 - RUBI estão circulando com intervalos maiores entre as estações LUZ e FRANCISCO MORATO ." />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:clipToPadding="false"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="4dp"
+        app:cardMaxElevation="4dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false">
+
+        <View
+            android:id="@id/cell_status_line_official_view_line_color"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            tools:background="@color/line_1_blue" />
+
+        <View
+            android:id="@id/cell_status_line_official_view_line_color_status"
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            tools:background="@color/green_status_ok" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clipToPadding="false"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@id/cell_status_line_official_text_view_line_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    tools:text="Linha 8 - Esmeralda" />
+
+                <TextView
+                    android:id="@id/cell_status_line_official_text_view_line_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    tools:text="Operação diferenciada" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@id/cell_status_line_official_button_show_details"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="-6dp"
+                android:layout_marginStart="-6dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@mipmap/ic_visibility_black_24dp"
+                android:textColor="@color/primary" />
+
+            <LinearLayout
+                android:id="@id/cell_status_line_official_linear_layout_line_description"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:id="@id/cell_status_line_official_text_view_line_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/silver_light_hint"
+                    android:textSize="14sp"
+                    tools:text="Por motivo de Obras , os trens da linha 7 - RUBI estão circulando com intervalos maiores entre as estações LUZ e FRANCISCO MORATO ." />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

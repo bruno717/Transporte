@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="line_10_turquoise_bras_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Praça Agente Cícero, s/nº</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_bras_at_the_station">
+        <item>Programa Acessa São Paulo de Inclusão Social</item>
+        <item>Transferência interna gratuita</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Transferência gratuita CPTM-Metro</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_juventos_mooca_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida Presidente Wilson, 483</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_juventos_mooca_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Telefone para surdos</item>
+        <item>Sanitário Unissex Acessível</item>
+        <item>Rampa</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_ipiranga_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida Presidente Wilson, 3.473</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_ipiranga_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Sanitário Unissex Acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_tamanduatei_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Guamiranga, 600</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_tamanduatei_at_the_station">
+        <item>Bicicletário</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Integração entre CPTM e Ônibus</item>
+        <item>Transferência gratuita CPTM-Metro</item>
+        <item>Piso Tátil</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Telefone para surdos</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_sao_caetano_do_sul_pref_water_braido_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Serafim Constantino, 51</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_sao_caetano_do_sul_pref_water_braido_at_the_station">
+        <item>Terminal Interurbano de Ônibus</item>
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Sanitário Unissex Acessível</item>
+        <item>Telefone para surdos</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_utinga_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida da Paz, s/nº</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_utinga_at_the_station">
+        <item>Rampa</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_prefeito_saladino_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Praça Armando Arruda, s/nº</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_prefeito_saladino_at_the_station">
+        <item>Terminal Interurbano de Ônibus</item>
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Telefone para surdos</item>
+        <item>Sanitário Unissex Acessível</item>
+        <item>Rampa</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_pref_celso_daniel_santo_andre_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Itambé, s/nº</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_pref_celso_daniel_santo_andre_at_the_station">
+        <item>Terminal Interurbano de Ônibus</item>
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Bicicletário</item>
+        <item>Integração entre CPTM e Ônibus</item>
+        <item>Integração entre a CPTM e a EMTU</item>
+        <item>Sanitário Unissex Acessível</item>
+        <item>Rampa</item>
+        <item>Telefone para surdos</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_capuava_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida Padre Manoel da Nóbrega, s/nº</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_capuava_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+        <item>Rampa</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_maua_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida Rio Branco, s/nº</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_maua_at_the_station">
+        <item>Bicicletário</item>
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+        <item>Sanitário Unissex Acessível</item>
+        <item>Telefone para surdos</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_guapituba_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida Brasil, s/nº</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_guapituba_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_ribeirao_pires_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Capitão José Gallo, s/nº</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_ribeirao_pires_at_the_station">
+        <item>Terminal Interurbano de Ônibus</item>
+        <item>Integração entre CPTM e Ônibus</item>
+        <item>Terminal Urbano de Ônibus</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Rampa</item>
+        <item>Transposição de plataformas</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_rio_grande_da_serra_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Guilherme Pinto Monteiro, s/nº</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_rio_grande_da_serra_at_the_station">
+        <item>Integração entre CPTM e Ônibus</item>
+        <item>Integração entre a CPTM e a EMTU</item>
+        <item>Telefone para surdos</item>
+        <item>Transposição de plataformas</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Rampa</item>
+    </string-array>
+
+    <string-array name="line_10_turquoise_direction">
+        <item>Brás</item>
+        <item>Rio Grande da Serra</item>
+    </string-array>
+
+</resources>

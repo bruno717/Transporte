@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Line 3 Red -->
+    <string-array name="line_5_lilac_capao_redendo_information">
+        <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
+        <item></item>
+        <item>AV. CARLOS CALDEIRA FILHO, 4261</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_5_lilac_capao_redendo_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Paraciclos</item>
+    </string-array>
+
+    <string-array name="line_5_lilac_campo_limpo_information">
+        <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
+        <item></item>
+        <item>RUA NOANAMA, 85</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_5_lilac_campo_limpo_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Paraciclos</item>
+    </string-array>
+
+    <string-array name="line_5_lilac_vila_das_belezas_information">
+        <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
+        <item></item>
+        <item>AV. DAS BELEZAS, 880</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_5_lilac_vila_das_belezas_at_the_station">
+        <item>Elevador</item>
+        <item>Paraciclos</item>
+    </string-array>
+
+    <string-array name="line_5_lilac_giovanni_gronchi_information">
+        <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
+        <item></item>
+        <item>AV. JOÃO DIAS, 3569</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_5_lilac_giovanni_gronchi_at_the_station">
+        <item>Elevador</item>
+    </string-array>
+
+    <string-array name="line_5_lilac_santo_amaro_information">
+        <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
+        <item></item>
+        <item>AV. GUIDO CALOI, 2221</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_5_lilac_santo_amaro_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+    </string-array>
+
+    <string-array name="line_5_lilac_largo_treze_information">
+        <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
+        <item></item>
+        <item>AV PADRE JOSÉ MARIA COM RUA BARÃO DO RIO BRANCO.</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_5_lilac_largo_treze_at_the_station">
+        <item>Elevador</item>
+        <item>Achados e Perdidos</item>
+    </string-array>
+
+    <string-array name="line_5_lilac_adolfo_pinheiro_information">
+        <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
+        <item></item>
+        <item>AV. ADOLFO PINHEIRO, 300</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_5_lilac_adolfo_pinheiro_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários (área paga)</item>
+    </string-array>
+
+    <string-array name="line_5_lilac_direction">
+        <item>Capão Redondo</item>
+        <item>Adolfo Pinheiro</item>
+    </string-array>
+
+</resources>
