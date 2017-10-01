@@ -92,5 +92,8 @@
     <item name="cell_settings_text_view" type="id" />
     <item name="cell_settings_image_button_remove" type="id" />
 
+    <!-- Transport Map Activity -->
+    <item name="activity_transport_map_web_view" type="id" />
+
 
 </resources>

@@ -11,20 +11,14 @@
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         android:title="@string/navigation_drawer_transport_map"
+        android:visibility="gone"
         app:layout_scrollFlags="scroll|enterAlways"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@style/ToolbarColoredBackArrow" />
 
-    <br.com.bruno.meumetro.widgets.TouchImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="fitXY"
-        android:src="@mipmap/transport_map" />
-
     <WebView
         android:id="@id/activity_transport_map_web_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="gone" />
+        android:layout_height="match_parent" />
 
 </LinearLayout>

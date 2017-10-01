@@ -35,9 +35,7 @@
         <activity
             android:name=".SmsDenunciationActivity"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".TransportMapActivity"
-            android:screenOrientation="portrait" />
+        <activity android:name=".TransportMapActivity" />
 
         <!--<receiver-->
         <!--android:name="br.com.bruno.meumetro.receiver.NotificationStatusReceiver"-->
