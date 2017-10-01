@@ -17,8 +17,8 @@ android {
         applicationId "br.com.bruno.meumetro"
         minSdkVersion 16
         targetSdkVersion 25
-        versionCode 17
-        versionName "1.1.0"
+        versionCode 18
+        versionName "1.2.0"
 //        multiDexEnabled true
     }
     buildTypes {
@@ -34,10 +34,6 @@ android {
 
     lintOptions {
         disable 'InvalidPackage'
-    }
-
-    aaptOptions {
-        cruncherEnabled = true
     }
 
     packagingOptions {
