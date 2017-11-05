@@ -37,29 +37,6 @@
             android:screenOrientation="portrait" />
         <activity android:name=".TransportMapActivity" />
 
-        <!--<receiver-->
-        <!--android:name="br.com.bruno.meumetro.receiver.NotificationStatusReceiver"-->
-        <!--android:enabled="true"-->
-        <!--android:exported="false"-->
-        <!--android:permission="android.permission.RECEIVE_BOOT_COMPLETED">-->
-        <!--<intent-filter>-->
-        <!--<category android:name="android.intent.category.DEFAULT" />-->
-        <!--<action android:name="android.intent.action.BOOT_COMPLETED" />-->
-        <!--</intent-filter>-->
-        <!--</receiver>-->
-
-        <!--<service-->
-        <!--android:name=".services.NotificationStatusOfficialService"-->
-        <!--android:enabled="true"-->
-        <!--android:exported="false"-->
-        <!--android:permission="android.permission.RECEIVE_BOOT_COMPLETED" />-->
-
-        <!--<service-->
-        <!--android:name=".services.NotificationStatusByUserService"-->
-        <!--android:enabled="true"-->
-        <!--android:exported="false"-->
-        <!--android:permission="android.permission.RECEIVE_BOOT_COMPLETED" />-->
-
         <service android:name=".services.MeuMetroMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -71,6 +48,10 @@
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="5daf77d4a129e29ca7a67194f1d265fc25eded60" />
 
     </application>
 

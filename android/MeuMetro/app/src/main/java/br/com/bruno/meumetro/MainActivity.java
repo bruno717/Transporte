@@ -60,7 +60,6 @@ public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerIt
 
     private void setupNavigationDrawer(Bundle savedInstanceState) {
 
-
         mDrawer = new DrawerBuilder()
                 .withActivity(this)
                 .withToolbar(mToolbar)
