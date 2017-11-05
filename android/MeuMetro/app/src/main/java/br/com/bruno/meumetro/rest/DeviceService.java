@@ -33,24 +33,24 @@ public class DeviceService {
             call.enqueue(new Callback<Void>() {
                 @Override
                 public void onResponse(Call<Void> call, Response<Void> response) {
-                    SharedPreferenceManager.deleteDeviceToken(null);
+                    SharedPreferenceManager.deleteDeviceToken();
                 }
 
                 @Override
                 public void onFailure(Call<Void> call, Throwable t) {
-                    if (SharedPreferenceManager.getDeviceToken(null) == null) {
-                        SharedPreferenceManager.saveDeviceToken(null, device);
+                    if (SharedPreferenceManager.getDeviceToken() == null) {
+                        SharedPreferenceManager.saveDeviceToken(device);
                     }
                 }
             });
         } else {
             try {
                 call.execute();
-                SharedPreferenceManager.deleteDeviceToken(null);
+                SharedPreferenceManager.deleteDeviceToken();
             } catch (IOException e) {
                 e.printStackTrace();
-                if (SharedPreferenceManager.getDeviceToken(null) == null) {
-                    SharedPreferenceManager.saveDeviceToken(null, device);
+                if (SharedPreferenceManager.getDeviceToken() == null) {
+                    SharedPreferenceManager.saveDeviceToken(device);
                 }
             }
         }

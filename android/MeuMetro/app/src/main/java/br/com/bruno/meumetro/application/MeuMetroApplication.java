@@ -1,14 +1,15 @@
 package br.com.bruno.meumetro.application;
 
-import android.app.Application;
 import android.content.Context;
 import android.support.multidex.MultiDexApplication;
+
+import com.blankj.utilcode.util.Utils;
+import com.crashlytics.android.Crashlytics;
 
 import br.com.bruno.meumetro.database.MigrationMyDataBase;
 import br.com.bruno.meumetro.managers.SharedPreferenceManager;
 import br.com.bruno.meumetro.models.Device;
 import br.com.bruno.meumetro.rest.DeviceService;
-import com.crashlytics.android.Crashlytics;
 import io.fabric.sdk.android.Fabric;
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
@@ -24,9 +25,12 @@ public class MeuMetroApplication extends MultiDexApplication {
     @Override
     public void onCreate() {
         super.onCreate();
-        Fabric.with(this, new Crashlytics());
 
         CONTEXT_GLOBAL = getApplicationContext();
+
+        Fabric.with(this, new Crashlytics());
+
+        Utils.init(this);
 
         Realm.init(this);
         RealmConfiguration realmConfiguration = new RealmConfiguration.Builder()
@@ -38,7 +42,7 @@ public class MeuMetroApplication extends MultiDexApplication {
     }
 
     private void verifyIfHasTokenNotification() {
-        Device device = SharedPreferenceManager.getDeviceToken(getApplicationContext());
+        Device device = SharedPreferenceManager.getDeviceToken();
         if (device != null) {
             new DeviceService().saveTokenDevice(device, true);
         }

@@ -14,10 +14,10 @@
         android:id="@id/cell_status_line_official_company_image_view"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        tools:src="@mipmap/ic_launcher" />
+        tools:src="@mipmap/ic_metro" />
 
     <TextView
-        android:id="@id/cell_status_line_official_company_text_view"
+        android:id="@id/cell_status_line_official_company_text_view_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -25,5 +25,34 @@
         android:textColor="@android:color/black"
         android:textSize="16sp"
         tools:text="Metrô" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/cell_status_line_official_company_text_view_last_refresh_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:gravity="end"
+            android:text="@string/cell_status_line_official_text_view_last_refresh"
+            android:textColor="@color/silver_light_hint"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@id/cell_status_line_official_company_text_view_last_refresh_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:gravity="end"
+            android:textColor="@color/silver_light_hint"
+            android:textSize="14sp"
+            tools:text="05/11 às 19h42" />
+
+    </LinearLayout>
 
 </LinearLayout>

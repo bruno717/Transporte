@@ -35,7 +35,7 @@ public class MeuMetroFirebaseInstanceIdService extends FirebaseInstanceIdService
         if (ConnectionUtils.isConnected(getApplicationContext())) {
             new DeviceService().saveTokenDevice(device, false);
         } else {
-            SharedPreferenceManager.saveDeviceToken(getApplicationContext(), device);
+            SharedPreferenceManager.saveDeviceToken(device);
         }
     }
 }

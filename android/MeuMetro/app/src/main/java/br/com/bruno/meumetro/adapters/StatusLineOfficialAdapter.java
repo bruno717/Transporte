@@ -22,6 +22,7 @@ import java.util.List;
 import br.com.bruno.meumetro.LinesInformationActivity;
 import br.com.bruno.meumetro.R;
 import br.com.bruno.meumetro.enums.StatusType;
+import br.com.bruno.meumetro.managers.SharedPreferenceManager;
 import br.com.bruno.meumetro.models.Line;
 import br.com.bruno.meumetro.utils.DrawableUtils;
 import br.com.bruno.meumetro.utils.MetricsConverter;
@@ -33,6 +34,9 @@ import butterknife.OnClick;
  * Created by Bruno on 30/08/2016.
  */
 public class StatusLineOfficialAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+
+    public static final String STATUS_LINE_OFFICIAL_ADAPTER_KEY_PREFERENCE_OFFICIAL = "STATUS_LINE_OFFICIAL_ADAPTER_KEY_PREFERENCE_OFFICIAL";
+    public static final String STATUS_LINE_OFFICIAL_ADAPTER_KEY_PREFERENCE_BY_USER = "STATUS_LINE_OFFICIAL_ADAPTER_KEY_PREFERENCE_BY_USER";
 
     private static final int HIDE = 0;
     private static final int PADDING_BOTTOM = 16;
@@ -57,8 +61,8 @@ public class StatusLineOfficialAdapter extends RecyclerView.Adapter<RecyclerView
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view;
 
+        View view;
         if (viewType == CellType.COMPANY_CELL.ordinal()) {
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_status_line_official_company, parent, false);
             return new ViewHolderCompany(view);
@@ -76,9 +80,15 @@ public class StatusLineOfficialAdapter extends RecyclerView.Adapter<RecyclerView
 
         if (holder.getItemViewType() == CellType.COMPANY_CELL.ordinal()) {
             ViewHolderCompany holderCompany = (ViewHolderCompany) holder;
-            holderCompany.mTextView.setText(position == 0 ? R.string.meu_metro_metro : R.string.meu_metro_cptm);
+            holderCompany.mTextViewNameCompany.setText(position == 0 ? R.string.meu_metro_metro : R.string.meu_metro_cptm);
             holderCompany.mImageView.setImageResource(position == 0 ? R.mipmap.ic_metro : R.mipmap.ic_cptm);
+            holderCompany.mTextViewLastRefreshLabel.setVisibility(position == 0 ? View.VISIBLE : View.GONE);
+            if (mLines.size() > 1) {
+                String dateLastRefresh = SharedPreferenceManager.getDateLastRefresh(mLines.get(1).getStatusType() == StatusType.OFFICIAL ? SharedPreferenceManager.LINE_OFFICIAL : SharedPreferenceManager.LINE_BY_USER);
+                holderCompany.mTextViewDate.setText(position == 0 ? dateLastRefresh : "");
+            }
         } else {
+
             int index = position > 7 ? position - 2 : position - 1;
             if (index < mLines.size()) {
                 Line line = mLines.get(index);
@@ -90,6 +100,7 @@ public class StatusLineOfficialAdapter extends RecyclerView.Adapter<RecyclerView
                 holderLine.mTextViewLineStatus.setText(line.getSituation());
                 holderLine.mViewLineColor.setBackgroundColor(ContextCompat.getColor(context, line.getColorBackground()));
                 holderLine.mViewLineColorStatus.setBackgroundColor(ContextCompat.getColor(context, getColorStatus(context, line)));
+
                 if (line.getStatusType() == StatusType.OFFICIAL) {
                     if (line.getDescription() != null && line.getDescription().length() > 0) {
                         holderLine.mTextViewDescription.setText(line.getDescription());
@@ -162,7 +173,7 @@ public class StatusLineOfficialAdapter extends RecyclerView.Adapter<RecyclerView
         return mLines.size() > 0 ? mLines.size() + CELLS_EXTRA : 0;
     }
 
-    public void setItems(List<Line> items){
+    public void setItems(List<Line> items) {
         mLines = items;
         notifyDataSetChanged();
     }
@@ -223,8 +234,12 @@ public class StatusLineOfficialAdapter extends RecyclerView.Adapter<RecyclerView
 
         @Bind(R.id.cell_status_line_official_company_image_view)
         ImageView mImageView;
-        @Bind(R.id.cell_status_line_official_company_text_view)
-        TextView mTextView;
+        @Bind(R.id.cell_status_line_official_company_text_view_name)
+        TextView mTextViewNameCompany;
+        @Bind(R.id.cell_status_line_official_company_text_view_last_refresh_label)
+        TextView mTextViewLastRefreshLabel;
+        @Bind(R.id.cell_status_line_official_company_text_view_last_refresh_date)
+        TextView mTextViewDate;
 
         public ViewHolderCompany(View itemView) {
             super(itemView);

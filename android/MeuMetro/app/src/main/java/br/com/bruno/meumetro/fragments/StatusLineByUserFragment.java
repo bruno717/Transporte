@@ -23,6 +23,7 @@ import br.com.bruno.meumetro.database.LineDbHelper;
 import br.com.bruno.meumetro.enums.StatusType;
 import br.com.bruno.meumetro.interfaces.IServiceResponse;
 import br.com.bruno.meumetro.managers.LineManager;
+import br.com.bruno.meumetro.managers.SharedPreferenceManager;
 import br.com.bruno.meumetro.models.Line;
 import br.com.bruno.meumetro.rest.StatusLineService;
 import br.com.bruno.meumetro.utils.ConnectionUtils;
@@ -119,6 +120,7 @@ public class StatusLineByUserFragment extends Fragment implements StatusLineOffi
                     LineManager.saveLines(lines, StatusType.USER);
                     mLines = lines;
                     mSwipeRefresh.setRefreshing(false);
+                    SharedPreferenceManager.saveDateLastRefresh(SharedPreferenceManager.LINE_BY_USER);
                     setupList(lines);
                 }
 

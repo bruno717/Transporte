@@ -162,6 +162,7 @@
 
     <!-- Status Line Official Adapter -->
     <string name="cell_status_line_official_button_show_details">Ver detalhes</string>
+    <string name="cell_status_line_official_text_view_last_refresh">Última atualização:</string>
 
     <!-- Transport Map Activity -->
     <string name="activity_transport_map_toolbar_title">Mapa</string>

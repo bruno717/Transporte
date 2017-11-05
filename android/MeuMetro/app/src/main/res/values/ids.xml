@@ -33,7 +33,9 @@
     <item name="cell_status_line_official_button_show_details" type="id" />
 
     <item name="cell_status_line_official_company_image_view" type="id" />
-    <item name="cell_status_line_official_company_text_view" type="id" />
+    <item name="cell_status_line_official_company_text_view_name" type="id" />
+    <item name="cell_status_line_official_company_text_view_last_refresh_label" type="id" />
+    <item name="cell_status_line_official_company_text_view_last_refresh_date" type="id" />
 
 
     <!-- Station of the Line Adapter -->

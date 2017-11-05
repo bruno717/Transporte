@@ -20,6 +20,7 @@ import br.com.bruno.meumetro.database.LineDbHelper;
 import br.com.bruno.meumetro.enums.StatusType;
 import br.com.bruno.meumetro.interfaces.IServiceResponse;
 import br.com.bruno.meumetro.managers.LineManager;
+import br.com.bruno.meumetro.managers.SharedPreferenceManager;
 import br.com.bruno.meumetro.models.Line;
 import br.com.bruno.meumetro.rest.StatusLineService;
 import br.com.bruno.meumetro.utils.ConnectionUtils;
@@ -71,7 +72,7 @@ public class StatusLineOfficialFragment extends Fragment {
         });
     }
 
-    private void setupList(List<Line> lines){
+    private void setupList(List<Line> lines) {
         if (mAdapter == null) {
             mAdapter = new StatusLineOfficialAdapter(lines);
             mRecyclerView.setAdapter(mAdapter);
@@ -89,6 +90,7 @@ public class StatusLineOfficialFragment extends Fragment {
                     lines = LineManager.sortLines(lines);
                     LineManager.saveLines(lines, StatusType.OFFICIAL);
                     mSwipeRefresh.setRefreshing(false);
+                    SharedPreferenceManager.saveDateLastRefresh(SharedPreferenceManager.LINE_OFFICIAL);
                     setupList(lines);
                 }
 
