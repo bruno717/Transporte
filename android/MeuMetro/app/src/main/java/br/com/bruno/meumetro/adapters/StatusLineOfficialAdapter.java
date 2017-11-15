@@ -26,7 +26,7 @@ import br.com.bruno.meumetro.managers.SharedPreferenceManager;
 import br.com.bruno.meumetro.models.Line;
 import br.com.bruno.meumetro.utils.DrawableUtils;
 import br.com.bruno.meumetro.utils.MetricsConverter;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -180,21 +180,21 @@ public class StatusLineOfficialAdapter extends RecyclerView.Adapter<RecyclerView
 
     public class ViewHolderLine extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        @Bind(R.id.cell_status_line_official_view_line_color)
+        @BindView(R.id.cell_status_line_official_view_line_color)
         View mViewLineColor;
-        @Bind(R.id.cell_status_line_official_view_line_color_status)
+        @BindView(R.id.cell_status_line_official_view_line_color_status)
         View mViewLineColorStatus;
-        @Bind(R.id.cell_status_line_official_text_view_line_name)
+        @BindView(R.id.cell_status_line_official_text_view_line_name)
         TextView mTextViewLineName;
-        @Bind(R.id.cell_status_line_official_text_view_line_status)
+        @BindView(R.id.cell_status_line_official_text_view_line_status)
         TextView mTextViewLineStatus;
-        @Bind(R.id.cell_status_line_official_text_view_line_description)
+        @BindView(R.id.cell_status_line_official_text_view_line_description)
         TextView mTextViewDescription;
-        @Bind(R.id.cell_status_line_official_text_view_line_description_invisible)
+        @BindView(R.id.cell_status_line_official_text_view_line_description_invisible)
         TextView mTextViewDescriptionInvisible;
-        @Bind(R.id.cell_status_line_official_linear_layout_line_description)
+        @BindView(R.id.cell_status_line_official_linear_layout_line_description)
         LinearLayout mLinearLayoutDescription;
-        @Bind(R.id.cell_status_line_official_button_show_details)
+        @BindView(R.id.cell_status_line_official_button_show_details)
         ImageButton mButtonShowDetails;
 
         public ViewHolderLine(View itemView) {
@@ -232,13 +232,13 @@ public class StatusLineOfficialAdapter extends RecyclerView.Adapter<RecyclerView
 
     public class ViewHolderCompany extends RecyclerView.ViewHolder {
 
-        @Bind(R.id.cell_status_line_official_company_image_view)
+        @BindView(R.id.cell_status_line_official_company_image_view)
         ImageView mImageView;
-        @Bind(R.id.cell_status_line_official_company_text_view_name)
+        @BindView(R.id.cell_status_line_official_company_text_view_name)
         TextView mTextViewNameCompany;
-        @Bind(R.id.cell_status_line_official_company_text_view_last_refresh_label)
+        @BindView(R.id.cell_status_line_official_company_text_view_last_refresh_label)
         TextView mTextViewLastRefreshLabel;
-        @Bind(R.id.cell_status_line_official_company_text_view_last_refresh_date)
+        @BindView(R.id.cell_status_line_official_company_text_view_last_refresh_date)
         TextView mTextViewDate;
 
         public ViewHolderCompany(View itemView) {

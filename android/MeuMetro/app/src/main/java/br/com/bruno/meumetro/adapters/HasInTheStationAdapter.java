@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import br.com.bruno.meumetro.R;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -39,7 +39,7 @@ public class HasInTheStationAdapter extends RecyclerView.Adapter<HasInTheStation
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        @Bind(R.id.cell_has_in_the_station_text_view)
+        @BindView(R.id.cell_has_in_the_station_text_view)
         TextView mTextView;
 
         public ViewHolder(View itemView) {

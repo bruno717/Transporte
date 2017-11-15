@@ -18,7 +18,7 @@ import br.com.bruno.meumetro.R;
 import br.com.bruno.meumetro.SettingsNotificationActivity;
 import br.com.bruno.meumetro.enums.SettingsListType;
 import br.com.bruno.meumetro.utils.DrawableUtils;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -65,9 +65,9 @@ public class SettingsAdapter extends RecyclerView.Adapter<SettingsAdapter.ViewHo
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        @Bind(R.id.cell_settings_text_view)
+        @BindView(R.id.cell_settings_text_view)
         TextView mTextView;
-        @Bind(R.id.cell_settings_image_button_remove)
+        @BindView(R.id.cell_settings_image_button_remove)
         ImageButton mImageButtonRemove;
 
         public ViewHolder(View itemView) {

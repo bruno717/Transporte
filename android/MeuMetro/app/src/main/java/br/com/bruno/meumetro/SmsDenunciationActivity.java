@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import br.com.bruno.meumetro.fragments.SmsDenunciationFragment;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -16,7 +16,7 @@ import butterknife.ButterKnife;
 
 public class SmsDenunciationActivity extends AppCompatActivity {
 
-    @Bind(R.id.meu_metro_toolbar)
+    @BindView(R.id.meu_metro_toolbar)
     Toolbar mToolbar;
 
     @Override

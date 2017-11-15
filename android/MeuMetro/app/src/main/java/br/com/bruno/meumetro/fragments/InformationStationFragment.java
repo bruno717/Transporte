@@ -18,7 +18,7 @@ import br.com.bruno.meumetro.R;
 import br.com.bruno.meumetro.adapters.HasInTheStationAdapter;
 import br.com.bruno.meumetro.managers.LinearLayoutManagerEnabledScroll;
 import br.com.bruno.meumetro.models.Station;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -26,13 +26,13 @@ import butterknife.ButterKnife;
  */
 public class InformationStationFragment extends Fragment {
 
-    @Bind(R.id.frag_information_station_text_view_operation_sunday_friday)
+    @BindView(R.id.frag_information_station_text_view_operation_sunday_friday)
     TextView mTextViewOperationSundayFriday;
-    @Bind(R.id.frag_information_station_text_view_operation_saturday)
+    @BindView(R.id.frag_information_station_text_view_operation_saturday)
     TextView mTextViewOperationSaturday;
-    @Bind(R.id.frag_information_station_text_view_localization)
+    @BindView(R.id.frag_information_station_text_view_localization)
     TextView mTextViewLocalization;
-    @Bind(R.id.meu_metro_recycler_view)
+    @BindView(R.id.meu_metro_recycler_view)
     RecyclerView mRecyclerView;
 
     public Station mStation;

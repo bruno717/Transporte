@@ -15,7 +15,7 @@ import java.util.List;
 import br.com.bruno.meumetro.R;
 import br.com.bruno.meumetro.fragments.InformationStationFragment;
 import br.com.bruno.meumetro.models.Station;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -56,9 +56,9 @@ public class StationsOfTheLineAdapter extends RecyclerView.Adapter<StationsOfThe
 
     class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        @Bind(R.id.cell_station_of_the_line_text_view_line)
+        @BindView(R.id.cell_station_of_the_line_text_view_line)
         TextView mTextViewLineName;
-        @Bind(R.id.cell_station_of_the_line_view_line_vertical)
+        @BindView(R.id.cell_station_of_the_line_view_line_vertical)
         View mView;
 
         ViewHolder(View itemView) {

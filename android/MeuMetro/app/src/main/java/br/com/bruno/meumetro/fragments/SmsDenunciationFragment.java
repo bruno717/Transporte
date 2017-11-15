@@ -42,7 +42,7 @@ import java.util.Locale;
 import br.com.bruno.meumetro.R;
 import br.com.bruno.meumetro.enums.lines.LineType;
 import br.com.bruno.meumetro.utils.StringUtils;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -56,23 +56,23 @@ public class SmsDenunciationFragment extends Fragment implements View.OnFocusCha
     private final String NUMBER_CPTM = "11971504949";
     private final static int REQUEST_SEND_SMS = 101;
 
-    @Bind(R.id.meu_metro_main_view)
+    @BindView(R.id.meu_metro_main_view)
     CoordinatorLayout mMainView;
-    @Bind(R.id.frag_sms_denunciation_input_line)
+    @BindView(R.id.frag_sms_denunciation_input_line)
     TextInputLayout mInputLayoutLine;
-    @Bind(R.id.frag_sms_denunciation_input_direction_train)
+    @BindView(R.id.frag_sms_denunciation_input_direction_train)
     TextInputLayout mInputLayoutDirectionTrain;
-    @Bind(R.id.frag_sms_denunciation_input_next_station)
+    @BindView(R.id.frag_sms_denunciation_input_next_station)
     TextInputLayout mInputLayoutNextStation;
-    @Bind(R.id.frag_sms_denunciation_input_car_number)
+    @BindView(R.id.frag_sms_denunciation_input_car_number)
     TextInputLayout mInputLayoutCarNumber;
-    @Bind(R.id.frag_sms_denunciation_input_subject)
+    @BindView(R.id.frag_sms_denunciation_input_subject)
     TextInputLayout mInputLayoutSubject;
-    @Bind(R.id.frag_sms_denunciation_input_details)
+    @BindView(R.id.frag_sms_denunciation_input_details)
     TextInputLayout mInputLayoutDetails;
-    @Bind(R.id.frag_sms_denunciation_radio_button_cptm)
+    @BindView(R.id.frag_sms_denunciation_radio_button_cptm)
     RadioButton mRadioButtonCPTM;
-    @Bind(R.id.frag_sms_denunciation_radio_button_metro)
+    @BindView(R.id.frag_sms_denunciation_radio_button_metro)
     RadioButton mRadioButtonMetro;
 
     private int mIndexLine = -1;

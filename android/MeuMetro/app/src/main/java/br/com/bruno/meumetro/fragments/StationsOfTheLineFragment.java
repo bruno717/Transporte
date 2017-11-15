@@ -19,7 +19,7 @@ import br.com.bruno.meumetro.LinesInformationActivity;
 import br.com.bruno.meumetro.R;
 import br.com.bruno.meumetro.adapters.StationsOfTheLineAdapter;
 import br.com.bruno.meumetro.models.Line;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -27,7 +27,7 @@ import butterknife.ButterKnife;
  */
 public class StationsOfTheLineFragment extends Fragment {
 
-    @Bind(R.id.meu_metro_recycler_view)
+    @BindView(R.id.meu_metro_recycler_view)
     RecyclerView mRecyclerView;
 
     public Line mLine;

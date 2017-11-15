@@ -22,20 +22,20 @@ import br.com.bruno.meumetro.adapters.TabsViewPagerAdapter;
 import br.com.bruno.meumetro.fragments.StatusLineByUserFragment;
 import br.com.bruno.meumetro.fragments.StatusLineOfficialFragment;
 import br.com.bruno.meumetro.utils.DrawableUtils;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerItemClickListener, Drawer.OnDrawerListener, TabLayout.OnTabSelectedListener {
 
     public static final String MAIN_ACTIVITY_INTENT_KEY_IS_TAB_USER = "MAIN_ACTIVITY_INTENT_KEY_IS_TAB_USER";
 
-    @Bind(R.id.meu_metro_main_view)
+    @BindView(R.id.meu_metro_main_view)
     CoordinatorLayout mViewMain;
-    @Bind(R.id.meu_metro_toolbar)
+    @BindView(R.id.meu_metro_toolbar)
     Toolbar mToolbar;
-    @Bind(R.id.meu_metro_tab_layout)
+    @BindView(R.id.meu_metro_tab_layout)
     TabLayout mTabLayout;
-    @Bind(R.id.meu_metro_view_pager)
+    @BindView(R.id.meu_metro_view_pager)
     ViewPager mViewPager;
 
     private Drawer mDrawer;

@@ -9,7 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.webkit.WebView;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -18,9 +18,9 @@ import butterknife.ButterKnife;
 
 public class TransportMapActivity extends AppCompatActivity {
 
-    @Bind(R.id.meu_metro_toolbar)
+    @BindView(R.id.meu_metro_toolbar)
     Toolbar mToolbar;
-    @Bind(R.id.activity_transport_map_web_view)
+    @BindView(R.id.activity_transport_map_web_view)
     WebView mWebView;
 
     @Override

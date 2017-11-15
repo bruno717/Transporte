@@ -13,7 +13,7 @@ import java.io.IOException;
 
 import br.com.bruno.meumetro.fragments.StationsOfTheLineFragment;
 import br.com.bruno.meumetro.models.Line;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -21,7 +21,7 @@ import butterknife.ButterKnife;
  */
 public class LinesInformationActivity extends AppCompatActivity {
 
-    @Bind(R.id.meu_metro_toolbar)
+    @BindView(R.id.meu_metro_toolbar)
     Toolbar mToolbar;
 
     @Override

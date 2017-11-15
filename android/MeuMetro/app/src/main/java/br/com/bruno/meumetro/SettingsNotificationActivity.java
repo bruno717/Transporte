@@ -31,7 +31,7 @@ import br.com.bruno.meumetro.models.settings.LineSetting;
 import br.com.bruno.meumetro.models.settings.Setting;
 import br.com.bruno.meumetro.utils.ArrayUtils;
 import br.com.bruno.meumetro.utils.DrawableUtils;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import io.realm.RealmList;
@@ -42,29 +42,29 @@ import io.realm.RealmList;
 
 public class SettingsNotificationActivity extends AppCompatActivity implements SettingsAdapter.ISettingsAdapter {
 
-    @Bind(R.id.meu_metro_toolbar)
+    @BindView(R.id.meu_metro_toolbar)
     Toolbar mToolbar;
-    @Bind(R.id.activity_config_notification_switch_official)
+    @BindView(R.id.activity_config_notification_switch_official)
     SwitchCompat mSwitchOfficial;
-    @Bind(R.id.activity_config_notification_switch_by_user)
+    @BindView(R.id.activity_config_notification_switch_by_user)
     SwitchCompat mSwitchByUser;
-    @Bind(R.id.activity_config_notification_recycler_view_days)
+    @BindView(R.id.activity_config_notification_recycler_view_days)
     RecyclerView mRecyclerViewDays;
-    @Bind(R.id.activity_config_notification_recycler_view_hours)
+    @BindView(R.id.activity_config_notification_recycler_view_hours)
     RecyclerView mRecyclerViewHours;
-    @Bind(R.id.activity_config_notification_recycler_view_lines)
+    @BindView(R.id.activity_config_notification_recycler_view_lines)
     RecyclerView mRecyclerViewLines;
-    @Bind(R.id.activity_config_notification_button_lines_days_notification)
+    @BindView(R.id.activity_config_notification_button_lines_days_notification)
     ImageButton mImageButtonDays;
-    @Bind(R.id.activity_config_notification_button_lines_hours_notification)
+    @BindView(R.id.activity_config_notification_button_lines_hours_notification)
     ImageButton mImageButtonHours;
-    @Bind(R.id.activity_config_notification_button_lines_notification)
+    @BindView(R.id.activity_config_notification_button_lines_notification)
     ImageButton mImageButtonLines;
-    @Bind(R.id.activity_config_notification_relative_layout_days)
+    @BindView(R.id.activity_config_notification_relative_layout_days)
     RelativeLayout mRelativeLayoutDays;
-    @Bind(R.id.activity_config_notification_relative_layout_hours)
+    @BindView(R.id.activity_config_notification_relative_layout_hours)
     RelativeLayout mRelativeLayoutHours;
-    @Bind(R.id.activity_config_notification_relative_layout_lines)
+    @BindView(R.id.activity_config_notification_relative_layout_lines)
     RelativeLayout mRelativeLayoutLines;
 
     public static final int TIME_ANIMATION = 250;

@@ -27,7 +27,7 @@ import br.com.bruno.meumetro.managers.SharedPreferenceManager;
 import br.com.bruno.meumetro.models.Line;
 import br.com.bruno.meumetro.rest.StatusLineService;
 import br.com.bruno.meumetro.utils.ConnectionUtils;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -35,11 +35,11 @@ import butterknife.ButterKnife;
  */
 public class StatusLineByUserFragment extends Fragment implements StatusLineOfficialAdapter.IStatusLineOfficialAdapter {
 
-    @Bind(R.id.meu_metro_main_view)
+    @BindView(R.id.meu_metro_main_view)
     RelativeLayout mMainView;
-    @Bind(R.id.meu_metro_recycler_view)
+    @BindView(R.id.meu_metro_recycler_view)
     RecyclerView mRecyclerView;
-    @Bind(R.id.meu_metro_swipe_refresh)
+    @BindView(R.id.meu_metro_swipe_refresh)
     SwipeRefreshLayout mSwipeRefresh;
 
     private Boolean mHasLoadList = true;
