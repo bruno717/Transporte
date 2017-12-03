@@ -1,5 +1,6 @@
 package br.com.bruno.meumetro.fragments;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -14,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import br.com.bruno.meumetro.PlacesNearbyActivity;
 import br.com.bruno.meumetro.R;
 import br.com.bruno.meumetro.adapters.HasInTheStationAdapter;
 import br.com.bruno.meumetro.managers.LinearLayoutManagerEnabledScroll;
@@ -28,10 +30,13 @@ public class InformationStationFragment extends Fragment {
 
     @BindView(R.id.frag_information_station_text_view_operation_sunday_friday)
     TextView mTextViewOperationSundayFriday;
+
     @BindView(R.id.frag_information_station_text_view_operation_saturday)
     TextView mTextViewOperationSaturday;
+
     @BindView(R.id.frag_information_station_text_view_localization)
     TextView mTextViewLocalization;
+
     @BindView(R.id.meu_metro_recycler_view)
     RecyclerView mRecyclerView;
 
@@ -48,6 +53,13 @@ public class InformationStationFragment extends Fragment {
         setupInfoInTheViews();
         setupRecyclerView();
         setupStatusBar();
+
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), PlacesNearbyActivity.class));
+            }
+        });
 
         return view;
     }

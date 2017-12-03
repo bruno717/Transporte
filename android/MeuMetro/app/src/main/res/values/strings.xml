@@ -167,4 +167,7 @@
     <!-- Transport Map Activity -->
     <string name="activity_transport_map_toolbar_title">Mapa</string>
 
+    <!-- Places Nearby Activity -->
+    <string name="activity_places_nearby_toolbar_title">Locais próximos da estação</string>
+
 </resources>

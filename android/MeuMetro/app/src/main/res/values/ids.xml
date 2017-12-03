@@ -97,5 +97,9 @@
     <!-- Transport Map Activity -->
     <item name="activity_transport_map_web_view" type="id" />
 
+    <!-- Places Nearby Adapter -->
+    <item name="cell_places_nearby_text_view_name" type="id" />
+    <item name="cell_places_nearby_text_view_address" type="id" />
+    <item name="cell_places_nearby_image_view_icon_type" type="id" />
 
 </resources>

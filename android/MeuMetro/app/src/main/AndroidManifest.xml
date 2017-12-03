@@ -15,6 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+
+        <!-- Activities -->
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
@@ -29,14 +31,22 @@
         <activity
             android:name=".LinesInformationActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".SettingsNotificationActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".SmsDenunciationActivity"
             android:screenOrientation="portrait" />
+
         <activity android:name=".TransportMapActivity" />
 
+        <activity
+            android:name=".PlacesNearbyActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Services -->
         <service android:name=".services.MeuMetroMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -49,6 +59,7 @@
             </intent-filter>
         </service>
 
+        <!-- Meta data -->
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="5daf77d4a129e29ca7a67194f1d265fc25eded60" />
