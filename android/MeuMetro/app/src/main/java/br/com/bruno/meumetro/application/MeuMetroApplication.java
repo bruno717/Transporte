@@ -7,9 +7,11 @@ import com.blankj.utilcode.util.Utils;
 import com.crashlytics.android.Crashlytics;
 
 import br.com.bruno.meumetro.database.MigrationMyDataBase;
+import br.com.bruno.meumetro.enums.ConnectionType;
 import br.com.bruno.meumetro.managers.SharedPreferenceManager;
 import br.com.bruno.meumetro.models.Device;
 import br.com.bruno.meumetro.rest.DeviceService;
+import br.com.bruno.meumetro.rest.managers.RestManager;
 import io.fabric.sdk.android.Fabric;
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
@@ -28,7 +30,8 @@ public class MeuMetroApplication extends MultiDexApplication {
 
         CONTEXT_GLOBAL = getApplicationContext();
 
-        Fabric.with(this, new Crashlytics());
+        if (RestManager.BASE_URL.equals(ConnectionType.PRODUCTION.getUrl()))
+            Fabric.with(this, new Crashlytics());
 
         Utils.init(this);
 
