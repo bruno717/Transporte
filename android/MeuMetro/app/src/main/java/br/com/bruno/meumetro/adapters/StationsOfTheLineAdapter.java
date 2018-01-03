@@ -69,12 +69,9 @@ public class StationsOfTheLineAdapter extends RecyclerView.Adapter<StationsOfThe
 
         @Override
         public void onClick(View v) {
-            InformationStationFragment fragment = new InformationStationFragment();
-            fragment.mStation = mStations.get(getAdapterPosition());
-            fragment.colorLine = mColorBackground;
             mFragActivity.getSupportFragmentManager().beginTransaction()
                     .setCustomAnimations(R.anim.fade_in, R.anim.fade_out, R.anim.fade_in, R.anim.fade_out)
-                    .replace(R.id.meu_metro_container_fragment, fragment)
+                    .replace(R.id.meu_metro_container_fragment, InformationStationFragment.newInstance(mStations.get(getAdapterPosition()), mColorBackground))
                     .addToBackStack(null)
                     .commit();
         }

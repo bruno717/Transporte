@@ -42,16 +42,14 @@ public class LinesInformationActivity extends AppCompatActivity {
     }
 
     private void setupFragment() {
-        StationsOfTheLineFragment fragment = new StationsOfTheLineFragment();
         Line line = null;
         try {
             line = new ObjectMapper().readValue(getIntent().getStringExtra(LinesInformationActivity.class.getName()), Line.class);
         } catch (IOException e) {
             e.printStackTrace();
         }
-        fragment.mLine = line;
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.meu_metro_container_fragment, fragment)
+                .replace(R.id.meu_metro_container_fragment, StationsOfTheLineFragment.newInstance(line))
                 .commit();
     }
 

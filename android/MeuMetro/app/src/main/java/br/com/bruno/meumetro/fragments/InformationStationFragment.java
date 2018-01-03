@@ -15,6 +15,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.io.IOException;
+
 import br.com.bruno.meumetro.PlacesNearbyActivity;
 import br.com.bruno.meumetro.R;
 import br.com.bruno.meumetro.adapters.HasInTheStationAdapter;
@@ -28,6 +33,9 @@ import butterknife.ButterKnife;
  */
 public class InformationStationFragment extends Fragment {
 
+    private static final String INFORMATION_STATION_FRAGMENT_STATION_KEY = "INFORMATION_STATION_FRAGMENT_STATION_KEY";
+    private static final String INFORMATION_STATION_FRAGMENT_COLOR_KEY = "INFORMATION_STATION_FRAGMENT_COLOR_KEY";
+
     @BindView(R.id.frag_information_station_text_view_operation_sunday_friday)
     TextView mTextViewOperationSundayFriday;
 
@@ -40,8 +48,28 @@ public class InformationStationFragment extends Fragment {
     @BindView(R.id.meu_metro_recycler_view)
     RecyclerView mRecyclerView;
 
-    public Station mStation;
-    public int colorLine;
+    private Station mStation;
+    private int colorLine;
+
+    public InformationStationFragment() {
+    }
+
+    public static InformationStationFragment newInstance(Station station, int colorLine) {
+        InformationStationFragment fragment = new InformationStationFragment();
+        if (station != null && colorLine > 0) {
+            try {
+                Bundle args = new Bundle();
+                ObjectMapper mapper = new ObjectMapper();
+                args.putString(INFORMATION_STATION_FRAGMENT_STATION_KEY, mapper.writeValueAsString(station));
+                args.putInt(INFORMATION_STATION_FRAGMENT_COLOR_KEY, colorLine);
+                fragment.setArguments(args);
+            } catch (JsonProcessingException e) {
+                e.printStackTrace();
+            }
+        }
+        return fragment;
+    }
+
 
     @Nullable
     @Override
@@ -49,6 +77,7 @@ public class InformationStationFragment extends Fragment {
         View view = inflater.inflate(R.layout.frag_information_station, container, false);
         ButterKnife.bind(this, view);
 
+        setupValues();
         setupToolbar();
         setupInfoInTheViews();
         setupRecyclerView();
@@ -62,6 +91,18 @@ public class InformationStationFragment extends Fragment {
         });
 
         return view;
+    }
+
+    private void setupValues() {
+        if (getArguments() != null) {
+            try {
+                ObjectMapper mapper = new ObjectMapper();
+                mStation = mapper.readValue(getArguments().getString(INFORMATION_STATION_FRAGMENT_STATION_KEY), Station.class);
+                colorLine = getArguments().getInt(INFORMATION_STATION_FRAGMENT_COLOR_KEY);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     private void setupToolbar() {

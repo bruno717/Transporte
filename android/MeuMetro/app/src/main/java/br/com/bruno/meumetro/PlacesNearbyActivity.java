@@ -32,7 +32,9 @@ public class PlacesNearbyActivity extends AppCompatActivity {
     private void setupToolbar() {
         mToolbar.setNavigationIcon(ContextCompat.getDrawable(getApplicationContext(), R.drawable.md_nav_back));
         mToolbar.setTitleTextColor(ContextCompat.getColor(this, android.R.color.white));
+        mToolbar.setSubtitleTextColor(ContextCompat.getColor(this, android.R.color.white));
         mToolbar.setTitle(R.string.activity_places_nearby_toolbar_title);
+        mToolbar.setSubtitle("Patriarca");
         setSupportActionBar(mToolbar);
         if (getSupportActionBar() != null)
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);

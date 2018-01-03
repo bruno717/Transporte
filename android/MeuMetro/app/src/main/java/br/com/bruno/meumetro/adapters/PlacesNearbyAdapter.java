@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.List;
 
 import br.com.bruno.meumetro.R;
@@ -35,7 +37,12 @@ public class PlacesNearbyAdapter extends RecyclerView.Adapter<PlacesNearbyAdapte
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.mTextViewName.setText(mPlaces.get(position).getName());
         holder.mTextViewAddress.setText(mPlaces.get(position).getAddress());
-//        holder.mImageViewIcon.setur(mPlaces.get(position).getAddress());
+
+        if (mPlaces.get(position).getIcon().length() > 0)
+            Glide.with(holder.itemView.getContext())
+                    .load(mPlaces.get(position).getIcon())
+                    .crossFade()
+                    .into(holder.mImageViewIcon);
 
     }
 

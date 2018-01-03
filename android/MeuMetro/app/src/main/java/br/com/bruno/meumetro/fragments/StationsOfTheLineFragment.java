@@ -13,6 +13,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.io.IOException;
 import java.util.Locale;
 
 import br.com.bruno.meumetro.LinesInformationActivity;
@@ -27,10 +31,33 @@ import butterknife.ButterKnife;
  */
 public class StationsOfTheLineFragment extends Fragment {
 
+    public static final String STATIONS_OF_THE_LINE_FRAGMENT_LINE_INTENT_KEY = "STATIONS_OF_THE_LINE_FRAGMENT_LINE_INTENT_KEY";
+
     @BindView(R.id.meu_metro_recycler_view)
     RecyclerView mRecyclerView;
 
-    public Line mLine;
+    private Line mLine;
+
+    public StationsOfTheLineFragment() {
+    }
+
+    public static StationsOfTheLineFragment newInstance(Line line) {
+
+        StationsOfTheLineFragment fragment = new StationsOfTheLineFragment();
+
+        if (line != null) {
+            try {
+                Bundle bundle = new Bundle();
+                String json = new ObjectMapper().writeValueAsString(line);
+                bundle.putString(STATIONS_OF_THE_LINE_FRAGMENT_LINE_INTENT_KEY, json);
+                fragment.setArguments(bundle);
+            } catch (JsonProcessingException e) {
+                e.printStackTrace();
+            }
+        }
+
+        return fragment;
+    }
 
     @Nullable
     @Override
@@ -45,23 +72,33 @@ public class StationsOfTheLineFragment extends Fragment {
     }
 
     private void setupToolbar() {
-        Toolbar toolbar = ((LinesInformationActivity) getActivity()).getToolbar();
-        ActionBar actionBar = ((LinesInformationActivity) getActivity()).getSupportActionBar();
-        if (toolbar != null && actionBar != null) {
-            actionBar.setTitle(String.format(Locale.US, "%s", mLine.getLineType().getName()));
-            toolbar.setBackgroundResource(mLine.getColorBackground());
-            toolbar.setTitleTextColor(ContextCompat.getColor(getActivity(), android.R.color.white));
-        }
 
-        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT_WATCH) {
-            getActivity().getWindow().setStatusBarColor(ContextCompat.getColor(getActivity(), mLine.getColorBackground()));
+        if (getArguments() != null) {
+            try {
+                mLine = new ObjectMapper().readValue(getArguments().getString(STATIONS_OF_THE_LINE_FRAGMENT_LINE_INTENT_KEY), Line.class);
+                Toolbar toolbar = ((LinesInformationActivity) getActivity()).getToolbar();
+                ActionBar actionBar = ((LinesInformationActivity) getActivity()).getSupportActionBar();
+                if (toolbar != null && actionBar != null) {
+                    actionBar.setTitle(String.format(Locale.US, "%s", mLine.getLineType().getName()));
+                    toolbar.setBackgroundResource(mLine.getColorBackground());
+                    toolbar.setTitleTextColor(ContextCompat.getColor(getActivity(), android.R.color.white));
+                }
+
+                if (Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT_WATCH) {
+                    getActivity().getWindow().setStatusBarColor(ContextCompat.getColor(getActivity(), mLine.getColorBackground()));
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
     private void setupRecyclerView() {
-        LinearLayoutManager manager = new LinearLayoutManager(getActivity());
-        manager.setOrientation(LinearLayoutManager.VERTICAL);
-        mRecyclerView.setLayoutManager(manager);
-        mRecyclerView.setAdapter(new StationsOfTheLineAdapter(getActivity(), mLine.getStations(), mLine.getColorBackground()));
+        if (getArguments() != null) {
+            LinearLayoutManager manager = new LinearLayoutManager(getActivity());
+            manager.setOrientation(LinearLayoutManager.VERTICAL);
+            mRecyclerView.setLayoutManager(manager);
+            mRecyclerView.setAdapter(new StationsOfTheLineAdapter(getActivity(), mLine.getStations(), mLine.getColorBackground()));
+        }
     }
 }
