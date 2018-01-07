@@ -16,6 +16,8 @@ import br.com.bruno.meumetro.models.Line;
 import br.com.bruno.meumetro.models.Message;
 import br.com.bruno.meumetro.models.settings.Setting;
 import br.com.bruno.meumetro.services.managers.NotificationStatusManager;
+import io.realm.Realm;
+import io.realm.RealmResults;
 
 /**
  * Created by Bruno on 19/05/2017.
@@ -27,9 +29,9 @@ public class MeuMetroMessagingService extends FirebaseMessagingService {
     public void onMessageReceived(RemoteMessage remoteMessage) {
         super.onMessageReceived(remoteMessage);
 
-        try {
+//        try {
 
-            Message message = new Message();
+            final Message message = new Message();
             message.setTitle(remoteMessage.getData().get("title"));
             message.setType(Integer.parseInt(remoteMessage.getData().get("type")));
             message.setDate(remoteMessage.getData().get("date"));
@@ -47,22 +49,50 @@ public class MeuMetroMessagingService extends FirebaseMessagingService {
                 e.printStackTrace();
             }
 
-            Setting setting = RealmDbHelper.findFirst(Setting.class);
-            NotificationStatusManager manager = new NotificationStatusManager(getApplicationContext());
-            NotificationType type = NotificationType.getNotification(message.getType());
-            if ((setting != null && setting.getIsNotificationOfficial() != null && setting.getIsNotificationOfficial() && type == NotificationType.STATUS_OFFICIAL)
-                    || setting != null && setting.getIsNotificationByUser() != null && setting.getIsNotificationByUser() && type == NotificationType.STATUS_BY_USER) {
-                if (manager.isDayToNotification(setting, message.getDate()) && manager.isHourToNotification(setting, message.getDate())) {
-                    message.setLines(manager.verifyLinesToNotify(message.getLines(), setting));
-                    if (message.getLines().size() > 0) {
-                        manager.setupNotification(message, type);
+//            final Setting setting = RealmDbHelper.findFirst(Setting.class);
+
+            Realm realm = Realm.getDefaultInstance();
+            realm.executeTransactionAsync(new Realm.Transaction() {
+                @Override
+                public void execute(Realm realm) {
+                    RealmResults<Setting> settings = realm.where(Setting.class).findAll();
+                    try {
+                        verifySettingsToMountNotification(settings.first(), message);
+                    } catch (ParseException e) {
+                        e.printStackTrace();
                     }
                 }
-            }
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
+            });
 
+//            NotificationStatusManager manager = new NotificationStatusManager(getApplicationContext());
+//            NotificationType type = NotificationType.getNotification(message.getType());
+//            if ((setting != null && setting.getIsNotificationOfficial() != null && setting.getIsNotificationOfficial() && type == NotificationType.STATUS_OFFICIAL)
+//                    || setting != null && setting.getIsNotificationByUser() != null && setting.getIsNotificationByUser() && type == NotificationType.STATUS_BY_USER) {
+//                if (manager.isDayToNotification(setting, message.getDate()) && manager.isHourToNotification(setting, message.getDate())) {
+//                    message.setLines(manager.verifyLinesToNotify(message.getLines(), setting));
+//                    if (message.getLines().size() > 0) {
+//                        manager.setupNotification(message, type);
+//                    }
+//                }
+//            }
+//        } catch (ParseException e) {
+//            e.printStackTrace();
+//        }
+
+    }
+
+    private void verifySettingsToMountNotification(Setting setting, Message message ) throws ParseException {
+        NotificationStatusManager manager = new NotificationStatusManager(getApplicationContext());
+        NotificationType type = NotificationType.getNotification(message.getType());
+        if ((setting != null && setting.getIsNotificationOfficial() != null && setting.getIsNotificationOfficial() && type == NotificationType.STATUS_OFFICIAL)
+                || setting != null && setting.getIsNotificationByUser() != null && setting.getIsNotificationByUser() && type == NotificationType.STATUS_BY_USER) {
+            if (manager.isDayToNotification(setting, message.getDate()) && manager.isHourToNotification(setting, message.getDate())) {
+                message.setLines(manager.verifyLinesToNotify(message.getLines(), setting));
+                if (message.getLines().size() > 0) {
+                    manager.setupNotification(message, type);
+                }
+            }
+        }
     }
 
 }

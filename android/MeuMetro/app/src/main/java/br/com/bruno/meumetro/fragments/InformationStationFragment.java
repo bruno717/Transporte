@@ -83,12 +83,12 @@ public class InformationStationFragment extends Fragment {
         setupRecyclerView();
         setupStatusBar();
 
-        view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(), PlacesNearbyActivity.class));
-            }
-        });
+//        view.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(getActivity(), PlacesNearbyActivity.class));
+//            }
+//        });
 
         return view;
     }
