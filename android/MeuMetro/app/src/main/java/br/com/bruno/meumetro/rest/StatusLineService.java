@@ -1,5 +1,7 @@
 package br.com.bruno.meumetro.rest;
 
+import com.crashlytics.android.Crashlytics;
+
 import java.io.IOException;
 import java.util.List;
 
@@ -120,6 +122,7 @@ public class StatusLineService {
                 return response.body();
             }
         } catch (IOException e) {
+            Crashlytics.logException(e);
             e.printStackTrace();
         }
 

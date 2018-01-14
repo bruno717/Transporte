@@ -1,5 +1,7 @@
 package br.com.bruno.meumetro.rest;
 
+import com.crashlytics.android.Crashlytics;
+
 import java.io.IOException;
 
 import br.com.bruno.meumetro.managers.SharedPreferenceManager;
@@ -48,6 +50,7 @@ public class DeviceService {
                 call.execute();
                 SharedPreferenceManager.deleteDeviceToken();
             } catch (IOException e) {
+                Crashlytics.logException(e);
                 e.printStackTrace();
                 if (SharedPreferenceManager.getDeviceToken() == null) {
                     SharedPreferenceManager.saveDeviceToken(device);

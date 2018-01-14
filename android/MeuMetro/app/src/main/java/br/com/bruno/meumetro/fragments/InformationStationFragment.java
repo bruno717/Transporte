@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.crashlytics.android.Crashlytics;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -64,6 +65,7 @@ public class InformationStationFragment extends Fragment {
                 args.putInt(INFORMATION_STATION_FRAGMENT_COLOR_KEY, colorLine);
                 fragment.setArguments(args);
             } catch (JsonProcessingException e) {
+                Crashlytics.logException(e);
                 e.printStackTrace();
             }
         }
@@ -83,12 +85,12 @@ public class InformationStationFragment extends Fragment {
         setupRecyclerView();
         setupStatusBar();
 
-//        view.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(getActivity(), PlacesNearbyActivity.class));
-//            }
-//        });
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), PlacesNearbyActivity.class));
+            }
+        });
 
         return view;
     }
@@ -100,6 +102,7 @@ public class InformationStationFragment extends Fragment {
                 mStation = mapper.readValue(getArguments().getString(INFORMATION_STATION_FRAGMENT_STATION_KEY), Station.class);
                 colorLine = getArguments().getInt(INFORMATION_STATION_FRAGMENT_COLOR_KEY);
             } catch (IOException e) {
+                Crashlytics.logException(e);
                 e.printStackTrace();
             }
         }

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 import com.blankj.utilcode.util.ActivityUtils;
+import com.crashlytics.android.Crashlytics;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -33,6 +34,7 @@ public class SharedPreferenceManager {
             editor.putString(MeuMetroFirebaseInstanceIdService.KEY_PREFERENCE_DEVICE, jsonDevice);
             editor.apply();
         } catch (JsonProcessingException e) {
+            Crashlytics.logException(e);
             e.printStackTrace();
         }
     }
@@ -56,6 +58,7 @@ public class SharedPreferenceManager {
             try {
                 return new ObjectMapper().readValue(json, Device.class);
             } catch (IOException e) {
+                Crashlytics.logException(e);
                 e.printStackTrace();
             }
         }

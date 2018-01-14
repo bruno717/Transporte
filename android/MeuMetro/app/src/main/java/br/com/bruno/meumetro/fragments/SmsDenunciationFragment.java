@@ -34,6 +34,7 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.crashlytics.android.Crashlytics;
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 
@@ -189,6 +190,7 @@ public class SmsDenunciationFragment extends Fragment implements View.OnFocusCha
             SmsManager smsManager = SmsManager.getDefault();
             smsManager.sendTextMessage(mNumberSend, null, message, sentPI, deliverPI);
         } catch (Exception e) {
+            Crashlytics.logException(e);
             e.printStackTrace();
             if (getActivity() != null)
                 Snackbar.make(mMainView, R.string.frag_sms_denunciation_message_error_send_sms, Snackbar.LENGTH_INDEFINITE)

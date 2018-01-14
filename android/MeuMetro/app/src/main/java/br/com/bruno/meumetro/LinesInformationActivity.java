@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import com.crashlytics.android.Crashlytics;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
@@ -46,6 +47,7 @@ public class LinesInformationActivity extends AppCompatActivity {
         try {
             line = new ObjectMapper().readValue(getIntent().getStringExtra(LinesInformationActivity.class.getName()), Line.class);
         } catch (IOException e) {
+            Crashlytics.logException(e);
             e.printStackTrace();
         }
         getSupportFragmentManager().beginTransaction()

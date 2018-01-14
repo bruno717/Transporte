@@ -1,5 +1,6 @@
 package br.com.bruno.meumetro.services;
 
+import com.crashlytics.android.Crashlytics;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.firebase.messaging.FirebaseMessagingService;
@@ -10,7 +11,6 @@ import java.text.ParseException;
 import java.util.Arrays;
 import java.util.List;
 
-import br.com.bruno.meumetro.database.RealmDbHelper;
 import br.com.bruno.meumetro.enums.NotificationType;
 import br.com.bruno.meumetro.models.Line;
 import br.com.bruno.meumetro.models.Message;
@@ -46,6 +46,7 @@ public class MeuMetroMessagingService extends FirebaseMessagingService {
                 };
                 message.setLines((List<Line>) new ObjectMapper().readValue(remoteMessage.getData().get("lines"), reference));
             } catch (IOException e) {
+                Crashlytics.logException(e);
                 e.printStackTrace();
             }
 
@@ -58,7 +59,8 @@ public class MeuMetroMessagingService extends FirebaseMessagingService {
                     RealmResults<Setting> settings = realm.where(Setting.class).findAll();
                     try {
                         verifySettingsToMountNotification(settings.first(), message);
-                    } catch (ParseException e) {
+                    } catch (Exception e) {
+                        Crashlytics.logException(e);
                         e.printStackTrace();
                     }
                 }

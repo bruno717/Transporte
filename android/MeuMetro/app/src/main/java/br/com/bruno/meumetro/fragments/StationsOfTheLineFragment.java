@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.crashlytics.android.Crashlytics;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -52,6 +53,7 @@ public class StationsOfTheLineFragment extends Fragment {
                 bundle.putString(STATIONS_OF_THE_LINE_FRAGMENT_LINE_INTENT_KEY, json);
                 fragment.setArguments(bundle);
             } catch (JsonProcessingException e) {
+                Crashlytics.logException(e);
                 e.printStackTrace();
             }
         }
@@ -88,6 +90,7 @@ public class StationsOfTheLineFragment extends Fragment {
                     getActivity().getWindow().setStatusBarColor(ContextCompat.getColor(getActivity(), mLine.getColorBackground()));
                 }
             } catch (IOException e) {
+                Crashlytics.logException(e);
                 e.printStackTrace();
             }
         }

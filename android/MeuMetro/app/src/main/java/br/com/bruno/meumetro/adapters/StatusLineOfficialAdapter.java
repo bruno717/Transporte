@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.crashlytics.android.Crashlytics;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -212,6 +213,7 @@ public class StatusLineOfficialAdapter extends RecyclerView.Adapter<RecyclerView
                 mLines.get(index).putStations(v.getContext());
                 jsonLine = new ObjectMapper().writeValueAsString(mLines.get(index));
             } catch (JsonProcessingException e) {
+                Crashlytics.logException(e);
                 e.printStackTrace();
             }
             intent.putExtra(LinesInformationActivity.class.getName(), jsonLine);

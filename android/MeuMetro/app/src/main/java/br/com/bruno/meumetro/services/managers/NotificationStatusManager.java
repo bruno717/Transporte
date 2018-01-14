@@ -9,6 +9,8 @@ import android.os.Build;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.NotificationCompat;
 
+import com.crashlytics.android.Crashlytics;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -154,6 +156,7 @@ public class NotificationStatusManager {
 
             notifyManager.notify(notificationType.getValue(), notificationBuilder.build());
         } catch (ParseException e) {
+            Crashlytics.logException(e);
             e.printStackTrace();
         }
     }
