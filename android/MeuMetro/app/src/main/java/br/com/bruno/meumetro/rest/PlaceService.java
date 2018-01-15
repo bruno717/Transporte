@@ -17,11 +17,11 @@ import retrofit2.Retrofit;
 
 public class PlaceService {
 
-    public void getPlacesNearbyStation(final IServiceResponse<List<Place>> callback) {
+    public void getPlacesNearbyStation(double latitude, double longitude, final IServiceResponse<List<Place>> callback) {
 
         Retrofit retrofit = RestManager.getRetrofitConfigured();
         IPlaceService service = retrofit.create(IPlaceService.class);
-        Call<List<Place>> call = service.getPlacesNearbyStation(RestManager.basicAuthenticate());
+        Call<List<Place>> call = service.getPlacesNearbyStation(latitude, longitude, RestManager.basicAuthenticate());
 
         call.enqueue(new Callback<List<Place>>() {
             @Override

@@ -1,5 +1,6 @@
 package br.com.bruno.meumetro.fragments;
 
+import android.location.Address;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -27,6 +28,8 @@ import butterknife.ButterKnife;
 
 public class PlacesNearbyListFragment extends Fragment {
 
+    private static final String PLACES_NEARBY_LIST_FRAGMENT_ADDRESS_INTENT_KEY = "PLACES_NEARBY_LIST_FRAGMENT_ADDRESS_INTENT_KEY";
+
     @BindView(R.id.meu_metro_swipe_refresh)
     SwipeRefreshLayout mSwipeRefresh;
 
@@ -38,8 +41,15 @@ public class PlacesNearbyListFragment extends Fragment {
     public PlacesNearbyListFragment() {
     }
 
-    public static PlacesNearbyListFragment newInstance() {
-        return new PlacesNearbyListFragment();
+    public static PlacesNearbyListFragment newInstance(Address address) {
+        PlacesNearbyListFragment fragment = new PlacesNearbyListFragment();
+        if (address != null) {
+            Bundle args = new Bundle();
+            args.putParcelable(PLACES_NEARBY_LIST_FRAGMENT_ADDRESS_INTENT_KEY, address);
+            fragment.setArguments(args);
+        }
+
+        return fragment;
     }
 
     @Nullable
@@ -74,22 +84,25 @@ public class PlacesNearbyListFragment extends Fragment {
 
     // REST
     private void getPlacesNearbyStation() {
-        new PlaceService().getPlacesNearbyStation(new IServiceResponse<List<Place>>() {
-            @Override
-            public void onSuccess(List<Place> places) {
-                if (getActivity() != null) {
-                    mAdapter.setPlaces(places);
-                    mSwipeRefresh.setRefreshing(false);
+        if (getArguments() != null) {
+            Address address = getArguments().getParcelable(PLACES_NEARBY_LIST_FRAGMENT_ADDRESS_INTENT_KEY);
+            new PlaceService().getPlacesNearbyStation(address.getLatitude(), address.getLongitude(), new IServiceResponse<List<Place>>() {
+                @Override
+                public void onSuccess(List<Place> places) {
+                    if (getActivity() != null) {
+                        mAdapter.setPlaces(places);
+                        mSwipeRefresh.setRefreshing(false);
+                    }
                 }
-            }
 
-            @Override
-            public void onError() {
-                if (getActivity() != null) {
-                    mSwipeRefresh.setRefreshing(false);
-                    Toast.makeText(getContext(), "Erro", Toast.LENGTH_SHORT).show();
+                @Override
+                public void onError() {
+                    if (getActivity() != null) {
+                        mSwipeRefresh.setRefreshing(false);
+                        Toast.makeText(getContext(), "Erro", Toast.LENGTH_SHORT).show();
+                    }
                 }
-            }
-        });
+            });
+        }
     }
 }

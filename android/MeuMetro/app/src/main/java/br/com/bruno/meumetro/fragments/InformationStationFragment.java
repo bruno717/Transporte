@@ -18,6 +18,7 @@ import android.widget.TextView;
 import com.crashlytics.android.Crashlytics;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.github.clans.fab.FloatingActionButton;
 
 import java.io.IOException;
 
@@ -28,6 +29,7 @@ import br.com.bruno.meumetro.managers.LinearLayoutManagerEnabledScroll;
 import br.com.bruno.meumetro.models.Station;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Created by Bruno on 07/09/2016.
@@ -49,8 +51,11 @@ public class InformationStationFragment extends Fragment {
     @BindView(R.id.meu_metro_recycler_view)
     RecyclerView mRecyclerView;
 
+    @BindView(R.id.frag_information_station_floating_button)
+    FloatingActionButton mFloatingButton;
+
     private Station mStation;
-    private int colorLine;
+    private int mColorLine;
 
     public InformationStationFragment() {
     }
@@ -84,13 +89,7 @@ public class InformationStationFragment extends Fragment {
         setupInfoInTheViews();
         setupRecyclerView();
         setupStatusBar();
-
-        view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(), PlacesNearbyActivity.class));
-            }
-        });
+        setupFloatingButton();
 
         return view;
     }
@@ -100,7 +99,7 @@ public class InformationStationFragment extends Fragment {
             try {
                 ObjectMapper mapper = new ObjectMapper();
                 mStation = mapper.readValue(getArguments().getString(INFORMATION_STATION_FRAGMENT_STATION_KEY), Station.class);
-                colorLine = getArguments().getInt(INFORMATION_STATION_FRAGMENT_COLOR_KEY);
+                mColorLine = getArguments().getInt(INFORMATION_STATION_FRAGMENT_COLOR_KEY);
             } catch (IOException e) {
                 Crashlytics.logException(e);
                 e.printStackTrace();
@@ -116,8 +115,14 @@ public class InformationStationFragment extends Fragment {
 
     private void setupStatusBar() {
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT_WATCH) {
-            getActivity().getWindow().setStatusBarColor(ContextCompat.getColor(getActivity(), colorLine));
+            getActivity().getWindow().setStatusBarColor(ContextCompat.getColor(getActivity(), mColorLine));
         }
+    }
+
+    private void setupFloatingButton() {
+        mFloatingButton.setColorNormalResId(mColorLine);
+        mFloatingButton.setColorPressedResId(R.color.grey_item_disabled_transparent);
+        mFloatingButton.setColorRippleResId(R.color.grey_item_disabled_transparent);
     }
 
     private void setupInfoInTheViews() {
@@ -133,5 +138,20 @@ public class InformationStationFragment extends Fragment {
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(manager);
         mRecyclerView.setAdapter(new HasInTheStationAdapter(mStation.getAtTheStation()));
+    }
+
+    // ONCLICK
+    @OnClick(R.id.frag_information_station_floating_button)
+    public void onClickButtonShowPlacesNearby() {
+        try {
+            String json = new ObjectMapper().writeValueAsString(mStation);
+            Intent intent = new Intent(getActivity(), PlacesNearbyActivity.class);
+            intent.putExtra(PlacesNearbyActivity.PLACES_NEARBY_ACTIVITY_ADDRESS_INTENT_KEY, json);
+            intent.putExtra(PlacesNearbyActivity.PLACES_NEARBY_ACTIVITY_COLOR_INTENT_KEY, mColorLine);
+            startActivity(intent);
+        } catch (JsonProcessingException e) {
+            Crashlytics.logException(e);
+            e.printStackTrace();
+        }
     }
 }

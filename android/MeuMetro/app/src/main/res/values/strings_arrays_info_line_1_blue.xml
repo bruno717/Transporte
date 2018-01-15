@@ -20,7 +20,7 @@
     <string-array name="line_1_blue_conceicao_information">
         <item>04h40 às 00h08 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>AV. ENG. ARMANDO DE ARRUDA PEREIRA, 919</item>
+        <item>AV. ENGENHEIRO ARMANDO DE ARRUDA PEREIRA, 919</item>
         <item>Estação enterrada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente.</item>
     </string-array>
 
@@ -82,7 +82,7 @@
     <string-array name="line_1_blue_vila_mariana_information">
         <item>04h40 às 00h18 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>AV. PROF. NOÉ AZEVEDO, 255</item>
+        <item>AV. PROFESSOR NOÉ AZEVEDO, 255</item>
         <item>Estação enterrada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente.\n\nPossui integração com Terminal de Ônibus Urbano.</item>
     </string-array>
 
@@ -293,7 +293,7 @@
     <string-array name="line_1_blue_tucuruvi_information">
         <item>04h40 às 00h14 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>AV. DR. ANTONIO MARIA DE LAET, 100</item>
+        <item>AV. DOUTOR ANTONIO MARIA DE LAET, 100</item>
         <item>Estação semi-enterrada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente.\n\nPossui acesso para pessoas portadoras de deficiência, integração com Terminal de Ônibus Urbano e acesso ao shopping center.</item>
     </string-array>
 

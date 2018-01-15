@@ -47,6 +47,7 @@
     <item name="frag_information_station_text_view_operation_saturday" type="id" />
     <item name="frag_information_station_text_view_localization" type="id" />
     <item name="frag_information_station_text_view_has_in_the_station" type="id" />
+    <item name="frag_information_station_floating_button" type="id" />
 
     <!-- Has In The Station Adapter -->
     <item name="cell_has_in_the_station_text_view" type="id" />
@@ -101,5 +102,9 @@
     <item name="cell_places_nearby_text_view_name" type="id" />
     <item name="cell_places_nearby_text_view_address" type="id" />
     <item name="cell_places_nearby_image_view_icon_type" type="id" />
+
+    <!-- Places Nearby Map Fragment -->
+    <item name="frag_places_nearby_map" type="id" />
+
 
 </resources>

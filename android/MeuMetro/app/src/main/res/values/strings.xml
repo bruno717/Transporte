@@ -169,5 +169,7 @@
 
     <!-- Places Nearby Activity -->
     <string name="activity_places_nearby_toolbar_title">Locais próximos da estação</string>
+    <string name="activity_places_nearby_tab_layout_tab_map">Mapa</string>
+    <string name="activity_places_nearby_tab_layout_tab_list">Lista</string>
 
 </resources>
