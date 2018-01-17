@@ -6,6 +6,7 @@
         <item>04h40 às 00h06 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>RUA DOS JEQUITIBÁS, 80</item>
+        <item>05263030</item>
         <item>Estação enterrada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente.\n\nPossui integração com Terminal de Ônibus Urbano e acesso ao Terminal Intermunicipal do Jabaquara.</item>
     </string-array>
 
@@ -21,6 +22,7 @@
         <item>04h40 às 00h08 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV. ENGENHEIRO ARMANDO DE ARRUDA PEREIRA, 919</item>
+        <item>04309010</item>
         <item>Estação enterrada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente.</item>
     </string-array>
 
@@ -34,6 +36,7 @@
         <item>04h40 às 00h10 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV. JABAQUARA, 2438</item>
+        <item>04046400</item>
         <item>Estação enterrada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente.</item>
     </string-array>
 
@@ -46,6 +49,7 @@
         <item>04h40 às 00h12 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV. JABAQUARA, 1634</item>
+        <item>04046300</item>
         <item>Estação enterrada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente.</item>
     </string-array>
 
@@ -58,6 +62,7 @@
         <item>04h40 às 00h14 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>PRAÇA DA ÁRVORE, 39</item>
+        <item>04140000</item>
         <item>Estação enterrada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente.</item>
     </string-array>
 
@@ -70,6 +75,7 @@
         <item>04h40 às 00h16 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>RUA DOMINGOS DE MORAIS, 2564</item>
+        <item>04036100</item>
         <item>Estação enterrada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente.\n\nPossui integração com Terminal de Ônibus Urbano e acesso ao Shopping Center.</item>
     </string-array>
 
@@ -83,6 +89,7 @@
         <item>04h40 às 00h18 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV. PROFESSOR NOÉ AZEVEDO, 255</item>
+        <item>04009003</item>
         <item>Estação enterrada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente.\n\nPossui integração com Terminal de Ônibus Urbano.</item>
     </string-array>
 
@@ -96,6 +103,7 @@
         <item>04h40 às 00h20 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>RUA DOMINGOS DE MORAIS, 505</item>
+        <item></item>
         <item>Estação enterrada de Integração da Linha 1-Azul e Linha 2-Verde.\n\nComposta por mezanino de distribuição e uma plataforma central para cada linha com estrutura em concreto aparente. Possui acesso para pessoas portadoras de deficiência e integração com Terminal de Ônibus Urbano e Estacionamento.</item>
     </string-array>
 

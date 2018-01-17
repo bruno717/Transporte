@@ -12,5 +12,6 @@ public class Station {
     private String operationSundayToFriday;
     private String operationSaturday;
     private String location;
+    private String cep;
     private String[] atTheStation;
 }
