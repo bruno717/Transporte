@@ -1,5 +1,9 @@
 package br.com.bruno.meumetro.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import java.util.Locale;
+
 import lombok.Data;
 
 /**
@@ -14,4 +18,9 @@ public class Station {
     private String location;
     private String cep;
     private String[] atTheStation;
+
+    @JsonIgnore
+    public String getLocationWithCep() {
+        return String.format(Locale.getDefault(), "%s - %s", location, cep);
+    }
 }

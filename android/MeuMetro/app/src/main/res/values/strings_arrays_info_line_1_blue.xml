@@ -103,7 +103,7 @@
         <item>04h40 às 00h20 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>RUA DOMINGOS DE MORAIS, 505</item>
-        <item></item>
+        <item>04009001</item>
         <item>Estação enterrada de Integração da Linha 1-Azul e Linha 2-Verde.\n\nComposta por mezanino de distribuição e uma plataforma central para cada linha com estrutura em concreto aparente. Possui acesso para pessoas portadoras de deficiência e integração com Terminal de Ônibus Urbano e Estacionamento.</item>
     </string-array>
 
@@ -119,6 +119,7 @@
         <item>04h40 às 00h22 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>RUA VERGUEIRO, 1456</item>
+        <item>04101000</item>
         <item>Estação enterrada de Integração da Linha 1-Azul e Linha 2-Verde.\n\nComposta por mezanino de distribuição e dos níveis sobrepostos com plataforma central e laterais na Linha 1-Azul e plataforma central na Linha 2-Verde, estrutura em concreto aparente. O principal acesso integra-se com a praça no nível do passeio.</item>
     </string-array>
 
@@ -135,6 +136,7 @@
         <item>04h40 às 00h24 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>RUA VERGUEIRO, 790</item>
+        <item>04101000</item>
         <item>Estação enterrada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente.</item>
     </string-array>
 
@@ -147,6 +149,7 @@
         <item>04h40 às 00h26 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV. LIBERDADE, 1033</item>
+        <item>01503001</item>
         <item>Estação enterrada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente.</item>
     </string-array>
 
@@ -159,6 +162,7 @@
         <item>04h40 às 00h28 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>PRAÇA DA LIBERDADE, 133</item>
+        <item>01503010</item>
         <item>Estação enterrada com dois mezaninos de distribuição (superior e inferior) e plataformas laterais com estrutura em concreto aparente.\n\nO principal acesso integra-se com a praça no nível do passeio.</item>
     </string-array>
 
@@ -170,7 +174,8 @@
     <string-array name="line_1_blue_se_information">
         <item>04h40 às 00h29 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>PRAÇA DA SÉ, S/Nº</item>
+        <item>PRAÇA DA SÉ</item>
+        <item>01001000</item>
         <item>Estação enterrada de integração da Linha 1-Azul e Linha 3-Vermelha.\n\nComposta por mezanino de distribuição e dois níveis sobrepostos com duas plataformas laterais e uma central (um conjunto por linha) com estrutura em concreto aparente e aberturas para iluminação natural. O principal acesso integra-se com a praça no nível do passeio.</item>
     </string-array>
 
@@ -189,6 +194,7 @@
         <item>04h40 às 00h32 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>LARGO SÃO BENTO, 109</item>
+        <item>01029010</item>
         <item>Estação enterrada com mezanino de conexão e duas plataformas laterais sobrepostas, estrutura em concreto aparente.\n\nO principal acesso integra-se com o largo no nível do passeio.</item>
     </string-array>
 
@@ -202,6 +208,7 @@
         <item>04h40 às 00h30 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV. PRESTES MAIA, 925</item>
+        <item>01031001</item>
         <item>Estação enterrada com mezanino de distribuição e plataformas central e laterais com estrutura em concreto aparente.\n\nIntegração com a Linha 4-Amarela e com a CPTM.\n\nA estação possui acesso adequado para pessoas com deficiência física e mobilidade reduzida na rua Brigadeiro Tobias, altura do número 731.</item>
     </string-array>
 
@@ -215,6 +222,7 @@
         <item>04h40 às 00h28 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV. TIRADENTES, 551</item>
+        <item>01101010</item>
         <item>Estação enterrada com mezanino de distribuição e plataforma central com estrutura em concreto aparente.</item>
     </string-array>
 
@@ -227,6 +235,7 @@
         <item>04h40 às 00h26 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>RUA PEDRO VICENTE, 47</item>
+        <item>01109010</item>
         <item>Estação elevada com plataformas laterais, estrutura em concreto aparente e cobertura pré-fabricada de concreto.\n\nPossui integração com Terminal de Ônibus Intermunicipal e Urbano.</item>
     </string-array>
 
@@ -240,6 +249,7 @@
         <item>04h40 às 00h24 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV. CRUZEIRO DO SUL, 1777</item>
+        <item>02031000</item>
         <item>Estação elevada com plataformas laterais, estrutura em concreto aparente e cobertura pré-fabricada de concreto.\n\nPossui integração com Terminal de Ônibus Urbano, Terminal Rodoviário e estacionamento.</item>
     </string-array>
 
@@ -253,6 +263,7 @@
         <item>04h40 às 00h22 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV. CRUZEIRO DO SUL, 2487</item>
+        <item>02031000</item>
         <item>Estação elevada com plataformas laterais, estrutura em concreto aparente e cobertura pré-fabricada de concreto.</item>
     </string-array>
 
@@ -265,6 +276,7 @@
         <item>04h40 às 00h20 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV. CRUZEIRO DO SUL, 3173</item>
+        <item>02031200</item>
         <item>Estação elevada com plataformas laterais, estrutura em concreto aparente e cobertura pré-fabricada de concreto.\n\nPossui integração com Terminal de Ônibus Urbano.</item>
     </string-array>
 
@@ -278,6 +290,7 @@
         <item>04h40 às 00h18 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV. LEÔNCIO DE MAGALHÃES, 1000</item>
+        <item>02042001</item>
         <item>Estação enterrada com mezanino de distribuição e plataforma central com estrutura em concreto aparente e aberturas para iluminação natural.\n\nPossui paisagismo de praça sob a cobertura e acesso para pessoas portadoras de deficiência.</item>
     </string-array>
 
@@ -290,6 +303,7 @@
         <item>04h40 às 00h16 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV. LUÍS DUMONT VILLARES, 1721</item>
+        <item>02239000</item>
         <item>Estação elevada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente e cobertura metálica.\n\nPossui acesso para pessoas portadoras de deficiência e integração com Terminal de Ônibus Urbano.</item>
     </string-array>
 
@@ -301,7 +315,8 @@
     <string-array name="line_1_blue_tucuruvi_information">
         <item>04h40 às 00h14 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>AV. DOUTOR ANTONIO MARIA DE LAET, 100</item>
+        <item>AV. DOUTOR ANTONIO MARIA LAET, 100</item>
+        <item>02240000</item>
         <item>Estação semi-enterrada com mezanino de distribuição e plataformas laterais com estrutura em concreto aparente.\n\nPossui acesso para pessoas portadoras de deficiência, integração com Terminal de Ônibus Urbano e acesso ao shopping center.</item>
     </string-array>
 
