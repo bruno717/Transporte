@@ -21,6 +21,6 @@ public class Station {
 
     @JsonIgnore
     public String getLocationWithCep() {
-        return String.format(Locale.getDefault(), "%s - %s", location, cep);
+        return String.format(Locale.getDefault(), "%s - %s", location, "São Paulo - SP");
     }
 }

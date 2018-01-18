@@ -15,7 +15,7 @@ import java.util.List;
 
 public class GeoLocationManager {
 
-    public static final float APPROXIMATE_ZOOM = 17f;
+    public static final float APPROXIMATE_ZOOM = 16f;
 
     public static Address getInfoAddress(Context context, String locationName) {
         try {

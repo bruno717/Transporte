@@ -5,7 +5,8 @@
     <string-array name="line_2_green_vila_prudente_information">
         <item>04h40 às 00h07 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>AVENIDA PROFESSOR LUIZ INÁCIO DE ANHAIA MELLO, 1.359</item>
+        <item>AVENIDA PROFESSOR LUIZ IGNÁCIO DE ANHAIA MELLO, 1359</item>
+        <item>03155000</item>
         <item></item>
     </string-array>
 
@@ -20,7 +21,8 @@
     <string-array name="line_2_green_tamanduatei_information">
         <item>04h40 às 00h09 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>Entre a Avenida Presidente Wilson e a Rua Guamiranga.</item>
+        <item>Av. Presidente Wilson, 4801</item>
+        <item>04220001</item>
         <item></item>
     </string-array>
 
@@ -35,7 +37,8 @@
     <string-array name="line_2_green_sacoma_information">
         <item>04h40 às 00h11 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>Sob a rua Greenfeld, entre as ruas Bom Pastor e Lino Coutinho.</item>
+        <item>Rua Agostinho Gomes, 3501</item>
+        <item>04206002</item>
         <item></item>
     </string-array>
 
@@ -48,7 +51,8 @@
     <string-array name="line_2_green_alto_do_ipiranga_information">
         <item>04h40 às 00h13 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>Rua Dr. Gentil de Moura, esquina com Rua Visconde de Pirajá.</item>
+        <item>Av. Dr Gentil de Moura, 231</item>
+        <item>04278080</item>
         <item></item>
     </string-array>
 
@@ -60,7 +64,8 @@
     <string-array name="line_2_green_santos_imigrantes_information">
         <item>04h40 às 00h16 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>Paralela ao Viaduto Saioá e perpendicular à Av. Dr. Ricardo Jafet</item>
+        <item>Avenida Doutor Ricardo Jafet, s/n</item>
+        <item>04124020</item>
         <item></item>
     </string-array>
 
@@ -73,7 +78,8 @@
     <string-array name="line_2_green_chacara_klabin_information">
         <item>04h40 às 00h18 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>Rua Vergueiro em frente ao Instituto de Ensino Liceu Pasteur.</item>
+        <item>Rua Vergueiro, 3795</item>
+        <item>04101300</item>
         <item></item>
     </string-array>
 
@@ -86,6 +92,7 @@
         <item>04h40 às 00h20 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>RUA DOMINGOS DE MORAIS, 505</item>
+        <item>04009001</item>
         <item></item>
     </string-array>
 
@@ -101,6 +108,7 @@
         <item>04h40 às 00h22 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>RUA VERGUEIRO, 1456</item>
+        <item>04101000</item>
         <item></item>
     </string-array>
 
@@ -116,7 +124,8 @@
     <string-array name="line_2_green_brigadeiro_information">
         <item>04h40 às 00h24 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>AV. PAULISTA, S/Nº (EM FRENTE AO Nº 447)</item>
+        <item>Av. Paulista, 447</item>
+        <item>01311000</item>
         <item></item>
     </string-array>
 
@@ -128,7 +137,8 @@
     <string-array name="line_2_green_trianon_masp_information">
         <item>04h40 às 00h22 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>AV. PAULISTA, S/Nº (EM FRENTE AO Nº 1485)</item>
+        <item>AV. PAULISTA, 1200</item>
+        <item>01310100</item>
         <item></item>
     </string-array>
 
@@ -140,7 +150,8 @@
     <string-array name="line_2_green_consolacao_information">
         <item>04h40 às 00h20 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>AV. PAULISTA, S/Nº (EM FRENTE AO Nº 1485)</item>
+        <item>Av. Paulista, 2163</item>
+        <item>01311300</item>
         <item></item>
     </string-array>
 
@@ -154,6 +165,7 @@
         <item>04h40 às 00h18 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV. DR. ARNALDO, 555</item>
+        <item>01246000</item>
         <item></item>
     </string-array>
 
@@ -162,14 +174,15 @@
         <item>Caixa de Sugestões</item>
     </string-array>
 
-    <string-array name="line_2_green_snsra_de_fatima_information">
+    <string-array name="line_2_green_sumare_information">
         <item>04h40 às 00h16 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV. DR.ARNALDO, 1470</item>
+        <item>01255000</item>
         <item></item>
     </string-array>
 
-    <string-array name="line_2_green_snsra_de_fatima_at_the_station">
+    <string-array name="line_2_green_sumare_at_the_station">
         <item>Elevador</item>
         <item>Caixa de Sugestões</item>
     </string-array>
@@ -178,6 +191,7 @@
         <item>04h40 às 00h14 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
         <item>PRAÇA AMÉRICO JACOMINO, 30</item>
+        <item>05437010</item>
         <item></item>
     </string-array>
 

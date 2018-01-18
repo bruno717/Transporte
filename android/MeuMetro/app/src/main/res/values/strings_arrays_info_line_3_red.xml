@@ -5,7 +5,7 @@
     <string-array name="line_3_red_corinthians_itaquera_information">
         <item>04h40 às 00h19 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>AV. PROJETADA, 1900</item>
+        <item>Rua Doutor Luís Aires, 3636</item>
         <item></item>
     </string-array>
 
@@ -74,7 +74,7 @@
     <string-array name="line_3_red_penha_information">
         <item>04h40 às 00h29 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>AV. CONDE DE FRONTIN, S/Nº</item>
+        <item>Rua Alvinópolis, 178</item>
         <item></item>
     </string-array>
 
@@ -88,7 +88,7 @@
     <string-array name="line_3_red_carrao_information">
         <item>04h40 às 00h31 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>AV. RADIAL LESTE, S/Nº (ESQUINA COM RUA APUCARANA)</item>
+        <item>Rua Apucarana, 50</item>
         <item></item>
     </string-array>
 
@@ -101,7 +101,7 @@
     <string-array name="line_3_red_tatuape_information">
         <item>04h40 às 00h33 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>RUA MELO FREIRE, S/Nº (ESQUINA COM A RUA TUIUTI)</item>
+        <item>R. Tuiuti, 1578</item>
         <item></item>
     </string-array>
 
@@ -116,7 +116,7 @@
     <string-array name="line_3_red_belem_information">
         <item>04h40 às 00h35 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>AV. ALCÂNTARA MACHADO, S/Nº</item>
+        <item>Av. Alcântara Machado, 3820</item>
         <item></item>
     </string-array>
 
@@ -130,7 +130,7 @@
     <string-array name="line_3_red_bresser_mooca_information">
         <item>04h40 às 00h35 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>RUA DO HIPÓDROMO, S/Nº</item>
+        <item>R. Inácio de Araújo, 140</item>
         <item></item>
     </string-array>
 
@@ -142,7 +142,7 @@
     <string-array name="line_3_red_bras_information">
         <item>04h40 às 00h33 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>RUA DOMINGOS PAIVA, S/Nº</item>
+        <item>R. Domingos Paiva, 434</item>
         <item></item>
     </string-array>
 
@@ -155,7 +155,7 @@
     <string-array name="line_3_red_pedro_ii_information">
         <item>04h40 às 00h31 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>RUA DA FIGUEIRA, S/Nº</item>
+        <item>R. da Figueira, 3</item>
         <item></item>
     </string-array>
 
@@ -168,7 +168,7 @@
     <string-array name="line_3_red_se_information">
         <item>04h40 às 00h29 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>PRAÇA DA SÉ, S/Nº</item>
+        <item>PRAÇA DA SÉ</item>
         <item></item>
     </string-array>
 
@@ -186,7 +186,7 @@
     <string-array name="line_3_red_anhangabau_information">
         <item>04h40 às 00h27 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>RUA FORMOSA, S/Nº</item>
+        <item>R. Formosa, 56</item>
         <item></item>
     </string-array>
 
@@ -212,7 +212,7 @@
     <string-array name="line_3_red_santa_cecilia_information">
         <item>04h40 às 00h23 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>LARGO SANTA CECÍLIA, S/Nº</item>
+        <item>Largo Santa Cecília, 302</item>
         <item></item>
     </string-array>
 
@@ -225,7 +225,7 @@
     <string-array name="line_3_red_marechal_deodoro_information">
         <item>04h40 às 00h21 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>PRAÇA MARECHAL DEODORO, S/Nº</item>
+        <item>R. Albuquerque Lins, 461</item>
         <item></item>
     </string-array>
 
@@ -239,7 +239,7 @@
     <string-array name="line_3_red_palmeiras_barra_funda_information">
         <item>04h40 às 00h19 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
-        <item>RUA BENTO TEOBALDO FERRAZ,119</item>
+        <item>RUA BENTO TEOBALDO FERRAZ, 119</item>
         <item></item>
     </string-array>
 
