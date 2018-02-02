@@ -22,6 +22,7 @@ public class RealmDbHelper {
                 // This will create a new object in Realm or throw an exception if the
                 // object already exists (same primary key)
                 realm.copyToRealm(element);
+                realm.close();
             }
         });
     }
@@ -33,6 +34,7 @@ public class RealmDbHelper {
                 // This will update an existing object with the same primary key
                 // or create a new object if an object with no primary key = 42
                 realm.copyToRealmOrUpdate(element);
+                realm.close();
             }
         });
     }
@@ -42,6 +44,7 @@ public class RealmDbHelper {
             @Override
             public void execute(Realm realm) {
                 Realm.getDefaultInstance().delete(entityClass);
+                realm.close();
             }
         });
     }
@@ -51,6 +54,7 @@ public class RealmDbHelper {
             @Override
             public void execute(Realm realm) {
                element.deleteFromRealm();
+                realm.close();
             }
         });
     }

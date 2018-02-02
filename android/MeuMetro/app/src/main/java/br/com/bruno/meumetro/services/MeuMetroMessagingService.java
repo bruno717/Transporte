@@ -63,6 +63,7 @@ public class MeuMetroMessagingService extends FirebaseMessagingService {
                         Crashlytics.logException(e);
                         e.printStackTrace();
                     }
+                    realm.close();
                 }
             });
 
