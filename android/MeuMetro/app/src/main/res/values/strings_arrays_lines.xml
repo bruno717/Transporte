@@ -69,6 +69,7 @@
     <string-array name="line_4_yellow">
         <item>Luz</item>
         <item>República</item>
+        <item>Higienópolis-Mackenzie</item>
         <item>Paulista</item>
         <item>Fradique Coutinho</item>
         <item>Faria Lima</item>
@@ -84,6 +85,9 @@
         <item>Santo Amaro</item>
         <item>Largo Treze</item>
         <item>Adolfo Pinheiro</item>
+        <item>Alto da Boa Vista</item>
+        <item>Borba Gato</item>
+        <item>Brooklin</item>
     </string-array>
 
     <string-array name="line_15_silver">

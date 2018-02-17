@@ -67,6 +67,8 @@ public class Line extends RealmObject {
 
     @JsonIgnore
     public void putStations(Context c) {
+        if (!stations.isEmpty())
+            stations.clear();
         for (int i = 0; i < getStations(c).length; i++) {
             Station station = new Station();
             station.setName(getStations(c)[i]);

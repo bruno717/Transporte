@@ -13,7 +13,10 @@ public enum Line5LilacInfo {
     giovanni_gronchi(3, R.array.line_5_lilac_giovanni_gronchi_information, R.array.line_5_lilac_giovanni_gronchi_at_the_station),
     santo_amaro(4, R.array.line_5_lilac_santo_amaro_information, R.array.line_5_lilac_santo_amaro_at_the_station),
     largo_treze(5, R.array.line_5_lilac_largo_treze_information, R.array.line_5_lilac_largo_treze_at_the_station),
-    adolfo_pinheiros(6, R.array.line_5_lilac_adolfo_pinheiro_information, R.array.line_5_lilac_adolfo_pinheiro_at_the_station);
+    adolfo_pinheiros(6, R.array.line_5_lilac_adolfo_pinheiro_information, R.array.line_5_lilac_adolfo_pinheiro_at_the_station),
+    alto_da_boa_vista(7, R.array.line_5_lilac_alto_da_boa_vista_information, R.array.line_5_lilac_alto_da_boa_vista_at_the_station),
+    borba_gato(8, R.array.line_5_lilac_borba_gato_information, R.array.line_5_lilac_borba_gato_at_the_station),
+    brooklin(9, R.array.line_5_lilac_brooklin_information, R.array.line_5_lilac_brooklin_at_the_station);
 
     private int index;
     private int resArrayInformation;
@@ -48,6 +51,15 @@ public enum Line5LilacInfo {
                 break;
             case 6:
                 type = adolfo_pinheiros;
+                break;
+            case 7:
+                type = alto_da_boa_vista;
+                break;
+            case 8:
+                type = borba_gato;
+                break;
+            case 9:
+                type = brooklin;
                 break;
         }
         return type;

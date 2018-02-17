@@ -30,8 +30,8 @@ public class MeuMetroApplication extends MultiDexApplication {
 
         CONTEXT_GLOBAL = getApplicationContext();
 
-        if (RestManager.BASE_URL.equals(ConnectionType.PRODUCTION.getUrl()))
-            Fabric.with(this, new Crashlytics());
+//        if (RestManager.BASE_URL.equals(ConnectionType.PRODUCTION.getUrl()))
+//            Fabric.with(this, new Crashlytics());
 
         Utils.init(this);
 

@@ -87,6 +87,45 @@
         <item>Sanitários (área paga)</item>
     </string-array>
 
+    <string-array name="line_5_lilac_alto_da_boa_vista_information">
+        <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
+        <item></item>
+        <item>AV. SANTO AMARO, 6960</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_5_lilac_alto_da_boa_vista_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários (área paga)</item>
+        <item>Paraciclos</item>
+    </string-array>
+
+    <string-array name="line_5_lilac_borba_gato_information">
+        <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
+        <item></item>
+        <item>AV. SANTO AMARO, 5869</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_5_lilac_borba_gato_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários (área paga)</item>
+        <item>Paraciclos</item>
+    </string-array>
+
+    <string-array name="line_5_lilac_brooklin_information">
+        <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
+        <item></item>
+        <item>AV. SANTO AMARO, 5010</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_5_lilac_brooklin_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários (área paga)</item>
+        <item>Paraciclos</item>
+    </string-array>
+
     <string-array name="line_5_lilac_direction">
         <item>Capão Redondo</item>
         <item>Adolfo Pinheiro</item>

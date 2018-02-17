@@ -29,6 +29,18 @@
         <item>Caixa de Sugestões</item>
     </string-array>
 
+    <string-array name="line_4_yellow_higienopolis_mackenzie_information">
+        <item>04h40 às 00h00 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua da Consolação, 1052</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_4_yellow_higienopolis_mackenzie_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+    </string-array>
+
     <string-array name="line_4_yellow_paulista_information">
         <item>04h40 às 00h00 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
