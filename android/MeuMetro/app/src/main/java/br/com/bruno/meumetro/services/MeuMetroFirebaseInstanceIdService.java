@@ -29,13 +29,13 @@ public class MeuMetroFirebaseInstanceIdService extends FirebaseInstanceIdService
 
         String idDevice = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
 
-//        Device device = new Device();
-//        device.setIdDevice(idDevice);
-//        device.setTokenDevice(token);
-//        if (ConnectionUtils.isConnected(getApplicationContext())) {
-//            new DeviceService().saveTokenDevice(device, false);
-//        } else {
-//            SharedPreferenceManager.saveDeviceToken(device);
-//        }
+        Device device = new Device();
+        device.setIdDevice(idDevice);
+        device.setTokenDevice(token);
+        if (ConnectionUtils.isConnected(getApplicationContext())) {
+            new DeviceService().saveTokenDevice(device, false);
+        } else {
+            SharedPreferenceManager.saveDeviceToken(device);
+        }
     }
 }

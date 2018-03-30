@@ -112,8 +112,8 @@ public class SettingsNotificationActivity extends AppCompatActivity implements S
 
     private void populateFields() {
         Setting setting = SharedPreferenceManager.getSetting(this);
-//        if (setting == null)
-//            setting = RealmDbHelper.findFirst(Setting.class);
+        if (setting == null)
+            setting = RealmDbHelper.findFirst(Setting.class);
 
         if (setting == null) {
             ((View) mRecyclerViewDays.getParent().getParent()).setAlpha(0);
