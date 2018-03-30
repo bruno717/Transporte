@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 
 import com.blankj.utilcode.util.ActivityUtils;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
@@ -15,6 +16,7 @@ import java.util.Locale;
 import br.com.bruno.meumetro.adapters.StatusLineOfficialAdapter;
 import br.com.bruno.meumetro.application.MeuMetroApplication;
 import br.com.bruno.meumetro.models.Device;
+import br.com.bruno.meumetro.models.settings.Setting;
 import br.com.bruno.meumetro.services.MeuMetroFirebaseInstanceIdService;
 
 /**
@@ -22,6 +24,8 @@ import br.com.bruno.meumetro.services.MeuMetroFirebaseInstanceIdService;
  */
 
 public class SharedPreferenceManager {
+
+    private static final String SHARED_PREFERENCES_SETTINGS = "SHARED_PREFERENCES_SETTINGS";
 
     public static void saveDeviceToken(Device device) {
 
@@ -74,6 +78,32 @@ public class SharedPreferenceManager {
         Context context = ActivityUtils.getTopActivity();
         SharedPreferences preferences = context.getSharedPreferences(context.getPackageName(), 0);
         return preferences.getString(type == LINE_OFFICIAL ? StatusLineOfficialAdapter.STATUS_LINE_OFFICIAL_ADAPTER_KEY_PREFERENCE_OFFICIAL : StatusLineOfficialAdapter.STATUS_LINE_OFFICIAL_ADAPTER_KEY_PREFERENCE_BY_USER, "");
+    }
+
+    public static void saveSettings(Setting settings) {
+        try {
+            Context context = ActivityUtils.getTopActivity();
+            SharedPreferences.Editor editor = context.getSharedPreferences(context.getPackageName(), 0).edit();
+            String json = new ObjectMapper().writeValueAsString(settings);
+            editor.remove(SHARED_PREFERENCES_SETTINGS).apply();
+            editor.putString(SHARED_PREFERENCES_SETTINGS, json);
+            editor.apply();
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static Setting getSetting(Context context) {
+        SharedPreferences preferences = context.getSharedPreferences(context.getPackageName(), 0);
+        String json = preferences.getString(SHARED_PREFERENCES_SETTINGS, "");
+        if (json.length() > 0) {
+            try {
+                return new ObjectMapper().readValue(json, Setting.class);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return null;
     }
 
     public static final int LINE_OFFICIAL = 0;

@@ -19,8 +19,11 @@ import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import java.util.Locale;
 
 import br.com.bruno.meumetro.adapters.TabsViewPagerAdapter;
+import br.com.bruno.meumetro.database.RealmDbHelper;
 import br.com.bruno.meumetro.fragments.StatusLineByUserFragment;
 import br.com.bruno.meumetro.fragments.StatusLineOfficialFragment;
+import br.com.bruno.meumetro.managers.SharedPreferenceManager;
+import br.com.bruno.meumetro.models.settings.Setting;
 import br.com.bruno.meumetro.utils.DrawableUtils;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -51,6 +54,13 @@ public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerIt
         setupToolbar();
         setupNavigationDrawer(savedInstanceState);
         setupTabLayout();
+        setupChangeRealmToPreference();
+    }
+
+    private void setupChangeRealmToPreference() {
+        Setting setting = RealmDbHelper.findFirst(Setting.class);
+        if (setting != null)
+            SharedPreferenceManager.saveSettings(setting);
     }
 
     private void setupToolbar() {

@@ -10,8 +10,8 @@ import java.text.ParseException;
 import java.util.Arrays;
 import java.util.List;
 
-import br.com.bruno.meumetro.database.RealmDbHelper;
 import br.com.bruno.meumetro.enums.NotificationType;
+import br.com.bruno.meumetro.managers.SharedPreferenceManager;
 import br.com.bruno.meumetro.models.Line;
 import br.com.bruno.meumetro.models.Message;
 import br.com.bruno.meumetro.models.settings.Setting;
@@ -50,20 +50,28 @@ public class MeuMetroMessagingService extends FirebaseMessagingService {
             }
 
 //            final Setting setting = RealmDbHelper.findFirst(Setting.class);
-
-            Realm realm = Realm.getDefaultInstance();
-            realm.executeTransactionAsync(new Realm.Transaction() {
-                @Override
-                public void execute(Realm realm) {
-                    RealmResults<Setting> settings = realm.where(Setting.class).findAll();
-                    try {
-                        verifySettingsToMountNotification(settings.first(), message);
-                    } catch (ParseException e) {
-                        e.printStackTrace();
-                    }
-                    realm.close();
+            Setting setting = SharedPreferenceManager.getSetting(getApplicationContext());
+            if (setting != null) {
+                try {
+                    verifySettingsToMountNotification(setting, message);
+                } catch (ParseException e) {
+                    e.printStackTrace();
                 }
-            });
+            } else {
+                Realm realm = Realm.getDefaultInstance();
+                realm.executeTransactionAsync(new Realm.Transaction() {
+                    @Override
+                    public void execute(Realm realm) {
+                        RealmResults<Setting> settings = realm.where(Setting.class).findAll();
+                        try {
+                            verifySettingsToMountNotification(settings.first(), message);
+                        } catch (ParseException e) {
+                            e.printStackTrace();
+                        }
+                        realm.close();
+                    }
+                });
+            }
 
 //            NotificationStatusManager manager = new NotificationStatusManager(getApplicationContext());
 //            NotificationType type = NotificationType.getNotification(message.getType());

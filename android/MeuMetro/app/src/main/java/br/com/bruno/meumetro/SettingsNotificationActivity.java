@@ -25,6 +25,7 @@ import br.com.bruno.meumetro.adapters.SettingsAdapter;
 import br.com.bruno.meumetro.database.RealmDbHelper;
 import br.com.bruno.meumetro.enums.SettingsListType;
 import br.com.bruno.meumetro.managers.LinearLayoutManagerEnabledScroll;
+import br.com.bruno.meumetro.managers.SharedPreferenceManager;
 import br.com.bruno.meumetro.models.settings.DaySetting;
 import br.com.bruno.meumetro.models.settings.HourSetting;
 import br.com.bruno.meumetro.models.settings.LineSetting;
@@ -110,7 +111,9 @@ public class SettingsNotificationActivity extends AppCompatActivity implements S
     }
 
     private void populateFields() {
-        Setting setting = RealmDbHelper.findFirst(Setting.class);
+        Setting setting = SharedPreferenceManager.getSetting(this);
+//        if (setting == null)
+//            setting = RealmDbHelper.findFirst(Setting.class);
 
         if (setting == null) {
             ((View) mRecyclerViewDays.getParent().getParent()).setAlpha(0);
@@ -410,6 +413,7 @@ public class SettingsNotificationActivity extends AppCompatActivity implements S
                     populateObject();
                     RealmDbHelper.deleteAll(Setting.class);
                     RealmDbHelper.save(mSetting);
+                    SharedPreferenceManager.saveSettings(mSetting);
                     mProgressDialog.dismiss();
                     Toast.makeText(this, R.string.activity_settings_notification_message_settings_saved, Toast.LENGTH_SHORT).show();
                     onBackPressed();
