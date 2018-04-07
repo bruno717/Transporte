@@ -126,6 +126,19 @@
         <item>Paraciclos</item>
     </string-array>
 
+    <string-array name="line_5_lilac_eucaliptos_information">
+        <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
+        <item></item>
+        <item>AV. IBIRAPUERA, 3144</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_5_lilac_eucaliptos_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários (área paga)</item>
+        <item>Paraciclos</item>
+    </string-array>
+
     <string-array name="line_5_lilac_direction">
         <item>Capão Redondo</item>
         <item>Adolfo Pinheiro</item>

@@ -11,10 +11,11 @@ public enum Line4YellowInfo {
     republica(1, R.array.line_4_yellow_republica_information, R.array.line_4_yellow_republica_at_the_station),
     higienopolis_mackenzie(2, R.array.line_4_yellow_higienopolis_mackenzie_information, R.array.line_4_yellow_higienopolis_mackenzie_at_the_station),
     paulista(3, R.array.line_4_yellow_paulista_information, R.array.line_4_yellow_paulista_at_the_station),
-    fradique_coutinho(4, R.array.line_4_yellow_fradique_coutinho_information, R.array.line_4_yellow_fradique_coutinho_at_the_station),
-    faria_lima(5, R.array.line_4_yellow_faria_lima_information, R.array.line_4_yellow_faria_lima_at_the_station),
-    pinheiros(6, R.array.line_4_yellow_pinheiros_information, R.array.line_4_yellow_pinheiros_at_the_station),
-    butanta(7, R.array.line_4_yellow_butanta_information, R.array.line_4_yellow_butanta_at_the_station);
+    oscar_freire(4, R.array.line_4_yellow_oscar_freire_information, R.array.line_4_yellow_oscar_freire_at_the_station),
+    fradique_coutinho(5, R.array.line_4_yellow_fradique_coutinho_information, R.array.line_4_yellow_fradique_coutinho_at_the_station),
+    faria_lima(6, R.array.line_4_yellow_faria_lima_information, R.array.line_4_yellow_faria_lima_at_the_station),
+    pinheiros(7, R.array.line_4_yellow_pinheiros_information, R.array.line_4_yellow_pinheiros_at_the_station),
+    butanta(8, R.array.line_4_yellow_butanta_information, R.array.line_4_yellow_butanta_at_the_station);
 
     private int index;
     private int resArrayInformation;
@@ -42,15 +43,18 @@ public enum Line4YellowInfo {
                 type = paulista;
                 break;
             case 4:
-                type = fradique_coutinho;
+                type = oscar_freire;
                 break;
             case 5:
-                type = faria_lima;
+                type = fradique_coutinho;
                 break;
             case 6:
-                type = pinheiros;
+                type = faria_lima;
                 break;
             case 7:
+                type = pinheiros;
+                break;
+            case 8:
                 type = butanta;
                 break;
         }

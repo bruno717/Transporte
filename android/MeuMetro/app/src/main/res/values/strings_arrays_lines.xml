@@ -71,6 +71,7 @@
         <item>República</item>
         <item>Higienópolis-Mackenzie</item>
         <item>Paulista</item>
+        <item>Oscar Freire</item>
         <item>Fradique Coutinho</item>
         <item>Faria Lima</item>
         <item>Pinheiros</item>
@@ -88,6 +89,7 @@
         <item>Alto da Boa Vista</item>
         <item>Borba Gato</item>
         <item>Brooklin</item>
+        <item>Eucaliptos</item>
     </string-array>
 
     <string-array name="line_15_silver">
@@ -193,7 +195,7 @@
         <item>Calmon Viana</item>
         <item>Suzano</item>
         <item>Jundiapeba</item>
-        <item>Brás Cubas</item>
+        <item>Braz Cubas</item>
         <item>Mogi das Cruzes</item>
         <item>Estudantes</item>
     </string-array>

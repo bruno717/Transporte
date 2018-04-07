@@ -16,7 +16,8 @@ public enum Line5LilacInfo {
     adolfo_pinheiros(6, R.array.line_5_lilac_adolfo_pinheiro_information, R.array.line_5_lilac_adolfo_pinheiro_at_the_station),
     alto_da_boa_vista(7, R.array.line_5_lilac_alto_da_boa_vista_information, R.array.line_5_lilac_alto_da_boa_vista_at_the_station),
     borba_gato(8, R.array.line_5_lilac_borba_gato_information, R.array.line_5_lilac_borba_gato_at_the_station),
-    brooklin(9, R.array.line_5_lilac_brooklin_information, R.array.line_5_lilac_brooklin_at_the_station);
+    brooklin(9, R.array.line_5_lilac_brooklin_information, R.array.line_5_lilac_brooklin_at_the_station),
+    eucaliptos(10, R.array.line_5_lilac_eucaliptos_information, R.array.line_5_lilac_eucaliptos_at_the_station);
 
     private int index;
     private int resArrayInformation;
@@ -60,6 +61,9 @@ public enum Line5LilacInfo {
                 break;
             case 9:
                 type = brooklin;
+                break;
+            case 10:
+                type = eucaliptos;
                 break;
         }
         return type;

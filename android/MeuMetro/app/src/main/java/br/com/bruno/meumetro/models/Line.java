@@ -33,6 +33,7 @@ import lombok.Data;
 /**
  * Created by Bruno on 28/08/2016.
  */
+
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Line extends RealmObject {

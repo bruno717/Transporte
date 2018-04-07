@@ -52,6 +52,18 @@
         <item>Elevador</item>
     </string-array>
 
+    <string-array name="line_4_yellow_oscar_freire_information">
+        <item>10h00 às 15h00 DOMINGO A SÁBADO</item>
+        <item></item>
+        <item>Avenida Rebouças, 1089</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_4_yellow_oscar_freire_at_the_station">
+        <item>Elevador</item>
+        <item>Banheiro</item>
+    </string-array>
+
     <string-array name="line_4_yellow_fradique_coutinho_information">
         <item>04h40 às 00h00 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
