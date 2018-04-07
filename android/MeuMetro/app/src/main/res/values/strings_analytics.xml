@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="frag_status_line_official_screen">Tela - Status oficial</string>
+    <string name="frag_status_line_by_user_screen">Tela - Status usuário</string>
+    <string name="frag_stations_of_the_line_screen">Tela - Estações da linha</string>
+    <string name="frag_information_station_screen">Tela - Informações da estação</string>
+    <string name="activity_transport_map">Tela - Mapa do transporte metropolitano</string>
+    <string name="frag_sms_denunciation">Tela - Sms denúncia</string>
+    <string name="activity_settings_notification">Tela - Configurações de notificação</string>
+
+</resources>

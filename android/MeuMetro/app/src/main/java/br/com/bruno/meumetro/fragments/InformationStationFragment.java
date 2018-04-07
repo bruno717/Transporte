@@ -1,6 +1,5 @@
 package br.com.bruno.meumetro.fragments;
 
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -20,9 +19,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
 
-import br.com.bruno.meumetro.PlacesNearbyActivity;
 import br.com.bruno.meumetro.R;
 import br.com.bruno.meumetro.adapters.HasInTheStationAdapter;
+import br.com.bruno.meumetro.managers.AnalyticsManager;
 import br.com.bruno.meumetro.managers.LinearLayoutManagerEnabledScroll;
 import br.com.bruno.meumetro.models.Station;
 import butterknife.BindView;
@@ -91,6 +90,12 @@ public class InformationStationFragment extends Fragment {
 //        });
 
         return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        AnalyticsManager.generateLogScreenOpen(getString(R.string.frag_information_station_screen));
     }
 
     private void setupValues() {

@@ -41,6 +41,7 @@ import java.util.Locale;
 
 import br.com.bruno.meumetro.R;
 import br.com.bruno.meumetro.enums.lines.LineType;
+import br.com.bruno.meumetro.managers.AnalyticsManager;
 import br.com.bruno.meumetro.utils.StringUtils;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -101,6 +102,12 @@ public class SmsDenunciationFragment extends Fragment implements View.OnFocusCha
         hasPermissionSendSms();
 
         return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        AnalyticsManager.generateLogScreenOpen(getString(R.string.frag_sms_denunciation));
     }
 
     @Override

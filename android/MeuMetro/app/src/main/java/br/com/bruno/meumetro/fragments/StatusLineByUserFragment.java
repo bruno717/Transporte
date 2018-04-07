@@ -22,6 +22,7 @@ import br.com.bruno.meumetro.adapters.StatusLineOfficialAdapter;
 import br.com.bruno.meumetro.database.LineDbHelper;
 import br.com.bruno.meumetro.enums.StatusType;
 import br.com.bruno.meumetro.interfaces.IServiceResponse;
+import br.com.bruno.meumetro.managers.AnalyticsManager;
 import br.com.bruno.meumetro.managers.LineManager;
 import br.com.bruno.meumetro.managers.SharedPreferenceManager;
 import br.com.bruno.meumetro.models.Line;
@@ -67,6 +68,7 @@ public class StatusLineByUserFragment extends Fragment implements StatusLineOffi
             getActivity().getIntent().removeExtra(MainActivity.MAIN_ACTIVITY_INTENT_KEY_IS_TAB_USER);
             setupRecyclerView();
         }
+        AnalyticsManager.generateLogScreenOpen(getString(R.string.frag_status_line_by_user_screen));
     }
 
     // UTILS
@@ -81,7 +83,7 @@ public class StatusLineByUserFragment extends Fragment implements StatusLineOffi
         }
     }
 
-    private void setupList(List<Line> lines){
+    private void setupList(List<Line> lines) {
         if (mAdapter == null) {
             mAdapter = new StatusLineOfficialAdapter(lines, StatusLineByUserFragment.this);
             mRecyclerView.setAdapter(mAdapter);

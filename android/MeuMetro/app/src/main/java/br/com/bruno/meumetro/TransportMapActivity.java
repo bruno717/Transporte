@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.webkit.WebView;
 
+import br.com.bruno.meumetro.managers.AnalyticsManager;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -33,6 +34,11 @@ public class TransportMapActivity extends AppCompatActivity {
         setupWebView();
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        AnalyticsManager.generateLogScreenOpen(getString(R.string.activity_transport_map));
+    }
 
     private void setupToolbar() {
         mToolbar.setNavigationIcon(ContextCompat.getDrawable(getApplicationContext(), R.drawable.md_nav_back));
