@@ -16,6 +16,7 @@ import br.com.bruno.meumetro.enums.StatusType;
 import br.com.bruno.meumetro.enums.lines.Line10TurquoiseInfo;
 import br.com.bruno.meumetro.enums.lines.Line11CoralInfo;
 import br.com.bruno.meumetro.enums.lines.Line12SapphireInfo;
+import br.com.bruno.meumetro.enums.lines.Line13JadeInfo;
 import br.com.bruno.meumetro.enums.lines.Line15SilverInfo;
 import br.com.bruno.meumetro.enums.lines.Line1BlueInfo;
 import br.com.bruno.meumetro.enums.lines.Line2GreenInfo;
@@ -121,6 +122,9 @@ public class Line extends RealmObject {
             case LINE_12_SAPPHIRE:
                 return R.color.line_12_sapphire;
 
+            case LINE_13_JADE:
+                return R.color.line_13_jade;
+
             case LINE_15_SILVER:
                 return R.color.line_15_silver;
 
@@ -164,6 +168,9 @@ public class Line extends RealmObject {
 
             case LINE_12_SAPPHIRE:
                 return c.getResources().getStringArray(R.array.line_12_sapphire);
+
+            case LINE_13_JADE:
+                return c.getResources().getStringArray(R.array.line_13_jade);
 
             case LINE_15_SILVER:
                 return c.getResources().getStringArray(R.array.line_15_silver);
@@ -211,6 +218,9 @@ public class Line extends RealmObject {
             case LINE_12_SAPPHIRE:
                 return c.getResources().getStringArray(Line12SapphireInfo.getStationByPosition(position).getResArrayInformation());
 
+            case LINE_13_JADE:
+                return c.getResources().getStringArray(Line13JadeInfo.getStationByPosition(position).getResArrayInformation());
+
             case LINE_15_SILVER:
                 return c.getResources().getStringArray(Line15SilverInfo.getStationByPosition(position).getResArrayInformation());
         }
@@ -252,6 +262,9 @@ public class Line extends RealmObject {
 
             case LINE_12_SAPPHIRE:
                 return c.getResources().getStringArray(Line12SapphireInfo.getStationByPosition(position).getResArrayAtTheStation());
+
+            case LINE_13_JADE:
+                return c.getResources().getStringArray(Line13JadeInfo.getStationByPosition(position).getResArrayAtTheStation());
 
             case LINE_15_SILVER:
                 return c.getResources().getStringArray(Line15SilverInfo.getStationByPosition(position).getResArrayAtTheStation());

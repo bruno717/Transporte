@@ -18,6 +18,7 @@ public enum LineType {
     LINE_10_TURQUOISE("10", "Linha 10 Turquesa"),
     LINE_11_CORAL("11", "Linha 11 Coral"),
     LINE_12_SAPPHIRE("12", "Linha 12 Safira"),
+    LINE_13_JADE("13", "Linha 13 Jade"),
     LINE_15_SILVER("15", "Linha 15 Prata");
 
     private String value;
@@ -60,6 +61,8 @@ public enum LineType {
                 return LINE_11_CORAL;
             case 12:
                 return LINE_12_SAPPHIRE;
+            case 13:
+                return LINE_13_JADE;
             case 15:
                 return LINE_15_SILVER;
             default:
@@ -92,6 +95,8 @@ public enum LineType {
             case 10:
                 return LINE_12_SAPPHIRE;
             case 11:
+                return LINE_13_JADE;
+            case 12:
                 return LINE_15_SILVER;
             default:
                 return LINE_1_BLUE;
@@ -132,6 +137,9 @@ public enum LineType {
         }
         if (name.equalsIgnoreCase(LINE_12_SAPPHIRE.getName())) {
             return LINE_12_SAPPHIRE;
+        }
+        if (name.equalsIgnoreCase(LINE_13_JADE.getName())) {
+            return LINE_13_JADE;
         }
         if (name.equalsIgnoreCase(LINE_15_SILVER.getName())) {
             return LINE_15_SILVER;
@@ -175,6 +183,9 @@ public enum LineType {
             case LINE_12_SAPPHIRE:
                 return R.array.line_12_sapphire_direction;
 
+            case LINE_13_JADE:
+                return R.array.line_13_jade_direction;
+
             case LINE_15_SILVER:
                 return R.array.line_15_silver_direction;
         }
@@ -216,6 +227,9 @@ public enum LineType {
 
             case LINE_12_SAPPHIRE:
                 return R.array.line_12_sapphire;
+
+            case LINE_13_JADE:
+                return R.array.line_13_jade;
 
             case LINE_15_SILVER:
                 return R.array.line_15_silver;
