@@ -30,6 +30,7 @@ import br.com.bruno.meumetro.rest.StatusLineService;
 import br.com.bruno.meumetro.utils.ConnectionUtils;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import io.realm.Realm;
 
 /**
  * Created by Bruno on 13/11/2016.
@@ -118,18 +119,22 @@ public class StatusLineByUserFragment extends Fragment implements StatusLineOffi
             new StatusLineService().getLinesStatusLinesByUser(new IServiceResponse<List<Line>>() {
                 @Override
                 public void onSuccess(List<Line> lines) {
-                    lines = LineManager.sortLines(lines);
-                    LineManager.saveLines(lines, StatusType.USER);
-                    mLines = lines;
-                    mSwipeRefresh.setRefreshing(false);
-                    SharedPreferenceManager.saveDateLastRefresh(SharedPreferenceManager.LINE_BY_USER);
-                    setupList(lines);
+                    if (getActivity() != null) {
+                        lines = LineManager.sortLines(lines);
+                        LineManager.saveLines(lines, StatusType.USER);
+                        mLines = lines;
+                        mSwipeRefresh.setRefreshing(false);
+                        SharedPreferenceManager.saveDateLastRefresh(SharedPreferenceManager.LINE_BY_USER);
+                        setupList(lines);
+                    }
                 }
 
                 @Override
                 public void onError() {
-                    setupList(LineManager.sortLines(LineDbHelper.getLinesByTypeStatus(StatusType.USER)));
                     if (getActivity() != null) {
+                        List<Line> lines = LineManager.sortLines(LineDbHelper.getLinesByTypeStatus(StatusType.USER));
+                        mLines = Realm.getDefaultInstance().copyFromRealm(lines);
+                        setupList(lines);
                         mSwipeRefresh.setRefreshing(false);
                         Toast.makeText(getActivity(), R.string.frag_status_line_official_load_error, Toast.LENGTH_LONG).show();
                     }
@@ -156,8 +161,9 @@ public class StatusLineByUserFragment extends Fragment implements StatusLineOffi
                 @Override
                 public void onError() {
                     mProgressDialog.dismiss();
-                    if (getActivity() != null)
+                    if (getActivity() != null) {
                         Toast.makeText(getActivity(), R.string.activity_edit_status_message_error, Toast.LENGTH_LONG).show();
+                    }
                 }
             });
         } else {
@@ -177,9 +183,11 @@ public class StatusLineByUserFragment extends Fragment implements StatusLineOffi
                     .itemsCallbackSingleChoice(-1, new MaterialDialog.ListCallbackSingleChoice() {
                         @Override
                         public boolean onSelection(MaterialDialog dialog, View itemView, int which, CharSequence text) {
-                            Line line = mLines.get(index);
-                            line.setSituation(text.toString());
-                            editStatusLine(line);
+                            if (text != null && !text.toString().isEmpty()) {
+                                Line line = mLines.get(index);
+                                line.setSituation(text.toString());
+                                editStatusLine(line);
+                            }
                             return false;
                         }
                     })
