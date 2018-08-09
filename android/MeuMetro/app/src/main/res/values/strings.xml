@@ -49,7 +49,7 @@
     <string name="frag_sms_denunciation_empty_field_subject">Selecione o assunto</string>
     <string name="frag_sms_denunciation_message_max_length">O detalhe da denúncia excedeu o tamanho limite!</string>
     <string name="frag_sms_denunciation_message_error_send_sms">Não foi possível enviar a menssagem sms, tente novamente mais tarde!</string>
-    <string name="frag_sms_denunciation_message_success">Menssagem enviada!</string>
+    <string name="frag_sms_denunciation_message_success">Sua denúncia foi feita à companhia!</string>
     <string name="frag_sms_denunciation_dialog_content">Enviando SMS denúncia…</string>
 
     <string-array name="frag_sms_denunciation_subject">

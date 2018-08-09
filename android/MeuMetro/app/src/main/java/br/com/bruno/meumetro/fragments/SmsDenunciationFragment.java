@@ -10,6 +10,7 @@ import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.CoordinatorLayout;
@@ -23,6 +24,7 @@ import android.telephony.SmsManager;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -53,8 +55,11 @@ import butterknife.OnClick;
 
 public class SmsDenunciationFragment extends Fragment implements View.OnFocusChangeListener, View.OnClickListener {
 
-    private final String NUMBER_METRO = "11973332252";
-    private final String NUMBER_CPTM = "11971504949";
+//    private final String NUMBER_METRO = "11973332252";
+//    private final String NUMBER_CPTM = "11971504949";
+
+    private final String NUMBER_METRO = "11964450525";
+    private final String NUMBER_CPTM = "11964450525";
     private final static int REQUEST_SEND_SMS = 101;
 
     @BindView(R.id.meu_metro_main_view)
@@ -89,6 +94,8 @@ public class SmsDenunciationFragment extends Fragment implements View.OnFocusCha
     private int mCountLengthDetails = 0;
     private String mNumberSend;
     private MaterialDialog mProgressDialog;
+    private boolean isScreenShow = true;
+    private boolean isNeedBackScreen = false;
 
     @Nullable
     @Override
@@ -107,7 +114,23 @@ public class SmsDenunciationFragment extends Fragment implements View.OnFocusCha
     @Override
     public void onResume() {
         super.onResume();
+        isScreenShow = true;
         AnalyticsManager.generateLogScreenOpen(getString(R.string.frag_sms_denunciation));
+        if (isNeedBackScreen) {
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    getActivity().onBackPressed();
+                }
+            }, 200);
+        }
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        isScreenShow = false;
+        Log.i("EINSTEIN", "onStop");
     }
 
     @Override
@@ -162,11 +185,15 @@ public class SmsDenunciationFragment extends Fragment implements View.OnFocusCha
             getActivity().registerReceiver(new BroadcastReceiver() {
                 @Override
                 public void onReceive(Context context, Intent intent) {
+                    getActivity().unregisterReceiver(this);
                     switch (getResultCode()) {
                         case Activity.RESULT_OK:
-                            Toast.makeText(context, R.string.frag_sms_denunciation_message_success, Toast.LENGTH_SHORT).show();
-                            if (getActivity() != null)
+                            Toast.makeText(context, R.string.frag_sms_denunciation_message_success, Toast.LENGTH_LONG).show();
+                            if (getActivity() != null && isScreenShow) {
                                 getActivity().onBackPressed();
+                            } else if (!isNeedBackScreen) {
+                                isNeedBackScreen = true;
+                            }
                             break;
 
                         case SmsManager.RESULT_ERROR_GENERIC_FAILURE:
