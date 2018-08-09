@@ -15,7 +15,7 @@ public class RestManager {
 
     private static final int SECONDS_TIMEOUT = 40;
 
-    public static final String BASE_URL = ConnectionType.HOMOLOGATION.getUrl();
+    public static final String BASE_URL = ConnectionType.PRODUCTION.getUrl();
 
     private static final String BASIC_AUTHENTICATE_USER_NAME = "50722f1edc4efb34a5adb1ebd7af0a9c"; // meumetro
     private static final String BASIC_AUTHENTICATE_PASSWORD = "e871f5a73c097ec22f27ebe917ed9f87"; // meumetrosecurity
