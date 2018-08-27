@@ -55,11 +55,9 @@ import butterknife.OnClick;
 
 public class SmsDenunciationFragment extends Fragment implements View.OnFocusChangeListener, View.OnClickListener {
 
-//    private final String NUMBER_METRO = "11973332252";
-//    private final String NUMBER_CPTM = "11971504949";
+    private final String NUMBER_METRO = "11973332252";
+    private final String NUMBER_CPTM = "11971504949";
 
-    private final String NUMBER_METRO = "11964450525";
-    private final String NUMBER_CPTM = "11964450525";
     private final static int REQUEST_SEND_SMS = 101;
 
     @BindView(R.id.meu_metro_main_view)
