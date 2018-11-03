@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Line 13 Jade -->
+    <string-array name="line_13_jade_eng_goulart_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Av. Dr. Assis Ribeiro, 3470</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_13_jade_guarulhos_cecap_at_the_station">
+        <item>Bicicletário</item>
+        <item>Banheiro masculino e feminino</item>
+    </string-array>
+
+    <string-array name="line_13_jade_guarulhos_cecap_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Av. Natália Zarif, 460</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_13_jade_eng_goulart_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+    </string-array>
+
+    <string-array name="line_13_jade_aeroporto_guarulhos_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Av. Marginal do Rio Baquirivú, 3300</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_13_jade_aeroporto_guarulhos_at_the_station">
+        <item>Banheiro masculino e feminino</item>
+    </string-array>
+
+    <string-array name="line_13_jade_direction">
+        <item>Eng. Goulart</item>
+        <item>Aeroporto Guarulhos</item>
+    </string-array>
+
+</resources>

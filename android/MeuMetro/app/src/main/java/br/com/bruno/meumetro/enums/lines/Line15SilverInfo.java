@@ -8,7 +8,11 @@ import br.com.bruno.meumetro.R;
 public enum Line15SilverInfo {
 
     vila_prudente(0, R.array.line_15_silver_vila_prudente_information, R.array.line_15_silver_vila_prudente_at_the_station),
-    oratorio(1, R.array.line_15_silver_oratorio_information, R.array.line_15_silver_oratorio_at_the_station);
+    oratorio(1, R.array.line_15_silver_oratorio_information, R.array.line_15_silver_oratorio_at_the_station),
+    sao_lucas(2, R.array.line_15_silver_sao_lucas_information, R.array.line_15_silver_sao_lucas_at_the_station),
+    camilo_haddad(3, R.array.line_15_silver_camilo_haddad_information, R.array.line_15_silver_camilo_haddad_at_the_station),
+    vila_tolstoi(4, R.array.line_15_silver_vila_tolstoi_information, R.array.line_15_silver_vila_tolstoi_at_the_station),
+    vila_uniao(5, R.array.line_15_silver_vila_uniao_information, R.array.line_15_silver_vila_uniao_at_the_station);
 
     private int index;
     private int resArrayInformation;
@@ -22,13 +26,12 @@ public enum Line15SilverInfo {
 
     public static Line15SilverInfo getStationByPosition(int position) {
         Line15SilverInfo type = null;
-        switch (position) {
-            case 0:
-                type = vila_prudente;
-                break;
-            case 1:
-                type = oratorio;
-                break;
+
+        for (int i = 0; i < Line15SilverInfo.values().length; i++) {
+            Line15SilverInfo info = Line15SilverInfo.values()[i];
+            if (info.index == position) {
+                type = info;
+            }
         }
         return type;
     }

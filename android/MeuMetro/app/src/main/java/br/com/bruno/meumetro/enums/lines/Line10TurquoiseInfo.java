@@ -33,46 +33,13 @@ public enum Line10TurquoiseInfo {
 
     public static Line10TurquoiseInfo getStationByPosition(int position) {
         Line10TurquoiseInfo type = null;
-        switch (position) {
-            case 0:
-                type = bras;
+
+        for (int i = 0; i < Line10TurquoiseInfo.values().length; i++) {
+            Line10TurquoiseInfo info = Line10TurquoiseInfo.values()[i];
+            if (info.index == position) {
+                type = info;
                 break;
-            case 1:
-                type = juventos_mooca;
-                break;
-            case 2:
-                type = ipiranga;
-                break;
-            case 3:
-                type = tamanduatei;
-                break;
-            case 4:
-                type = sao_caetano;
-                break;
-            case 5:
-                type = utinga;
-                break;
-            case 6:
-                type = prefeito_saladino;
-                break;
-            case 7:
-                type = pref_celso_daniel_santo_andre;
-                break;
-            case 8:
-                type = capuava;
-                break;
-            case 9:
-                type = maua;
-                break;
-            case 10:
-                type = guapituba;
-                break;
-            case 11:
-                type = ribeirao_pires_a_bespalec;
-                break;
-            case 12:
-                type = rio_grande_da_serra;
-                break;
+            }
         }
         return type;
     }

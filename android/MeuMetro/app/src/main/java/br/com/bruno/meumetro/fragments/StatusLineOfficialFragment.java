@@ -19,6 +19,7 @@ import br.com.bruno.meumetro.adapters.StatusLineOfficialAdapter;
 import br.com.bruno.meumetro.database.LineDbHelper;
 import br.com.bruno.meumetro.enums.StatusType;
 import br.com.bruno.meumetro.interfaces.IServiceResponse;
+import br.com.bruno.meumetro.managers.AnalyticsManager;
 import br.com.bruno.meumetro.managers.LineManager;
 import br.com.bruno.meumetro.managers.SharedPreferenceManager;
 import br.com.bruno.meumetro.models.Line;
@@ -52,6 +53,12 @@ public class StatusLineOfficialFragment extends Fragment {
         setupSwipeRefresh();
 
         return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        AnalyticsManager.generateLogScreenOpen(getString(R.string.frag_status_line_official_screen));
     }
 
     private void setupRecyclerView() {

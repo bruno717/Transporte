@@ -11,7 +11,7 @@ public enum Line1BlueInfo {
     conceicao(1, R.array.line_1_blue_conceicao_information, R.array.line_1_blue_conceicao_at_the_station),
     sao_judas(2, R.array.line_1_blue_sao_judas_information, R.array.line_1_blue_sao_judas_at_the_station),
     saude(3, R.array.line_1_blue_saude_information, R.array.line_1_blue_saude_at_the_station),
-    praça_da_arvore(4, R.array.line_1_blue_praca_da_arvore_information, R.array.line_1_blue_praca_da_arvore_at_the_station),
+    praca_da_arvore(4, R.array.line_1_blue_praca_da_arvore_information, R.array.line_1_blue_praca_da_arvore_at_the_station),
     santa_cruz(5, R.array.line_1_blue_santa_cruz_information, R.array.line_1_blue_santa_cruz_at_the_station),
     vila_mariana(6, R.array.line_1_blue_vila_mariana_information, R.array.line_1_blue_vila_mariana_at_the_station),
     ana_rosa(7, R.array.line_1_blue_ana_rosa_information, R.array.line_1_blue_ana_rosa_at_the_station),
@@ -43,76 +43,13 @@ public enum Line1BlueInfo {
 
     public static Line1BlueInfo getStationByPosition(int position) {
         Line1BlueInfo type = null;
-        switch (position) {
-            case 0:
-                type = jabaquara;
+
+        for (int i = 0; i < Line1BlueInfo.values().length; i++) {
+            Line1BlueInfo info = Line1BlueInfo.values()[i];
+            if (info.index == position) {
+                type = info;
                 break;
-            case 1:
-                type = conceicao;
-                break;
-            case 2:
-                type = sao_judas;
-                break;
-            case 3:
-                type = saude;
-                break;
-            case 4:
-                type = praça_da_arvore;
-                break;
-            case 5:
-                type = santa_cruz;
-                break;
-            case 6:
-                type = vila_mariana;
-                break;
-            case 7:
-                type = ana_rosa;
-                break;
-            case 8:
-                type = paraiso;
-                break;
-            case 9:
-                type = vergueiro;
-                break;
-            case 10:
-                type = sao_joaquim;
-                break;
-            case 11:
-                type = liberdade;
-                break;
-            case 12:
-                type = se;
-                break;
-            case 13:
-                type = sao_bento;
-                break;
-            case 14:
-                type = luz;
-                break;
-            case 15:
-                type = tiradentes;
-                break;
-            case 16:
-                type = armenia;
-                break;
-            case 17:
-                type = portuguesa_tiete;
-                break;
-            case 18:
-                type = carandiru;
-                break;
-            case 19:
-                type = santana;
-                break;
-            case 20:
-                type = jardim_sao_paulo_ayrton_senna;
-                break;
-            case 21:
-                type = parada_inglesa;
-                break;
-            case 22:
-                type = tucuruvi;
-                break;
+            }
         }
         return type;
     }

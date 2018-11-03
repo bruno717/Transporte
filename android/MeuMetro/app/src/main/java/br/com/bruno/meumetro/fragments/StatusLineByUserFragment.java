@@ -22,6 +22,7 @@ import br.com.bruno.meumetro.adapters.StatusLineOfficialAdapter;
 import br.com.bruno.meumetro.database.LineDbHelper;
 import br.com.bruno.meumetro.enums.StatusType;
 import br.com.bruno.meumetro.interfaces.IServiceResponse;
+import br.com.bruno.meumetro.managers.AnalyticsManager;
 import br.com.bruno.meumetro.managers.LineManager;
 import br.com.bruno.meumetro.managers.SharedPreferenceManager;
 import br.com.bruno.meumetro.models.Line;
@@ -29,6 +30,7 @@ import br.com.bruno.meumetro.rest.StatusLineService;
 import br.com.bruno.meumetro.utils.ConnectionUtils;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import io.realm.Realm;
 
 /**
  * Created by Bruno on 13/11/2016.
@@ -67,6 +69,7 @@ public class StatusLineByUserFragment extends Fragment implements StatusLineOffi
             getActivity().getIntent().removeExtra(MainActivity.MAIN_ACTIVITY_INTENT_KEY_IS_TAB_USER);
             setupRecyclerView();
         }
+        AnalyticsManager.generateLogScreenOpen(getString(R.string.frag_status_line_by_user_screen));
     }
 
     // UTILS
@@ -81,7 +84,7 @@ public class StatusLineByUserFragment extends Fragment implements StatusLineOffi
         }
     }
 
-    private void setupList(List<Line> lines){
+    private void setupList(List<Line> lines) {
         if (mAdapter == null) {
             mAdapter = new StatusLineOfficialAdapter(lines, StatusLineByUserFragment.this);
             mRecyclerView.setAdapter(mAdapter);
@@ -116,18 +119,22 @@ public class StatusLineByUserFragment extends Fragment implements StatusLineOffi
             new StatusLineService().getLinesStatusLinesByUser(new IServiceResponse<List<Line>>() {
                 @Override
                 public void onSuccess(List<Line> lines) {
-                    lines = LineManager.sortLines(lines);
-                    LineManager.saveLines(lines, StatusType.USER);
-                    mLines = lines;
-                    mSwipeRefresh.setRefreshing(false);
-                    SharedPreferenceManager.saveDateLastRefresh(SharedPreferenceManager.LINE_BY_USER);
-                    setupList(lines);
+                    if (getActivity() != null) {
+                        lines = LineManager.sortLines(lines);
+                        LineManager.saveLines(lines, StatusType.USER);
+                        mLines = lines;
+                        mSwipeRefresh.setRefreshing(false);
+                        SharedPreferenceManager.saveDateLastRefresh(SharedPreferenceManager.LINE_BY_USER);
+                        setupList(lines);
+                    }
                 }
 
                 @Override
                 public void onError() {
-                    setupList(LineManager.sortLines(LineDbHelper.getLinesByTypeStatus(StatusType.USER)));
                     if (getActivity() != null) {
+                        List<Line> lines = LineManager.sortLines(LineDbHelper.getLinesByTypeStatus(StatusType.USER));
+                        mLines = Realm.getDefaultInstance().copyFromRealm(lines);
+                        setupList(lines);
                         mSwipeRefresh.setRefreshing(false);
                         Toast.makeText(getActivity(), R.string.frag_status_line_official_load_error, Toast.LENGTH_LONG).show();
                     }
@@ -154,8 +161,9 @@ public class StatusLineByUserFragment extends Fragment implements StatusLineOffi
                 @Override
                 public void onError() {
                     mProgressDialog.dismiss();
-                    if (getActivity() != null)
+                    if (getActivity() != null) {
                         Toast.makeText(getActivity(), R.string.activity_edit_status_message_error, Toast.LENGTH_LONG).show();
+                    }
                 }
             });
         } else {
@@ -175,9 +183,11 @@ public class StatusLineByUserFragment extends Fragment implements StatusLineOffi
                     .itemsCallbackSingleChoice(-1, new MaterialDialog.ListCallbackSingleChoice() {
                         @Override
                         public boolean onSelection(MaterialDialog dialog, View itemView, int which, CharSequence text) {
-                            Line line = mLines.get(index);
-                            line.setSituation(text.toString());
-                            editStatusLine(line);
+                            if (text != null && !text.toString().isEmpty()) {
+                                Line line = mLines.get(index);
+                                line.setSituation(text.toString());
+                                editStatusLine(line);
+                            }
                             return false;
                         }
                     })

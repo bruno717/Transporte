@@ -14,7 +14,7 @@
         <item>Paraíso</item>
         <item>Vergueiro</item>
         <item>São Joaquim</item>
-        <item>Liberdade</item>
+        <item>Japão-Liberdade</item>
         <item>Sé</item>
         <item>São Bento</item>
         <item>Luz</item>
@@ -69,11 +69,14 @@
     <string-array name="line_4_yellow">
         <item>Luz</item>
         <item>República</item>
+        <item>Higienópolis-Mackenzie</item>
         <item>Paulista</item>
+        <item>Oscar Freire</item>
         <item>Fradique Coutinho</item>
         <item>Faria Lima</item>
         <item>Pinheiros</item>
         <item>Butantã</item>
+        <item>São Paulo-Morumbi</item>
     </string-array>
 
     <string-array name="line_5_lilac">
@@ -84,11 +87,24 @@
         <item>Santo Amaro</item>
         <item>Largo Treze</item>
         <item>Adolfo Pinheiro</item>
+        <item>Alto da Boa Vista</item>
+        <item>Borba Gato</item>
+        <item>Brooklin</item>
+        <item>Eucaliptos</item>
+        <item>Moema</item>
+        <item>AACD - Servidor</item>
+        <item>Hospital São Paulo</item>
+        <item>Santa Cruz</item>
+        <item>Chácara Klabin</item>
     </string-array>
 
     <string-array name="line_15_silver">
         <item>Vila Prudente</item>
         <item>Oratório</item>
+        <item>São Lucas</item>
+        <item>Camilo Haddad</item>
+        <item>Vila Tolstói</item>
+        <item>Vila União</item>
     </string-array>
 
     <!-- CPTM -->
@@ -189,7 +205,7 @@
         <item>Calmon Viana</item>
         <item>Suzano</item>
         <item>Jundiapeba</item>
-        <item>Brás Cubas</item>
+        <item>Braz Cubas</item>
         <item>Mogi das Cruzes</item>
         <item>Estudantes</item>
     </string-array>
@@ -208,6 +224,12 @@
         <item>Itaquaquecetuba</item>
         <item>Aracaré</item>
         <item>Calmon Viana</item>
+    </string-array>
+
+    <string-array name="line_13_jade">
+        <item>Eng. Goulart</item>
+        <item>Guarulhos CECAP</item>
+        <item>Aeroporto Guarulhos</item>
     </string-array>
 
 </resources>

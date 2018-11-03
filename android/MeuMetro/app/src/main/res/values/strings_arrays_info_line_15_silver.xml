@@ -3,7 +3,7 @@
 
     <!-- Line 15 Silver -->
     <string-array name="line_15_silver_vila_prudente_information">
-        <item>06h00 às 20h00 DOMINGO A SÁBADO</item>
+        <item>04h40 às 00h00 DOMINGO A SÁBADO</item>
         <item></item>
         <item>AV. PROF. LUIZ IGNÁCIO DE ANHAIA MELLO, 1359</item>
         <item></item>
@@ -16,7 +16,7 @@
     </string-array>
 
     <string-array name="line_15_silver_oratorio_information">
-        <item>06h00 às 20h00 DOMINGO A SÁBADO</item>
+        <item>04h40 às 00h00 DOMINGO A SÁBADO</item>
         <item></item>
         <item>AV. DO ORATÓRIO, 165</item>
         <item></item>
@@ -27,6 +27,50 @@
         <item>Paraciclos</item>
         <item>Caixa de Sugestões</item>
         <item>Sanitários</item>
+    </string-array>
+
+    <string-array name="line_15_silver_sao_lucas_information">
+        <item>04h40 às 00h00 DOMINGO A SÁBADO</item>
+        <item></item>
+        <item>Av. Professor Luiz Ignácio Anhaia Mello, 5345</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_15_silver_sao_lucas_at_the_station">
+        <!-- TODO: verificar informações -->
+    </string-array>
+
+    <string-array name="line_15_silver_camilo_haddad_information">
+        <item>04h40 às 00h00 DOMINGO A SÁBADO</item>
+        <item></item>
+        <item>Av. Professor Luiz Ignácio Anhaia Mello, 6494</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_15_silver_vila_tolstoi_at_the_station">
+        <!-- TODO: verificar informações -->
+    </string-array>
+
+    <string-array name="line_15_silver_vila_tolstoi_information">
+        <item>04h40 às 00h00 DOMINGO A SÁBADO</item>
+        <item></item>
+        <item>Av. Professor Luiz Ignácio Anhaia Mello, 7753</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_15_silver_camilo_haddad_at_the_station">
+        <!-- TODO: verificar informações -->
+    </string-array>
+
+    <string-array name="line_15_silver_vila_uniao_information">
+        <item>04h40 às 00h00 DOMINGO A SÁBADO</item>
+        <item></item>
+        <item>Av. Professor Luiz Ignácio Anhaia Mello, 9121</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_15_silver_vila_uniao_at_the_station">
+        <!-- TODO: verificar informações -->
     </string-array>
 
     <string-array name="line_15_silver_direction">

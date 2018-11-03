@@ -36,55 +36,13 @@ public enum Line11CoralInfo {
 
     public static Line11CoralInfo getStationByPosition(int position) {
         Line11CoralInfo type = null;
-        switch (position) {
-            case 0:
-                type = luz;
+
+        for (int i = 0; i < Line11CoralInfo.values().length; i++) {
+            Line11CoralInfo info = Line11CoralInfo.values()[i];
+            if (info.index == position) {
+                type = info;
                 break;
-            case 1:
-                type = bras;
-                break;
-            case 2:
-                type = tatuape;
-                break;
-            case 3:
-                type = corinthians_itaquera;
-                break;
-            case 4:
-                type = dom_bosco;
-                break;
-            case 5:
-                type = jose_bonifacio;
-                break;
-            case 6:
-                type = guaianases;
-                break;
-            case 7:
-                type = antonio_gianetti_neto;
-                break;
-            case 8:
-                type = ferraz_de_vasconcelos;
-                break;
-            case 9:
-                type = poa;
-                break;
-            case 10:
-                type = calmon_viana;
-                break;
-            case 11:
-                type = suzano;
-                break;
-            case 12:
-                type = jundiapeba;
-                break;
-            case 13:
-                type = bras_cubas;
-                break;
-            case 14:
-                type = mogi_das_cruzes;
-                break;
-            case 15:
-                type = estudantes;
-                break;
+            }
         }
         return type;
     }

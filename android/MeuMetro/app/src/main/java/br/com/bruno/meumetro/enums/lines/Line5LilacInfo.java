@@ -13,7 +13,16 @@ public enum Line5LilacInfo {
     giovanni_gronchi(3, R.array.line_5_lilac_giovanni_gronchi_information, R.array.line_5_lilac_giovanni_gronchi_at_the_station),
     santo_amaro(4, R.array.line_5_lilac_santo_amaro_information, R.array.line_5_lilac_santo_amaro_at_the_station),
     largo_treze(5, R.array.line_5_lilac_largo_treze_information, R.array.line_5_lilac_largo_treze_at_the_station),
-    adolfo_pinheiros(6, R.array.line_5_lilac_adolfo_pinheiro_information, R.array.line_5_lilac_adolfo_pinheiro_at_the_station);
+    adolfo_pinheiros(6, R.array.line_5_lilac_adolfo_pinheiro_information, R.array.line_5_lilac_adolfo_pinheiro_at_the_station),
+    alto_da_boa_vista(7, R.array.line_5_lilac_alto_da_boa_vista_information, R.array.line_5_lilac_alto_da_boa_vista_at_the_station),
+    borba_gato(8, R.array.line_5_lilac_borba_gato_information, R.array.line_5_lilac_borba_gato_at_the_station),
+    brooklin(9, R.array.line_5_lilac_brooklin_information, R.array.line_5_lilac_brooklin_at_the_station),
+    eucaliptos(10, R.array.line_5_lilac_eucaliptos_information, R.array.line_5_lilac_eucaliptos_at_the_station),
+    moema(11, R.array.line_5_lilac_moema_information, R.array.line_5_lilac_moema_at_the_station),
+    aacd_servidor(12, R.array.line_5_lilac_aacd_servidor_information, R.array.line_5_lilac_aacd_servidor_at_the_station),
+    hospital_sao_paulo(13, R.array.line_5_lilac_hospital_sao_paulo_information, R.array.line_5_lilac_hospital_sao_paulo_at_the_station),
+    santa_cruz(14, R.array.line_5_lilac_santa_cruz_information, R.array.line_5_lilac_santa_cruz_at_the_station),
+    chacara_klabin(15, R.array.line_5_lilac_chacara_klabin_information, R.array.line_5_lilac_chacara_klabin_at_the_station);
 
     private int index;
     private int resArrayInformation;
@@ -27,28 +36,13 @@ public enum Line5LilacInfo {
 
     public static Line5LilacInfo getStationByPosition(int position) {
         Line5LilacInfo type = null;
-        switch (position) {
-            case 0:
-                type = capao_redondo;
+
+        for (int i = 0; i < Line5LilacInfo.values().length; i++) {
+            Line5LilacInfo info = Line5LilacInfo.values()[i];
+            if (info.index == position) {
+                type = info;
                 break;
-            case 1:
-                type = campo_limpo;
-                break;
-            case 2:
-                type = vila_das_belezas;
-                break;
-            case 3:
-                type = giovanni_gronchi;
-                break;
-            case 4:
-                type = santo_amaro;
-                break;
-            case 5:
-                type = largo_treze;
-                break;
-            case 6:
-                type = adolfo_pinheiros;
-                break;
+            }
         }
         return type;
     }
@@ -64,4 +58,4 @@ public enum Line5LilacInfo {
     public int getResArrayAtTheStation() {
         return resArrayAtTheStation;
     }
-}
+    }

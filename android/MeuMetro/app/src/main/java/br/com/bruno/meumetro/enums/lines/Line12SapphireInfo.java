@@ -33,46 +33,13 @@ public enum Line12SapphireInfo {
 
     public static Line12SapphireInfo getStationByPosition(int position) {
         Line12SapphireInfo type = null;
-        switch (position) {
-            case 0:
-                type = bras;
+
+        for (int i = 0; i < Line12SapphireInfo.values().length; i++) {
+            Line12SapphireInfo info = Line12SapphireInfo.values()[i];
+            if (info.index == position) {
+                type = info;
                 break;
-            case 1:
-                type = tatuape;
-                break;
-            case 2:
-                type = eng_goulart;
-                break;
-            case 3:
-                type = usp_leste;
-                break;
-            case 4:
-                type = comendador_ermelino;
-                break;
-            case 5:
-                type = sao_miguel_paulista;
-                break;
-            case 6:
-                type = jardim_helena_vila_mara;
-                break;
-            case 7:
-                type = itaim_paulista;
-                break;
-            case 8:
-                type = jardim_romano;
-                break;
-            case 9:
-                type = eng_manoel_feio;
-                break;
-            case 10:
-                type = itaquaquecetuba;
-                break;
-            case 11:
-                type = aracare;
-                break;
-            case 12:
-                type = calmon_viana;
-                break;
+            }
         }
         return type;
     }

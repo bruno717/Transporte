@@ -23,6 +23,10 @@
     <string name="activity_main_toolbar_title">Situação das linhas</string>
     <string name="activity_main_tab_layout_official">Oficial</string>
     <string name="activity_main_tab_layout_user">Usuário</string>
+    <string name="activity_main_dialog_app_version_title">Versão desatualizada</string>
+    <string name="activity_main_dialog_app_version_content">Está disponível uma nova versão do Meu Metro, clique em atualizar para receber uma versão mais recente com novidades e correções.</string>
+    <string name="activity_main_dialog_app_version_positive">Atualizar</string>
+    <string name="activity_main_dialog_app_version_negative">Depois</string>
 
     <!-- Navigation Drawer -->
     <string name="navigation_drawer_transport_map">Mapa</string>
@@ -49,7 +53,7 @@
     <string name="frag_sms_denunciation_empty_field_subject">Selecione o assunto</string>
     <string name="frag_sms_denunciation_message_max_length">O detalhe da denúncia excedeu o tamanho limite!</string>
     <string name="frag_sms_denunciation_message_error_send_sms">Não foi possível enviar a menssagem sms, tente novamente mais tarde!</string>
-    <string name="frag_sms_denunciation_message_success">Menssagem enviada!</string>
+    <string name="frag_sms_denunciation_message_success">Sua denúncia foi feita à companhia!</string>
     <string name="frag_sms_denunciation_dialog_content">Enviando SMS denúncia…</string>
 
     <string-array name="frag_sms_denunciation_subject">
@@ -84,6 +88,7 @@
         <item>Linha 10 Turquesa</item>
         <item>Linha 11 Coral</item>
         <item>Linha 12 Safira</item>
+        <item>Linha 13 Jade</item>
         <item>Linha 15 Prata</item>
     </string-array>
 

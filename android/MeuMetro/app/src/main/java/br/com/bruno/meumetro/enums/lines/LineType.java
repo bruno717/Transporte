@@ -1,5 +1,7 @@
 package br.com.bruno.meumetro.enums.lines;
 
+import android.support.annotation.ArrayRes;
+
 import br.com.bruno.meumetro.R;
 
 /**
@@ -7,25 +9,32 @@ import br.com.bruno.meumetro.R;
  */
 public enum LineType {
 
-    LINE_1_BLUE("1", "Linha 1 Azul"),
-    LINE_2_GREEN("2", "Linha 2 Verde"),
-    LINE_3_RED("3", "Linha 3 Vermelha"),
-    LINE_4_YELLOW("4", "Linha 4 Amarela"),
-    LINE_5_LILAC("5", "Linha 5 Lilás"),
-    LINE_7_RUBY("7", "Linha 7 Rubi"),
-    LINE_8_DIAMOND("8", "Linha 8 Diamante"),
-    LINE_9_EMERALD("9", "Linha 9 Esmeralda"),
-    LINE_10_TURQUOISE("10", "Linha 10 Turquesa"),
-    LINE_11_CORAL("11", "Linha 11 Coral"),
-    LINE_12_SAPPHIRE("12", "Linha 12 Safira"),
-    LINE_15_SILVER("15", "Linha 15 Prata");
+    LINE_1_BLUE(0, "1", "Linha 1 Azul", R.array.line_1_blue_direction, R.array.line_1_blue),
+    LINE_2_GREEN(1, "2", "Linha 2 Verde", R.array.line_2_green_direction, R.array.line_2_green),
+    LINE_3_RED(2, "3", "Linha 3 Vermelha", R.array.line_3_red_direction, R.array.line_3_red),
+    LINE_4_YELLOW(3, "4", "Linha 4 Amarela", R.array.line_4_yellow_direction, R.array.line_4_yellow),
+    LINE_5_LILAC(4, "5", "Linha 5 Lilás", R.array.line_5_lilac_direction, R.array.line_5_lilac),
+    LINE_7_RUBY(5, "7", "Linha 7 Rubi", R.array.line_7_ruby_direction, R.array.line_7_ruby),
+    LINE_8_DIAMOND(6, "8", "Linha 8 Diamante", R.array.line_8_diamond_direction, R.array.line_8_diamond),
+    LINE_9_EMERALD(7, "9", "Linha 9 Esmeralda", R.array.line_9_emerald_direction, R.array.line_9_emerald),
+    LINE_10_TURQUOISE(8, "10", "Linha 10 Turquesa", R.array.line_10_turquoise_direction, R.array.line_10_turquoise),
+    LINE_11_CORAL(9, "11", "Linha 11 Coral", R.array.line_11_coral_direction, R.array.line_11_coral),
+    LINE_12_SAPPHIRE(10, "12", "Linha 12 Safira", R.array.line_12_sapphire_direction, R.array.line_12_sapphire),
+    LINE_13_JADE(11, "13", "Linha 13 Jade", R.array.line_13_jade_direction, R.array.line_13_jade),
+    LINE_15_SILVER(12, "15", "Linha 15 Prata", R.array.line_15_silver_direction, R.array.line_15_silver);
 
+    private int position;
     private String value;
     private String name;
+    private int directionRes;
+    private int seasonsRes;
 
-    LineType(String value, String name) {
+    LineType(int position, String value, String name, @ArrayRes int directionRes, @ArrayRes int seasonsRes) {
+        this.position = position;
         this.value = value;
         this.name = name;
+        this.directionRes = directionRes;
+        this.seasonsRes = seasonsRes;
     }
 
     public String getValue() {
@@ -36,192 +45,55 @@ public enum LineType {
         return name;
     }
 
-    public static LineType getLineType(int type) {
-        switch (type) {
-            case 1:
-                return LINE_1_BLUE;
-            case 2:
-                return LINE_2_GREEN;
-            case 3:
-                return LINE_3_RED;
-            case 4:
-                return LINE_4_YELLOW;
-            case 5:
-                return LINE_5_LILAC;
-            case 7:
-                return LINE_7_RUBY;
-            case 8:
-                return LINE_8_DIAMOND;
-            case 9:
-                return LINE_9_EMERALD;
-            case 10:
-                return LINE_10_TURQUOISE;
-            case 11:
-                return LINE_11_CORAL;
-            case 12:
-                return LINE_12_SAPPHIRE;
-            case 15:
-                return LINE_15_SILVER;
-            default:
-                return LINE_1_BLUE;
-        }
+    public int getDirectionRes() {
+        return directionRes;
     }
 
-    public static LineType getLineTypeByPosition(int type) {
-        switch (type) {
-            case 0:
-                return LINE_1_BLUE;
-            case 1:
-                return LINE_2_GREEN;
-            case 2:
-                return LINE_3_RED;
-            case 3:
-                return LINE_4_YELLOW;
-            case 4:
-                return LINE_5_LILAC;
-            case 5:
-                return LINE_7_RUBY;
-            case 6:
-                return LINE_8_DIAMOND;
-            case 7:
-                return LINE_9_EMERALD;
-            case 8:
-                return LINE_10_TURQUOISE;
-            case 9:
-                return LINE_11_CORAL;
-            case 10:
-                return LINE_12_SAPPHIRE;
-            case 11:
-                return LINE_15_SILVER;
-            default:
-                return LINE_1_BLUE;
+    public int getSeasonsRes() {
+        return seasonsRes;
+    }
+
+    public static LineType getLineType(int numberLine) {
+        LineType type = null;
+
+        LineType[] values = LineType.values();
+        for (LineType lineType : values) {
+            if (Integer.parseInt(lineType.value) == numberLine) {
+                type = lineType;
+                break;
+            }
         }
+
+        return type;
+    }
+
+    public static LineType getLineTypeByPosition(int position) {
+
+        LineType type = null;
+
+        LineType[] values = LineType.values();
+        for (LineType lineType : values) {
+            if (position == lineType.position) {
+                type = lineType;
+                break;
+            }
+        }
+
+        return type;
     }
 
     public static LineType getLineTypeByName(String name) {
 
-        if (name.equalsIgnoreCase(LINE_1_BLUE.getName())) {
-            return LINE_1_BLUE;
-        }
-        if (name.equalsIgnoreCase(LINE_2_GREEN.getName())) {
-            return LINE_2_GREEN;
-        }
-        if (name.equalsIgnoreCase(LINE_3_RED.getName())) {
-            return LINE_3_RED;
-        }
-        if (name.equalsIgnoreCase(LINE_4_YELLOW.getName())) {
-            return LINE_4_YELLOW;
-        }
-        if (name.equalsIgnoreCase(LINE_5_LILAC.getName())) {
-            return LINE_5_LILAC;
-        }
-        if (name.equalsIgnoreCase(LINE_7_RUBY.getName())) {
-            return LINE_7_RUBY;
-        }
-        if (name.equalsIgnoreCase(LINE_8_DIAMOND.getName())) {
-            return LINE_8_DIAMOND;
-        }
-        if (name.equalsIgnoreCase(LINE_9_EMERALD.getName())) {
-            return LINE_9_EMERALD;
-        }
-        if (name.equalsIgnoreCase(LINE_10_TURQUOISE.getName())) {
-            return LINE_10_TURQUOISE;
-        }
-        if (name.equalsIgnoreCase(LINE_11_CORAL.getName())) {
-            return LINE_11_CORAL;
-        }
-        if (name.equalsIgnoreCase(LINE_12_SAPPHIRE.getName())) {
-            return LINE_12_SAPPHIRE;
-        }
-        if (name.equalsIgnoreCase(LINE_15_SILVER.getName())) {
-            return LINE_15_SILVER;
-        }
-        return LINE_1_BLUE;
-    }
+        LineType type = null;
 
-    public static Integer getDirectionLineResByLineType(LineType lineType) {
-
-        switch (lineType) {
-            case LINE_1_BLUE:
-                return R.array.line_1_blue_direction;
-
-            case LINE_2_GREEN:
-                return R.array.line_2_green_direction;
-
-            case LINE_3_RED:
-                return R.array.line_3_red_direction;
-
-            case LINE_4_YELLOW:
-                return R.array.line_4_yellow_direction;
-
-            case LINE_5_LILAC:
-                return R.array.line_5_lilac_direction;
-
-            case LINE_7_RUBY:
-                return R.array.line_7_ruby_direction;
-
-            case LINE_8_DIAMOND:
-                return R.array.line_8_diamond_direction;
-
-            case LINE_9_EMERALD:
-                return R.array.line_9_emerald_direction;
-
-            case LINE_10_TURQUOISE:
-                return R.array.line_10_turquoise_direction;
-
-            case LINE_11_CORAL:
-                return R.array.line_11_coral_direction;
-
-            case LINE_12_SAPPHIRE:
-                return R.array.line_12_sapphire_direction;
-
-            case LINE_15_SILVER:
-                return R.array.line_15_silver_direction;
+        LineType[] values = LineType.values();
+        for (LineType lineType : values) {
+            if (name.equals(lineType.getName())) {
+                type = lineType;
+                break;
+            }
         }
 
-        return R.array.line_1_blue_direction;
-    }
-
-    public static Integer getStationsByLineType(LineType lineType) {
-        switch (lineType) {
-            case LINE_1_BLUE:
-                return R.array.line_1_blue;
-
-            case LINE_2_GREEN:
-                return R.array.line_2_green;
-
-            case LINE_3_RED:
-                return R.array.line_3_red;
-
-            case LINE_4_YELLOW:
-                return R.array.line_4_yellow;
-
-            case LINE_5_LILAC:
-                return R.array.line_5_lilac;
-
-            case LINE_7_RUBY:
-                return R.array.line_7_ruby;
-
-            case LINE_8_DIAMOND:
-                return R.array.line_8_diamond;
-
-            case LINE_9_EMERALD:
-                return R.array.line_9_emerald;
-
-            case LINE_10_TURQUOISE:
-                return R.array.line_10_turquoise;
-
-            case LINE_11_CORAL:
-                return R.array.line_11_coral;
-
-            case LINE_12_SAPPHIRE:
-                return R.array.line_12_sapphire;
-
-            case LINE_15_SILVER:
-                return R.array.line_15_silver;
-
-            default:
-                return R.array.line_1_blue;
-        }
+        return type;
     }
 }

@@ -25,6 +25,7 @@ import java.io.IOException;
 import br.com.bruno.meumetro.PlacesNearbyActivity;
 import br.com.bruno.meumetro.R;
 import br.com.bruno.meumetro.adapters.HasInTheStationAdapter;
+import br.com.bruno.meumetro.managers.AnalyticsManager;
 import br.com.bruno.meumetro.managers.LinearLayoutManagerEnabledScroll;
 import br.com.bruno.meumetro.models.Station;
 import butterknife.BindView;
@@ -92,6 +93,12 @@ public class InformationStationFragment extends Fragment {
         setupFloatingButton();
 
         return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        AnalyticsManager.generateLogScreenOpen(getString(R.string.frag_information_station_screen));
     }
 
     private void setupValues() {

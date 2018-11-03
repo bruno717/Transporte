@@ -206,18 +206,17 @@ public class StatusLineOfficialAdapter extends RecyclerView.Adapter<RecyclerView
 
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(v.getContext(), LinesInformationActivity.class);
-            String jsonLine = "";
             try {
+                Intent intent = new Intent(v.getContext(), LinesInformationActivity.class);
                 int index = getAdapterPosition() > 7 ? getAdapterPosition() - 2 : getAdapterPosition() - 1;
                 mLines.get(index).putStations(v.getContext());
-                jsonLine = new ObjectMapper().writeValueAsString(mLines.get(index));
+                String jsonLine = new ObjectMapper().writeValueAsString(mLines.get(index));
+                intent.putExtra(LinesInformationActivity.class.getName(), jsonLine);
+                v.getContext().startActivity(intent);
             } catch (JsonProcessingException e) {
                 Crashlytics.logException(e);
                 e.printStackTrace();
             }
-            intent.putExtra(LinesInformationActivity.class.getName(), jsonLine);
-            v.getContext().startActivity(intent);
         }
 
         @OnClick(R.id.cell_status_line_official_button_show_details)
