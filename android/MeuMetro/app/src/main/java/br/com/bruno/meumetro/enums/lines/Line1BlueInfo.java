@@ -11,7 +11,7 @@ public enum Line1BlueInfo {
     conceicao(1, R.array.line_1_blue_conceicao_information, R.array.line_1_blue_conceicao_at_the_station),
     sao_judas(2, R.array.line_1_blue_sao_judas_information, R.array.line_1_blue_sao_judas_at_the_station),
     saude(3, R.array.line_1_blue_saude_information, R.array.line_1_blue_saude_at_the_station),
-    praça_da_arvore(4, R.array.line_1_blue_praca_da_arvore_information, R.array.line_1_blue_praca_da_arvore_at_the_station),
+    praca_da_arvore(4, R.array.line_1_blue_praca_da_arvore_information, R.array.line_1_blue_praca_da_arvore_at_the_station),
     santa_cruz(5, R.array.line_1_blue_santa_cruz_information, R.array.line_1_blue_santa_cruz_at_the_station),
     vila_mariana(6, R.array.line_1_blue_vila_mariana_information, R.array.line_1_blue_vila_mariana_at_the_station),
     ana_rosa(7, R.array.line_1_blue_ana_rosa_information, R.array.line_1_blue_ana_rosa_at_the_station),
@@ -57,7 +57,7 @@ public enum Line1BlueInfo {
                 type = saude;
                 break;
             case 4:
-                type = praça_da_arvore;
+                type = praca_da_arvore;
                 break;
             case 5:
                 type = santa_cruz;

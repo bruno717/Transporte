@@ -23,6 +23,10 @@
     <string name="activity_main_toolbar_title">Situação das linhas</string>
     <string name="activity_main_tab_layout_official">Oficial</string>
     <string name="activity_main_tab_layout_user">Usuário</string>
+    <string name="activity_main_dialog_app_version_title">Versão desatualizada</string>
+    <string name="activity_main_dialog_app_version_content">Está disponível uma nova versão do Meu Metro, clique em atualizar para receber uma versão mais recente com novidades e correções.</string>
+    <string name="activity_main_dialog_app_version_positive">Atualizar</string>
+    <string name="activity_main_dialog_app_version_negative">Depois</string>
 
     <!-- Navigation Drawer -->
     <string name="navigation_drawer_transport_map">Mapa</string>
