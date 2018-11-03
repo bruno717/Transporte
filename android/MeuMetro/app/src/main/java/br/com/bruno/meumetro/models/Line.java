@@ -79,7 +79,7 @@ public class Line extends RealmObject {
                 station.setOperationSundayToFriday(information[0]);
                 station.setOperationSaturday(information[1]);
                 station.setLocation(information[2]);
-                station.setCep(information[2]);
+                station.setCep(information[3]);
             }
             station.setAtTheStation(getAtTheStation(i, c));
             stations.add(station);

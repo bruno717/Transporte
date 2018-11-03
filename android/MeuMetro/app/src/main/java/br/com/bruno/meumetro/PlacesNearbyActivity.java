@@ -81,7 +81,7 @@ public class PlacesNearbyActivity extends AppCompatActivity {
     }
 
     private void setupTabLayout() {
-        Address address = GeoLocationManager.getInfoAddress(this, mStation.getLocation());
+        Address address = GeoLocationManager.getInfoAddress(this, mStation.getLocationWithCep());
         mViewPagerAdapter = new TabsViewPagerAdapter(getSupportFragmentManager());
         mViewPagerAdapter.addFragment(PlacesNearbyMapFragment.newInstance(address), getString(R.string.activity_places_nearby_tab_layout_tab_map).toUpperCase());
         mViewPagerAdapter.addFragment(PlacesNearbyListFragment.newInstance(address), getString(R.string.activity_places_nearby_tab_layout_tab_list).toUpperCase());

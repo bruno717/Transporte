@@ -19,7 +19,7 @@ public enum Line2GreenInfo {
     trianon_masp(9, R.array.line_2_green_trianon_masp_information, R.array.line_2_green_trianon_masp_at_the_station),
     consolacao(10, R.array.line_2_green_consolacao_information, R.array.line_2_green_consolacao_at_the_station),
     clinicas(11, R.array.line_2_green_clinicas_information, R.array.line_2_green_clinicas_at_the_station),
-    s_n_sra_de_fatima_sumare(12, R.array.line_2_green_snsra_de_fatima_information, R.array.line_2_green_snsra_de_fatima_at_the_station),
+    s_n_sra_de_fatima_sumare(12, R.array.line_2_green_sumare_information, R.array.line_2_green_sumare_at_the_station),
     vila_madalena(13, R.array.line_2_green_vila_madalena_information, R.array.line_2_green_vila_madalena_at_the_station);
 
     private int index;
