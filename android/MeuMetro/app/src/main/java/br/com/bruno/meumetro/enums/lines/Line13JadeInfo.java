@@ -23,16 +23,13 @@ public enum Line13JadeInfo {
 
     public static Line13JadeInfo getStationByPosition(int position) {
         Line13JadeInfo type = null;
-        switch (position) {
-            case 0:
-                type = eng_goulart;
+
+        for (int i = 0; i < Line13JadeInfo.values().length; i++) {
+            Line13JadeInfo info = Line13JadeInfo.values()[i];
+            if (info.index == position) {
+                type = info;
                 break;
-            case 1:
-                type = guarulhos_cecap;
-                break;
-            case 2:
-                type = aeroporto_guarulhos;
-                break;
+            }
         }
         return type;
     }

@@ -42,73 +42,13 @@ public enum Line8DiamondInfo {
 
     public static Line8DiamondInfo getStationByPosition(int position) {
         Line8DiamondInfo type = null;
-        switch (position) {
-            case 0:
-                type = julio_prestes;
+
+        for (int i = 0; i < Line8DiamondInfo.values().length; i++) {
+            Line8DiamondInfo info = Line8DiamondInfo.values()[i];
+            if (info.index == position) {
+                type = info;
                 break;
-            case 1:
-                type = palmeiras_barra_funda;
-                break;
-            case 2:
-                type = lapa;
-                break;
-            case 3:
-                type = domingos_de_moraes;
-                break;
-            case 4:
-                type = imperatriz_leopoldina;
-                break;
-            case 5:
-                type = presidente_altino;
-                break;
-            case 6:
-                type = osasco;
-                break;
-            case 7:
-                type = comandante_sampaio;
-                break;
-            case 8:
-                type = quitauna;
-                break;
-            case 9:
-                type = general_miguel_costa;
-                break;
-            case 10:
-                type = carapicuiba;
-                break;
-            case 11:
-                type = santa_terezinha;
-                break;
-            case 12:
-                type = antonio_joao;
-                break;
-            case 13:
-                type = barueri;
-                break;
-            case 14:
-                type = jardim_belval;
-                break;
-            case 15:
-                type = jardim_silveira;
-                break;
-            case 16:
-                type = jandira;
-                break;
-            case 17:
-                type = sagrado_coracao;
-                break;
-            case 18:
-                type = eng_cardoso;
-                break;
-            case 19:
-                type = itapevi;
-                break;
-            case 20:
-                type = santa_rita;
-                break;
-            case 21:
-                type = amador_bueno;
-                break;
+            }
         }
         return type;
     }

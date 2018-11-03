@@ -38,61 +38,13 @@ public enum Line9EmeraldInfo {
 
     public static Line9EmeraldInfo getStationByPosition(int position) {
         Line9EmeraldInfo type = null;
-        switch (position) {
-            case 0:
-                type = osasco;
+
+        for (int i = 0; i < Line9EmeraldInfo.values().length; i++) {
+            Line9EmeraldInfo info = Line9EmeraldInfo.values()[i];
+            if (info.index == position) {
+                type = info;
                 break;
-            case 1:
-                type = presidente_altino;
-                break;
-            case 2:
-                type = ceasa;
-                break;
-            case 3:
-                type = villa_lobos_jaguare;
-                break;
-            case 4:
-                type = cidade_universitaria;
-                break;
-            case 5:
-                type = pinheiros;
-                break;
-            case 6:
-                type = hebraica_reboucas;
-                break;
-            case 7:
-                type = cidade_jardim;
-                break;
-            case 8:
-                type = vila_olimpia;
-                break;
-            case 9:
-                type = berrini;
-                break;
-            case 10:
-                type = morumbi;
-                break;
-            case 11:
-                type = granja_julieta;
-                break;
-            case 12:
-                type = santo_amaro;
-                break;
-            case 13:
-                type = socorro;
-                break;
-            case 14:
-                type = jurubatuba;
-                break;
-            case 15:
-                type = autodromo;
-                break;
-            case 16:
-                type = primavera_interlagos;
-                break;
-            case 17:
-                type = grajau;
-                break;
+            }
         }
         return type;
     }

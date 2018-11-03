@@ -6,6 +6,7 @@ import android.support.multidex.MultiDexApplication;
 import com.blankj.utilcode.util.Utils;
 import com.crashlytics.android.Crashlytics;
 
+import br.com.bruno.meumetro.BuildConfig;
 import br.com.bruno.meumetro.database.MigrationMyDataBase;
 import br.com.bruno.meumetro.enums.ConnectionType;
 import br.com.bruno.meumetro.managers.SharedPreferenceManager;
@@ -30,7 +31,7 @@ public class MeuMetroApplication extends MultiDexApplication {
 
         CONTEXT_GLOBAL = getApplicationContext();
 
-        if (RestManager.BASE_URL.equals(ConnectionType.PRODUCTION.getUrl())) {
+        if (!BuildConfig.DEBUG) {
             Fabric.with(this, new Crashlytics());
         }
 

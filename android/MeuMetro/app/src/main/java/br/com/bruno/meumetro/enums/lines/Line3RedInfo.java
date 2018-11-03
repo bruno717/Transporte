@@ -38,61 +38,13 @@ public enum Line3RedInfo {
 
     public static Line3RedInfo getStationByPosition(int position) {
         Line3RedInfo type = null;
-        switch (position) {
-            case 0:
-                type = corinthians_itaquera;
+
+        for (int i = 0; i < Line3RedInfo.values().length; i++) {
+            Line3RedInfo info = Line3RedInfo.values()[i];
+            if (info.index == position) {
+                type = info;
                 break;
-            case 1:
-                type = artur_alvin;
-                break;
-            case 2:
-                type = patriarca;
-                break;
-            case 3:
-                type = guilhermina_esperanca;
-                break;
-            case 4:
-                type = vila_matilde;
-                break;
-            case 5:
-                type = penha;
-                break;
-            case 6:
-                type = carrao;
-                break;
-            case 7:
-                type = tatuape;
-                break;
-            case 8:
-                type = belem;
-                break;
-            case 9:
-                type = bresser_mooca;
-                break;
-            case 10:
-                type = bras;
-                break;
-            case 11:
-                type = pedro_ii;
-                break;
-            case 12:
-                type = se;
-                break;
-            case 13:
-                type = anhangabau;
-                break;
-            case 14:
-                type = republica;
-                break;
-            case 15:
-                type = santa_cecilia;
-                break;
-            case 16:
-                type = marechal_deodoro;
-                break;
-            case 17:
-                type = palmeiras_barra_funda;
-                break;
+            }
         }
         return type;
     }

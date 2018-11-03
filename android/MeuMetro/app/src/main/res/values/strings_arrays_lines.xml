@@ -76,6 +76,7 @@
         <item>Faria Lima</item>
         <item>Pinheiros</item>
         <item>Butantã</item>
+        <item>São Paulo-Morumbi</item>
     </string-array>
 
     <string-array name="line_5_lilac">
@@ -90,11 +91,20 @@
         <item>Borba Gato</item>
         <item>Brooklin</item>
         <item>Eucaliptos</item>
+        <item>Moema</item>
+        <item>AACD - Servidor</item>
+        <item>Hospital São Paulo</item>
+        <item>Santa Cruz</item>
+        <item>Chácara Klabin</item>
     </string-array>
 
     <string-array name="line_15_silver">
         <item>Vila Prudente</item>
         <item>Oratório</item>
+        <item>São Lucas</item>
+        <item>Camilo Haddad</item>
+        <item>Vila Tolstói</item>
+        <item>Vila União</item>
     </string-array>
 
     <!-- CPTM -->

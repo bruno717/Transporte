@@ -15,7 +15,8 @@ public enum Line4YellowInfo {
     fradique_coutinho(5, R.array.line_4_yellow_fradique_coutinho_information, R.array.line_4_yellow_fradique_coutinho_at_the_station),
     faria_lima(6, R.array.line_4_yellow_faria_lima_information, R.array.line_4_yellow_faria_lima_at_the_station),
     pinheiros(7, R.array.line_4_yellow_pinheiros_information, R.array.line_4_yellow_pinheiros_at_the_station),
-    butanta(8, R.array.line_4_yellow_butanta_information, R.array.line_4_yellow_butanta_at_the_station);
+    butanta(8, R.array.line_4_yellow_butanta_information, R.array.line_4_yellow_butanta_at_the_station),
+    sao_paulo_morumbi(9, R.array.line_4_yellow_sao_paulo_morumbi_information, R.array.line_4_yellow_sao_paulo_morumbi_at_the_station);
 
     private int index;
     private int resArrayInformation;
@@ -29,34 +30,13 @@ public enum Line4YellowInfo {
 
     public static Line4YellowInfo getStationByPosition(int position) {
         Line4YellowInfo type = null;
-        switch (position) {
-            case 0:
-                type = luz;
+
+        for (int i = 0; i < Line4YellowInfo.values().length; i++) {
+            Line4YellowInfo info = Line4YellowInfo.values()[i];
+            if (info.index == position) {
+                type = info;
                 break;
-            case 1:
-                type = republica;
-                break;
-            case 2:
-                type = higienopolis_mackenzie;
-                break;
-            case 3:
-                type = paulista;
-                break;
-            case 4:
-                type = oscar_freire;
-                break;
-            case 5:
-                type = fradique_coutinho;
-                break;
-            case 6:
-                type = faria_lima;
-                break;
-            case 7:
-                type = pinheiros;
-                break;
-            case 8:
-                type = butanta;
-                break;
+            }
         }
         return type;
     }

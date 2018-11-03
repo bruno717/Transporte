@@ -4,7 +4,7 @@
     <!-- Line 3 Red -->
     <string-array name="line_5_lilac_capao_redendo_information">
         <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
-        <item></item>
+        <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV. CARLOS CALDEIRA FILHO, 4261</item>
         <item></item>
     </string-array>
@@ -17,7 +17,7 @@
 
     <string-array name="line_5_lilac_campo_limpo_information">
         <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
-        <item></item>
+        <item>04h40 às 01h00 SÁBADOS</item>
         <item>RUA NOANAMA, 85</item>
         <item></item>
     </string-array>
@@ -30,7 +30,7 @@
 
     <string-array name="line_5_lilac_vila_das_belezas_information">
         <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
-        <item></item>
+        <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV. DAS BELEZAS, 880</item>
         <item></item>
     </string-array>
@@ -42,7 +42,7 @@
 
     <string-array name="line_5_lilac_giovanni_gronchi_information">
         <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
-        <item></item>
+        <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV. JOÃO DIAS, 3569</item>
         <item></item>
     </string-array>
@@ -53,7 +53,7 @@
 
     <string-array name="line_5_lilac_santo_amaro_information">
         <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
-        <item></item>
+        <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV. GUIDO CALOI, 2221</item>
         <item></item>
     </string-array>
@@ -65,7 +65,7 @@
 
     <string-array name="line_5_lilac_largo_treze_information">
         <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
-        <item></item>
+        <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV PADRE JOSÉ MARIA COM RUA BARÃO DO RIO BRANCO.</item>
         <item></item>
     </string-array>
@@ -77,7 +77,7 @@
 
     <string-array name="line_5_lilac_adolfo_pinheiro_information">
         <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
-        <item></item>
+        <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV. ADOLFO PINHEIRO, 300</item>
         <item></item>
     </string-array>
@@ -89,7 +89,7 @@
 
     <string-array name="line_5_lilac_alto_da_boa_vista_information">
         <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
-        <item></item>
+        <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV. SANTO AMARO, 6960</item>
         <item></item>
     </string-array>
@@ -102,7 +102,7 @@
 
     <string-array name="line_5_lilac_borba_gato_information">
         <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
-        <item></item>
+        <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV. SANTO AMARO, 5869</item>
         <item></item>
     </string-array>
@@ -115,7 +115,7 @@
 
     <string-array name="line_5_lilac_brooklin_information">
         <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
-        <item></item>
+        <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV. SANTO AMARO, 5010</item>
         <item></item>
     </string-array>
@@ -128,7 +128,7 @@
 
     <string-array name="line_5_lilac_eucaliptos_information">
         <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
-        <item></item>
+        <item>04h40 às 01h00 SÁBADOS</item>
         <item>AV. IBIRAPUERA, 3144</item>
         <item></item>
     </string-array>
@@ -139,9 +139,70 @@
         <item>Paraciclos</item>
     </string-array>
 
+    <string-array name="line_5_lilac_moema_information">
+        <item>04h40 às 00h00 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. IBIRAPUERA, 2197</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_5_lilac_moema_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+    </string-array>
+
+    <string-array name="line_5_lilac_aacd_servidor_information">
+        <item>04h40 às 00h00 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. IBIRAPUERA, 2197</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_5_lilac_aacd_servidor_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+        <item>Paraciclos​​</item>
+    </string-array>
+
+    <string-array name="line_5_lilac_hospital_sao_paulo_information">
+        <item>04h40 às 00h00 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Pedro de Toledo, 937</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_5_lilac_hospital_sao_paulo_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+    </string-array>
+
+    <string-array name="line_5_lilac_santa_cruz_information">
+        <item>04h40 às 00h00 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida Domingos de Morais, 2474</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_5_lilac_santa_cruz_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+    </string-array>
+
+    <string-array name="line_5_lilac_chacara_klabin_information">
+        <item>04h40 às 00h00 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua Vergueiro, 3800</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_5_lilac_chacara_klabin_at_the_station">
+        <item>Elevador</item>
+        <item>Sanitários</item>
+    </string-array>
+
     <string-array name="line_5_lilac_direction">
         <item>Capão Redondo</item>
-        <item>Adolfo Pinheiro</item>
+        <item>Chácara Klabin</item>
     </string-array>
 
 </resources>

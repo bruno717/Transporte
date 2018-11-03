@@ -38,61 +38,13 @@ public enum Line7RubyInfo {
 
     public static Line7RubyInfo getStationByPosition(int position) {
         Line7RubyInfo type = null;
-        switch (position) {
-            case 0:
-                type = luz;
+
+        for (int i = 0; i < Line7RubyInfo.values().length; i++) {
+            Line7RubyInfo info = Line7RubyInfo.values()[i];
+            if (info.index == position) {
+                type = info;
                 break;
-            case 1:
-                type = palmeiras_barra_funda;
-                break;
-            case 2:
-                type = agua_branca;
-                break;
-            case 3:
-                type = lapa;
-                break;
-            case 4:
-                type = piqueri;
-                break;
-            case 5:
-                type = pirituba;
-                break;
-            case 6:
-                type = vila_clarice;
-                break;
-            case 7:
-                type = jaragua;
-                break;
-            case 8:
-                type = vila_aurora;
-                break;
-            case 9:
-                type = perus;
-                break;
-            case 10:
-                type = caieiras;
-                break;
-            case 11:
-                type = franco_da_rocha;
-                break;
-            case 12:
-                type = baltazar_fidelis;
-                break;
-            case 13:
-                type = francisco_morato;
-                break;
-            case 14:
-                type = botujuru;
-                break;
-            case 15:
-                type = campo_limpo_paulista;
-                break;
-            case 16:
-                type = varzea_paulista;
-                break;
-            case 17:
-                type = jundiai;
-                break;
+            }
         }
         return type;
     }

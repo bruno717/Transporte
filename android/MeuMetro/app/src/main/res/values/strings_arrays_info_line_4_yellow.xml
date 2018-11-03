@@ -111,9 +111,21 @@
         <item>Bicicletário</item>
     </string-array>
 
+    <string-array name="line_4_yellow_sao_paulo_morumbi_information">
+        <item>10h00 às 15h00 DOMINGO A SEXTA</item>
+        <item>10h00 às 15h00 SÁBADOS</item>
+        <item>Av. Deputado Jacob Salvador Zveibil, 50</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_4_yellow_sao_paulo_morumbi_at_the_station">
+        <item>Elevador</item>
+        <item>Bicicletário</item>
+    </string-array>
+
     <string-array name="line_4_yellow_direction">
         <item>Luz</item>
-        <item>Butantã</item>
+        <item>São Paulo-Morumbi</item>
     </string-array>
 
 </resources>

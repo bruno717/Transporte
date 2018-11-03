@@ -34,49 +34,13 @@ public enum Line2GreenInfo {
 
     public static Line2GreenInfo getStationByPosition(int position) {
         Line2GreenInfo type = null;
-        switch (position) {
-            case 0:
-                type = vila_prudente;
+
+        for (int i = 0; i < Line2GreenInfo.values().length; i++) {
+            Line2GreenInfo info = Line2GreenInfo.values()[i];
+            if (info.index == position) {
+                type = info;
                 break;
-            case 1:
-                type = tamanduatei;
-                break;
-            case 2:
-                type = sacoma;
-                break;
-            case 3:
-                type = alto_do_ipiranga;
-                break;
-            case 4:
-                type = santos_imigrantes;
-                break;
-            case 5:
-                type = chacara_klabin;
-                break;
-            case 6:
-                type = ana_rosa;
-                break;
-            case 7:
-                type = paraiso;
-                break;
-            case 8:
-                type = brigadeiro;
-                break;
-            case 9:
-                type = trianon_masp;
-                break;
-            case 10:
-                type = consolacao;
-                break;
-            case 11:
-                type = clinicas;
-                break;
-            case 12:
-                type = s_n_sra_de_fatima_sumare;
-                break;
-            case 13:
-                type = vila_madalena;
-                break;
+            }
         }
         return type;
     }

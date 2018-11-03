@@ -321,7 +321,7 @@ public class SmsDenunciationFragment extends Fragment implements View.OnFocusCha
         LineType lineType = LineType.getLineTypeByPosition(mIndexLine);
         new MaterialDialog.Builder(getActivity())
                 .title(getString(R.string.frag_sms_denunciation_input_hint_direction_train).replace("*", ""))
-                .items(getResources().getStringArray(LineType.getDirectionLineResByLineType(lineType)))
+                .items(getResources().getStringArray(lineType.getDirectionRes()))
                 .itemsCallbackSingleChoice(mIndexDirection, new MaterialDialog.ListCallbackSingleChoice() {
                     @Override
                     public boolean onSelection(MaterialDialog dialog, View itemView, int which, CharSequence text) {
@@ -337,7 +337,7 @@ public class SmsDenunciationFragment extends Fragment implements View.OnFocusCha
         LineType lineType = LineType.getLineTypeByPosition(mIndexLine);
         new MaterialDialog.Builder(getActivity())
                 .title(getString(R.string.frag_sms_denunciation_input_hint_next_station).replace("*", ""))
-                .items(getResources().getStringArray(LineType.getStationsByLineType(lineType)))
+                .items(getResources().getStringArray(lineType.getSeasonsRes()))
                 .itemsCallbackSingleChoice(mIndexNextStation, new MaterialDialog.ListCallbackSingleChoice() {
                     @Override
                     public boolean onSelection(MaterialDialog dialog, View itemView, int which, CharSequence text) {
