@@ -5,7 +5,7 @@ package br.com.bruno.meumetro.enums;
  */
 public enum ConnectionType {
 
-    HOMOLOGATION("http://192.168.1.7:8080/"),
+    HOMOLOGATION("http://192.168.1.4:8080/"),
     PRODUCTION("https://meumetro.herokuapp.com/");
 
     private String url;

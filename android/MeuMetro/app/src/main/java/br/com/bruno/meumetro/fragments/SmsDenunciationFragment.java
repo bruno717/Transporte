@@ -321,23 +321,28 @@ public class SmsDenunciationFragment extends Fragment implements View.OnFocusCha
     @OnClick(R.id.frag_sms_denunciation_button_direction)
     public void onClickShowModalDirection() {
         LineType lineType = LineType.getLineTypeByPosition(mIndexLine);
-        new MaterialDialog.Builder(getActivity())
-                .title(getString(R.string.frag_sms_denunciation_input_hint_direction_train).replace("*", ""))
-                .items(getResources().getStringArray(lineType.getDirectionRes()))
-                .itemsCallbackSingleChoice(mIndexDirection, new MaterialDialog.ListCallbackSingleChoice() {
-                    @Override
-                    public boolean onSelection(MaterialDialog dialog, View itemView, int which, CharSequence text) {
-                        mIndexDirection = which;
-                        mInputLayoutDirectionTrain.getEditText().setText(text);
-                        return false;
-                    }
-                }).show();
+        if (lineType != null) {
+            new MaterialDialog.Builder(getActivity())
+                    .title(getString(R.string.frag_sms_denunciation_input_hint_direction_train).replace("*", ""))
+                    .items(getResources().getStringArray(lineType.getDirectionRes()))
+                    .itemsCallbackSingleChoice(mIndexDirection, new MaterialDialog.ListCallbackSingleChoice() {
+                        @Override
+                        public boolean onSelection(MaterialDialog dialog, View itemView, int which, CharSequence text) {
+                            mIndexDirection = which;
+                            mInputLayoutDirectionTrain.getEditText().setText(text);
+                            return false;
+                        }
+                    }).show();
+        } else {
+            Toast.makeText(getContext(), R.string.frag_sms_denunciation_empty_field_line, Toast.LENGTH_SHORT).show();
+        }
     }
 
     @OnClick(R.id.frag_sms_denunciation_button_next_station)
     public void onClickShowModalNextStation() {
         LineType lineType = LineType.getLineTypeByPosition(mIndexLine);
-        new MaterialDialog.Builder(getActivity())
+        if (lineType != null) {
+            new MaterialDialog.Builder(getActivity())
                 .title(getString(R.string.frag_sms_denunciation_input_hint_next_station).replace("*", ""))
                 .items(getResources().getStringArray(lineType.getSeasonsRes()))
                 .itemsCallbackSingleChoice(mIndexNextStation, new MaterialDialog.ListCallbackSingleChoice() {
@@ -348,6 +353,9 @@ public class SmsDenunciationFragment extends Fragment implements View.OnFocusCha
                         return false;
                     }
                 }).show();
+        } else {
+            Toast.makeText(getContext(), R.string.frag_sms_denunciation_empty_field_line, Toast.LENGTH_SHORT).show();
+        }
     }
 
     @OnClick(R.id.frag_sms_denunciation_button_subject)
