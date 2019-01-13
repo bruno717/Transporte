@@ -1,5 +1,6 @@
 package br.com.bruno.meumetro.services.managers;
 
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -40,6 +41,7 @@ public class NotificationStatusManager {
     public Boolean mHasLoop = true;
     public long mSleepTime = 0;
 
+    private static final String NOTIFICATION_CHANNEL_ID = "10001";
     private Context mContext;
 
     public NotificationStatusManager(Context context) {
@@ -150,6 +152,12 @@ public class NotificationStatusManager {
                         .setContentText(mContext.getResources().getString(R.string.service_notification_status_change_status));
             } else {
                 notificationBuilder.setContentText(message.getSimpleDescription());
+            }
+
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+                NotificationChannel notificationChannel = new NotificationChannel(NOTIFICATION_CHANNEL_ID, mContext.getString(R.string.notification_status_manager), NotificationManager.IMPORTANCE_DEFAULT);
+                notificationBuilder.setChannelId(NOTIFICATION_CHANNEL_ID);
+                notifyManager.createNotificationChannel(notificationChannel);
             }
 
             notifyManager.notify(notificationType.getValue(), notificationBuilder.build());

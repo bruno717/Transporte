@@ -175,4 +175,7 @@
     <!-- Places Nearby Activity -->
     <string name="activity_places_nearby_toolbar_title">Locais próximos da estação</string>
 
+    <!-- Notification Status Manager -->
+    <string name="notification_status_manager">Locais próximos da estação</string>
+
 </resources>
