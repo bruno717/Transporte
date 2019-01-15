@@ -90,7 +90,7 @@ public class MeuMetroMessagingService extends FirebaseMessagingService {
 
     }
 
-    private void verifySettingsToMountNotification(Setting setting, Message message ) throws ParseException {
+    private void verifySettingsToMountNotification(Setting setting, Message message) throws ParseException {
         NotificationStatusManager manager = new NotificationStatusManager(getApplicationContext());
         NotificationType type = NotificationType.getNotification(message.getType());
         if ((setting != null && setting.getIsNotificationOfficial() != null && setting.getIsNotificationOfficial() && type == NotificationType.STATUS_OFFICIAL)
