@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Default App -->
     <string name="meu_metro_name">Meu Metro</string>
     <string name="meu_metro_metro">Metrô</string>
@@ -6,12 +6,12 @@
     <string name="meu_metro_snack_bar_action_try_again">Tentar novamente</string>
     <string name="meu_metro_message_positive">OK</string>
     <string name="meu_metro_message_negative">Cancelar</string>
-    <string name="meu_metro_message_no_connection">Você está sem conexão no momento!</string>
+    <string name="meu_metro_message_no_connection" tools:ignore="Typos">Você está sem conexão no momento!</string>
     <string name="meu_metro_progress_dialog_title_wait">Aguarde</string>
 
-    <string name="meu_metro_integer_price">4,00</string>
-    <string name="meu_metro_half_price">2,00</string>
-    <string name="meu_metro_integration_price">2,96</string>
+    <string name="meu_metro_integer_price">4,30</string>
+    <string name="meu_metro_half_price">2,15</string>
+    <string name="meu_metro_integration_price">3,18</string>
 
     <!-- Navigation Drawer -->
     <string name="navigation_drawer_text_view_price">Tarifas</string>

@@ -139,7 +139,7 @@ public class NotificationStatusManager {
             }
 
             NotificationManager notifyManager = (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
-            NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(mContext);
+            NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(mContext, NOTIFICATION_CHANNEL_ID);
             notificationBuilder
                     .setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION))
                     .setVibrate(new long[]{100, 300, 100, 300})
