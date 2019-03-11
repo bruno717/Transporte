@@ -20,8 +20,8 @@ android {
         applicationId "br.com.bruno.meumetro"
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 35
-        versionName "1.4.13"
+        versionCode 36
+        versionName "1.4.14"
         multiDexEnabled true
     }
     buildTypes {

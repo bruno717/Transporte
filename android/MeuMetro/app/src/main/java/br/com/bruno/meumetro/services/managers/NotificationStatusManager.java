@@ -120,7 +120,6 @@ public class NotificationStatusManager {
 
         try {
             NotificationCompat.InboxStyle inboxStyle = null;
-            String title;
 
             Intent notificationIntent = new Intent(mContext, MainActivity.class);
             notificationIntent.putExtra(MainActivity.MAIN_ACTIVITY_INTENT_KEY_IS_TAB_USER, notificationType == NotificationType.STATUS_BY_USER);
@@ -130,12 +129,9 @@ public class NotificationStatusManager {
             if (message.getLines().size() > 1) {
                 inboxStyle = new NotificationCompat.InboxStyle();
                 inboxStyle.setBigContentTitle(message.getTitle());
-                title = message.getTitle();
                 for (Line line : message.getLines()) {
                     inboxStyle.addLine(String.format(Locale.getDefault(), "%s - %s", line.getName(), line.getSituation()));
                 }
-            } else {
-                title = message.getLines().get(0).getName();
             }
 
             NotificationManager notifyManager = (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
@@ -143,7 +139,7 @@ public class NotificationStatusManager {
             notificationBuilder
                     .setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION))
                     .setVibrate(new long[]{100, 300, 100, 300})
-                    .setContentTitle(title)
+                    .setContentTitle(message.getTitle())
                     .setContentIntent(intent)
                     .setColor(ContextCompat.getColor(mContext, R.color.background_notification_blue))
                     .setAutoCancel(true)
