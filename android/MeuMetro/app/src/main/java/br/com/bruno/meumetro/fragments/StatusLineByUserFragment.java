@@ -63,13 +63,18 @@ public class StatusLineByUserFragment extends Fragment implements StatusLineOffi
     }
 
     @Override
+    public void onStart() {
+        super.onStart();
+        AnalyticsManager.generateLogScreenOpen(getString(R.string.frag_status_line_by_user_screen));
+    }
+
+    @Override
     public void onResume() {
         super.onResume();
         if (getActivity().getIntent().getBooleanExtra(MainActivity.MAIN_ACTIVITY_INTENT_KEY_IS_TAB_USER, false)) {
             getActivity().getIntent().removeExtra(MainActivity.MAIN_ACTIVITY_INTENT_KEY_IS_TAB_USER);
             setupRecyclerView();
         }
-        AnalyticsManager.generateLogScreenOpen(getString(R.string.frag_status_line_by_user_screen));
     }
 
     // UTILS

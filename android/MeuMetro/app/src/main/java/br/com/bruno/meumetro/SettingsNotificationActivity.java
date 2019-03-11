@@ -101,8 +101,8 @@ public class SettingsNotificationActivity extends AppCompatActivity implements S
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
+    protected void onStart() {
+        super.onStart();
         AnalyticsManager.generateLogScreenOpen(getString(R.string.activity_settings_notification));
     }
 

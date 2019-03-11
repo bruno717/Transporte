@@ -35,8 +35,8 @@ public class TransportMapActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
+    protected void onStart() {
+        super.onStart();
         AnalyticsManager.generateLogScreenOpen(getString(R.string.activity_transport_map));
     }
 

@@ -73,8 +73,8 @@ public class StationsOfTheLineFragment extends Fragment {
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
+    public void onStart() {
+        super.onStart();
         AnalyticsManager.generateLogScreenOpen(getString(R.string.frag_stations_of_the_line_screen));
     }
 

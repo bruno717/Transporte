@@ -56,8 +56,8 @@ public class StatusLineOfficialFragment extends Fragment {
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
+    public void onStart() {
+        super.onStart();
         AnalyticsManager.generateLogScreenOpen(getString(R.string.frag_status_line_official_screen));
     }
 

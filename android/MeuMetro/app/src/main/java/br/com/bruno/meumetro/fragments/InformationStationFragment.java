@@ -93,8 +93,8 @@ public class InformationStationFragment extends Fragment {
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
+    public void onStart() {
+        super.onStart();
         AnalyticsManager.generateLogScreenOpen(getString(R.string.frag_information_station_screen));
     }
 

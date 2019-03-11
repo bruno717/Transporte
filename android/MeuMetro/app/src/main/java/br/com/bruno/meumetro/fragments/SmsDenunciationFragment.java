@@ -91,8 +91,8 @@ public class SmsDenunciationFragment extends Fragment implements View.OnFocusCha
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
+    public void onStart() {
+        super.onStart();
         AnalyticsManager.generateLogScreenOpen(getString(R.string.frag_sms_denunciation));
     }
 
