@@ -10,6 +10,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
@@ -29,8 +30,10 @@ import br.com.bruno.meumetro.fragments.StatusLineByUserFragment;
 import br.com.bruno.meumetro.fragments.StatusLineOfficialFragment;
 import br.com.bruno.meumetro.interfaces.IServiceResponse;
 import br.com.bruno.meumetro.managers.SharedPreferenceManager;
+import br.com.bruno.meumetro.models.Price;
 import br.com.bruno.meumetro.models.settings.Setting;
 import br.com.bruno.meumetro.rest.AppVersionService;
+import br.com.bruno.meumetro.rest.PriceService;
 import br.com.bruno.meumetro.utils.DrawableUtils;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -110,15 +113,39 @@ public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerIt
 
     private View getHeaderNavigationDrawer() {
         View header = getLayoutInflater().inflate(R.layout.navigation_drawer_header, mViewMain, false);
-        TextView textViewIntegerPrice = (TextView) header.findViewById(R.id.navigation_drawer_header_text_view_integer_price);
-        TextView textViewHalfPrice = (TextView) header.findViewById(R.id.navigation_drawer_header_text_view_half_price);
-        TextView textViewIntegrationPrice = (TextView) header.findViewById(R.id.navigation_drawer_header_text_view_integration_price);
-
-        textViewIntegerPrice.setText(String.format(Locale.getDefault(), getString(R.string.navigation_drawer_text_view_integer_price), getString(R.string.meu_metro_integer_price)));
-        textViewHalfPrice.setText(String.format(Locale.getDefault(), getString(R.string.navigation_drawer_text_view_half_price), getString(R.string.meu_metro_half_price)));
-        textViewIntegrationPrice.setText(String.format(Locale.getDefault(), getString(R.string.navigation_drawer_text_view_integration_price), getString(R.string.meu_metro_integration_price)));
-
+        loadPriceInHeaderMenu(header);
         return header;
+    }
+
+    private void loadPriceInHeaderMenu(View header) {
+        if(header != null) {
+            final TextView textViewIntegerPrice = (TextView) header.findViewById(R.id.navigation_drawer_header_text_view_integer_price);
+            final TextView textViewHalfPrice = (TextView) header.findViewById(R.id.navigation_drawer_header_text_view_half_price);
+            final TextView textViewIntegrationPrice = (TextView) header.findViewById(R.id.navigation_drawer_header_text_view_integration_price);
+
+
+            Price price = SharedPreferenceManager.getPrice();
+            if (price != null) {
+                textViewIntegerPrice.setText(String.format(Locale.getDefault(), getString(R.string.navigation_drawer_text_view_integer_price), price.getEntire()));
+                textViewHalfPrice.setText(String.format(Locale.getDefault(), getString(R.string.navigation_drawer_text_view_half_price), price.getHalf()));
+                textViewIntegrationPrice.setText(String.format(Locale.getDefault(), getString(R.string.navigation_drawer_text_view_integration_price), price.getIntegration()));
+            }
+
+            new PriceService().loadPrice(new IServiceResponse<Price>() {
+                @Override
+                public void onSuccess(Price price) {
+                    SharedPreferenceManager.savePrice(price);
+                    textViewIntegerPrice.setText(String.format(Locale.getDefault(), getString(R.string.navigation_drawer_text_view_integer_price), price.getEntire()));
+                    textViewHalfPrice.setText(String.format(Locale.getDefault(), getString(R.string.navigation_drawer_text_view_half_price), price.getHalf()));
+                    textViewIntegrationPrice.setText(String.format(Locale.getDefault(), getString(R.string.navigation_drawer_text_view_integration_price), price.getIntegration()));
+                }
+
+                @Override
+                public void onError() {
+                    Log.i("", "");
+                }
+            });
+        }
     }
 
     private void setupTabLayout() {

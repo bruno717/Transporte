@@ -16,6 +16,7 @@ import java.util.Locale;
 import br.com.bruno.meumetro.adapters.StatusLineOfficialAdapter;
 import br.com.bruno.meumetro.application.MeuMetroApplication;
 import br.com.bruno.meumetro.models.Device;
+import br.com.bruno.meumetro.models.Price;
 import br.com.bruno.meumetro.models.settings.Setting;
 import br.com.bruno.meumetro.services.MeuMetroFirebaseInstanceIdService;
 
@@ -26,6 +27,7 @@ import br.com.bruno.meumetro.services.MeuMetroFirebaseInstanceIdService;
 public class SharedPreferenceManager {
 
     private static final String SHARED_PREFERENCES_SETTINGS = "SHARED_PREFERENCES_SETTINGS";
+    private static final String SHARED_PREFERENCES_PRICE = "SHARED_PREFERENCES_PRICE";
 
     public static void saveDeviceToken(Device device) {
 
@@ -99,6 +101,33 @@ public class SharedPreferenceManager {
         if (json.length() > 0) {
             try {
                 return new ObjectMapper().readValue(json, Setting.class);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return null;
+    }
+
+    public static void savePrice(Price price) {
+        try {
+            Context context = ActivityUtils.getTopActivity();
+            SharedPreferences.Editor editor = context.getSharedPreferences(context.getPackageName(), 0).edit();
+            String json = new ObjectMapper().writeValueAsString(price);
+            editor.remove(SHARED_PREFERENCES_PRICE).apply();
+            editor.putString(SHARED_PREFERENCES_PRICE, json);
+            editor.apply();
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static Price getPrice() {
+        Context context = ActivityUtils.getTopActivity();
+        SharedPreferences preferences = context.getSharedPreferences(context.getPackageName(), 0);
+        String json = preferences.getString(SHARED_PREFERENCES_PRICE, "");
+        if (json.length() > 0) {
+            try {
+                return new ObjectMapper().readValue(json, Price.class);
             } catch (IOException e) {
                 e.printStackTrace();
             }
