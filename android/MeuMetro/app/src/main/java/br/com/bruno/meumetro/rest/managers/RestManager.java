@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import br.com.bruno.meumetro.enums.ConnectionType;
 import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.jackson.JacksonConverterFactory;
 
@@ -31,11 +32,14 @@ public class RestManager {
     }
 
     public static OkHttpClient clientTimeout() {
+        HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
+        logging.setLevel(HttpLoggingInterceptor.Level.BODY);
         return new OkHttpClient()
                 .newBuilder()
                 .connectTimeout(SECONDS_TIMEOUT, TimeUnit.SECONDS)
                 .readTimeout(SECONDS_TIMEOUT, TimeUnit.SECONDS)
                 .writeTimeout(SECONDS_TIMEOUT, TimeUnit.SECONDS)
+                .addInterceptor(logging)
                 .build();
     }
 

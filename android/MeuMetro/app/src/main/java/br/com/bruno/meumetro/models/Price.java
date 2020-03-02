@@ -12,28 +12,4 @@ public class Price {
     private String half;
     private String integration;
 
-    public String getEntire() {
-        return entire;
-    }
-
-    public void setEntire(String entire) {
-        this.entire = entire;
-    }
-
-    public String getHalf() {
-        return half;
-    }
-
-    public void setHalf(String half) {
-        this.half = half;
-    }
-
-    public String getIntegration() {
-        return integration;
-    }
-
-    public void setIntegration(String integration) {
-        this.integration = integration;
-    }
-
 }

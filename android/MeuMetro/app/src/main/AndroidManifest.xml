@@ -21,8 +21,8 @@
             android:launchMode="singleTop"
             android:screenOrientation="portrait">
             <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -39,7 +39,9 @@
             android:name=".SmsDenunciationActivity"
             android:screenOrientation="portrait" />
 
-        <activity android:name=".TransportMapActivity" />
+        <activity
+            android:name=".TransportMapActivity"
+            android:screenOrientation="portrait" />
 
         <activity
             android:name=".PlacesNearbyActivity"
