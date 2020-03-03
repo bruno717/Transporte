@@ -58,6 +58,7 @@ public class StatusLineByUserFragment extends Fragment implements StatusLineOffi
         setHasOptionsMenu(true);
 
         setupSwipeRefresh();
+        setupRecyclerView();
 
         return view;
     }
@@ -78,7 +79,7 @@ public class StatusLineByUserFragment extends Fragment implements StatusLineOffi
     }
 
     // UTILS
-    public void setupRecyclerView() {
+    private void setupRecyclerView() {
         if (getActivity() != null && mHasLoadList) {
             mSwipeRefresh.setRefreshing(true);
             LinearLayoutManager manager = new LinearLayoutManager(getActivity());

@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerIt
     }
 
     private void loadPriceInHeaderMenu(View header) {
-        if(header != null) {
+        if (header != null) {
             final TextView textViewIntegerPrice = (TextView) header.findViewById(R.id.navigation_drawer_header_text_view_integer_price);
             final TextView textViewHalfPrice = (TextView) header.findViewById(R.id.navigation_drawer_header_text_view_half_price);
             final TextView textViewIntegrationPrice = (TextView) header.findViewById(R.id.navigation_drawer_header_text_view_integration_price);
@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerIt
         mViewPagerAdapter.addFragment(new StatusLineByUserFragment(), getString(R.string.activity_main_tab_layout_user).toUpperCase());
         mViewPager.setAdapter(mViewPagerAdapter);
         mTabLayout.setupWithViewPager(mViewPager);
-        mTabLayout.addOnTabSelectedListener(this);
+//        mTabLayout.addOnTabSelectedListener(this);
         if (mTabLayout.getTabAt(mPositionTab) != null)
             mTabLayout.getTabAt(mPositionTab).select();
     }
@@ -251,9 +251,6 @@ public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerIt
     @Override
     public void onTabSelected(TabLayout.Tab tab) {
         mPositionTab = tab.getPosition();
-        if (mPositionTab == 1) {
-            ((StatusLineByUserFragment) mViewPagerAdapter.getItem(tab.getPosition())).setupRecyclerView();
-        }
     }
 
     @Override
