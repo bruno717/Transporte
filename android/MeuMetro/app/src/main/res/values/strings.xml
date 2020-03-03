@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Default App -->
-    <string name="meu_metro_name">Meu Metro</string>
+    <string name="meu_metro_name">Meu Metrô</string>
     <string name="meu_metro_metro">Metrô</string>
     <string name="meu_metro_cptm">CPTM</string>
     <string name="meu_metro_snack_bar_action_try_again">Tentar novamente</string>

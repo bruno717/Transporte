@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="br.com.bruno.meumetro">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -12,7 +13,8 @@
         android:label="@string/meu_metro_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
 
 
         <!-- Activities -->
@@ -23,6 +25,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -39,9 +42,7 @@
             android:name=".SmsDenunciationActivity"
             android:screenOrientation="portrait" />
 
-        <activity
-            android:name=".TransportMapActivity"
-            android:screenOrientation="portrait" />
+        <activity android:name=".TransportMapActivity" />
 
         <activity
             android:name=".PlacesNearbyActivity"
