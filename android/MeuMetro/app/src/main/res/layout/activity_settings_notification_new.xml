@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@id/meu_metro_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
@@ -32,7 +32,7 @@
             android:textColor="@android:color/black"
             android:textSize="16sp" />
 
-        <android.support.v7.widget.SwitchCompat
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@id/activity_config_notification_switch_official"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
@@ -62,7 +62,7 @@
             android:textColor="@android:color/black"
             android:textSize="16sp" />
 
-        <android.support.v7.widget.SwitchCompat
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@id/activity_config_notification_switch_by_user"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
@@ -123,16 +123,16 @@
 
                 </RelativeLayout>
 
-                <android.support.v4.widget.NestedScrollView
+                <androidx.core.widget.NestedScrollView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <android.support.v7.widget.RecyclerView
+                    <androidx.recyclerview.widget.RecyclerView
                         android:id="@id/activity_config_notification_recycler_view_days"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
-                </android.support.v4.widget.NestedScrollView>
+                </androidx.core.widget.NestedScrollView>
 
             </LinearLayout>
 
@@ -173,16 +173,16 @@
 
                 </RelativeLayout>
 
-                <android.support.v4.widget.NestedScrollView
+                <androidx.core.widget.NestedScrollView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <android.support.v7.widget.RecyclerView
+                    <androidx.recyclerview.widget.RecyclerView
                         android:id="@id/activity_config_notification_recycler_view_hours"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
-                </android.support.v4.widget.NestedScrollView>
+                </androidx.core.widget.NestedScrollView>
 
 
             </LinearLayout>
@@ -224,16 +224,16 @@
 
                 </RelativeLayout>
 
-                <android.support.v4.widget.NestedScrollView
+                <androidx.core.widget.NestedScrollView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <android.support.v7.widget.RecyclerView
+                    <androidx.recyclerview.widget.RecyclerView
                         android:id="@id/activity_config_notification_recycler_view_lines"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
-                </android.support.v4.widget.NestedScrollView>
+                </androidx.core.widget.NestedScrollView>
 
 
             </LinearLayout>

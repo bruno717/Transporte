@@ -2,10 +2,10 @@ package br.com.bruno.meumetro.application;
 
 import android.content.Context;
 import android.provider.Settings;
-import android.support.multidex.MultiDexApplication;
+
+import androidx.multidex.MultiDexApplication;
 
 import com.blankj.utilcode.util.Utils;
-import com.crashlytics.android.Crashlytics;
 import com.google.firebase.iid.FirebaseInstanceId;
 
 import java.io.IOException;
@@ -15,7 +15,6 @@ import br.com.bruno.meumetro.database.MigrationMyDataBase;
 import br.com.bruno.meumetro.managers.SharedPreferenceManager;
 import br.com.bruno.meumetro.models.Device;
 import br.com.bruno.meumetro.rest.DeviceService;
-import io.fabric.sdk.android.Fabric;
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
 
@@ -33,9 +32,9 @@ public class MeuMetroApplication extends MultiDexApplication {
 
         CONTEXT_GLOBAL = getApplicationContext();
 
-        if (!BuildConfig.DEBUG) {
-            Fabric.with(this, new Crashlytics());
-        }
+//        if (!BuildConfig.DEBUG) {
+//            Fabric.with(this, new Crashlytics());
+//        }
 
         Utils.init(this);
 

@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'realm-android'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
 
 android {
     compileSdkVersion 30
@@ -19,8 +21,8 @@ android {
         applicationId "br.com.bruno.meumetro"
         minSdkVersion 16
         targetSdkVersion 30
-        versionCode 39
-        versionName "1.4.16"
+        versionCode 40
+        versionName "1.4.17"
         multiDexEnabled true
     }
     buildTypes {
@@ -36,6 +38,11 @@ android {
 
     lintOptions {
         disable 'InvalidPackage'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 
     packagingOptions {
@@ -68,17 +75,23 @@ repositories {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:multidex:1.0.3'
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.android.support:animated-vector-drawable:28.0.0'
-    implementation 'com.android.support:support-v13:28.0.0'
-    implementation 'com.android.support:support-v4:28.0.0'
-    implementation 'com.android.support:design:28.0.0'
-    implementation 'com.android.support:recyclerview-v7:28.0.0'
-    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.vectordrawable:vectordrawable-animated:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
 
-    implementation 'com.jakewharton:butterknife:8.8.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    // Firebase
+    implementation 'com.google.firebase:firebase-analytics:18.0.0'
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+    implementation 'com.google.firebase:firebase-crashlytics:17.1.0'
+
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+
     implementation 'io.reactivex:rxjava:1.1.0'
     implementation 'org.projectlombok:lombok:1.12.6'
     annotationProcessor "org.projectlombok:lombok:1.12.6"
@@ -105,13 +118,13 @@ dependencies {
     implementation 'com.daimajia.easing:library:2.0@aar'
     implementation 'com.daimajia.androidanimations:library:2.2@aar'
 
-    implementation 'com.google.firebase:firebase-messaging:11.8.0'
+    implementation 'com.google.firebase:firebase-messaging:15.0.2'
 
     // Crashlytics
-    implementation 'com.google.firebase:firebase-core:11.8.0'
-    implementation('com.crashlytics.sdk.android:crashlytics:2.9.1@aar') {
-        transitive = true
-    }
+//    implementation 'com.google.firebase:firebase-core:11.8.0'
+//    implementation('com.crashlytics.sdk.android:crashlytics:2.9.1@aar') {
+//        transitive = true
+//    }
 
     // Android java utils
     implementation 'com.blankj:utilcode:1.9.6'
@@ -126,4 +139,3 @@ dependencies {
     // Floating button
     implementation 'com.github.clans:fab:1.6.4'
 }
-apply plugin: 'com.google.gms.google-services'
