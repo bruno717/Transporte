@@ -18,6 +18,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.google.android.gms.ads.AdView;
 import com.google.android.material.tabs.TabLayout;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
@@ -36,6 +37,7 @@ import br.com.bruno.meumetro.models.Price;
 import br.com.bruno.meumetro.models.settings.Setting;
 import br.com.bruno.meumetro.rest.AppVersionService;
 import br.com.bruno.meumetro.rest.PriceService;
+import br.com.bruno.meumetro.utils.AdViewUtils;
 import br.com.bruno.meumetro.utils.DrawableUtils;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -52,6 +54,8 @@ public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerIt
     TabLayout mTabLayout;
     @BindView(R.id.meu_metro_view_pager)
     ViewPager mViewPager;
+    @BindView(R.id.adViewBanner)
+    AdView adViewBanner;
 
     private Drawer mDrawer;
     private TabsViewPagerAdapter mViewPagerAdapter;
@@ -69,6 +73,7 @@ public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerIt
         setupChangeRealmToPreference();
         verifyVersionApp();
         showStatusNotificationOptionDialog();
+        setupBanner();
     }
 
     private void setupChangeRealmToPreference() {
@@ -247,6 +252,10 @@ public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerIt
             }, 500);
 
         }
+    }
+
+    private void setupBanner() {
+        AdViewUtils.requestAd(adViewBanner);
     }
 
 

@@ -21,6 +21,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
+import com.google.android.gms.ads.AdView;
 
 import br.com.bruno.meumetro.adapters.SettingsAdapter;
 import br.com.bruno.meumetro.database.RealmDbHelper;
@@ -32,6 +33,7 @@ import br.com.bruno.meumetro.models.settings.DaySetting;
 import br.com.bruno.meumetro.models.settings.HourSetting;
 import br.com.bruno.meumetro.models.settings.LineSetting;
 import br.com.bruno.meumetro.models.settings.Setting;
+import br.com.bruno.meumetro.utils.AdViewUtils;
 import br.com.bruno.meumetro.utils.ArrayUtils;
 import br.com.bruno.meumetro.utils.DrawableUtils;
 import butterknife.BindView;
@@ -69,6 +71,8 @@ public class SettingsNotificationActivity extends AppCompatActivity implements S
     RelativeLayout mRelativeLayoutHours;
     @BindView(R.id.activity_config_notification_relative_layout_lines)
     RelativeLayout mRelativeLayoutLines;
+    @BindView(R.id.adViewBanner)
+    AdView adViewBanner;
 
     public static final int TIME_ANIMATION = 250;
 
@@ -95,6 +99,7 @@ public class SettingsNotificationActivity extends AppCompatActivity implements S
         mSwitchByUser.setOnCheckedChangeListener(onCheckedChangedSwitchByUser());
         setupRecyclerViews();
         populateFields();
+        setupBanner();
 
         mImageButtonDays.setImageDrawable(DrawableUtils.changeColorDrawable(this, R.mipmap.ic_add_black_24dp, R.color.primary));
         mImageButtonHours.setImageDrawable(DrawableUtils.changeColorDrawable(this, R.mipmap.ic_add_black_24dp, R.color.primary));
@@ -284,6 +289,10 @@ public class SettingsNotificationActivity extends AppCompatActivity implements S
         mRecyclerViewDays.setItemAnimator(null);
         mRecyclerViewHours.setItemAnimator(null);
         mRecyclerViewLines.setItemAnimator(null);
+    }
+
+    private void setupBanner() {
+        AdViewUtils.requestAd(adViewBanner);
     }
 
     // ONCLICK

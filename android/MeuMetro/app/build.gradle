@@ -21,8 +21,8 @@ android {
         applicationId "br.com.bruno.meumetro"
         minSdkVersion 16
         targetSdkVersion 30
-        versionCode 40
-        versionName "1.4.17"
+        versionCode 41
+        versionName "1.4.18"
         multiDexEnabled true
     }
     buildTypes {
@@ -119,6 +119,7 @@ dependencies {
     implementation 'com.daimajia.androidanimations:library:2.2@aar'
 
     implementation 'com.google.firebase:firebase-messaging:15.0.2'
+    implementation 'com.google.android.gms:play-services-ads:20.1.0'
 
     // Crashlytics
 //    implementation 'com.google.firebase:firebase-core:11.8.0'
