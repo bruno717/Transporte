@@ -14,7 +14,7 @@
         android:visibility="invisible"
         tools:text="Por motivo de Obras , os trens da linha 7 - RUBI estão circulando com intervalos maiores entre as estações LUZ e FRANCISCO MORATO ." />
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -103,5 +103,5 @@
             </LinearLayout>
 
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 </RelativeLayout>

@@ -1,8 +1,9 @@
 package br.com.bruno.meumetro.managers;
 
 import android.content.Context;
-import android.support.v7.widget.LinearLayoutManager;
 import android.util.AttributeSet;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 /**
  * Created by Bruno on 08/09/2016.

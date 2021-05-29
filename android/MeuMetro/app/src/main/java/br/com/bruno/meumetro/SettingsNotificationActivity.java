@@ -2,13 +2,6 @@ package br.com.bruno.meumetro;
 
 import android.animation.Animator;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SwitchCompat;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,9 +10,18 @@ import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SwitchCompat;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
+import com.google.android.gms.ads.AdView;
 
 import br.com.bruno.meumetro.adapters.SettingsAdapter;
 import br.com.bruno.meumetro.database.RealmDbHelper;
@@ -31,6 +33,7 @@ import br.com.bruno.meumetro.models.settings.DaySetting;
 import br.com.bruno.meumetro.models.settings.HourSetting;
 import br.com.bruno.meumetro.models.settings.LineSetting;
 import br.com.bruno.meumetro.models.settings.Setting;
+import br.com.bruno.meumetro.utils.AdViewUtils;
 import br.com.bruno.meumetro.utils.ArrayUtils;
 import br.com.bruno.meumetro.utils.DrawableUtils;
 import butterknife.BindView;
@@ -68,6 +71,8 @@ public class SettingsNotificationActivity extends AppCompatActivity implements S
     RelativeLayout mRelativeLayoutHours;
     @BindView(R.id.activity_config_notification_relative_layout_lines)
     RelativeLayout mRelativeLayoutLines;
+    @BindView(R.id.adViewBanner)
+    AdView adViewBanner;
 
     public static final int TIME_ANIMATION = 250;
 
@@ -94,6 +99,7 @@ public class SettingsNotificationActivity extends AppCompatActivity implements S
         mSwitchByUser.setOnCheckedChangeListener(onCheckedChangedSwitchByUser());
         setupRecyclerViews();
         populateFields();
+        setupBanner();
 
         mImageButtonDays.setImageDrawable(DrawableUtils.changeColorDrawable(this, R.mipmap.ic_add_black_24dp, R.color.primary));
         mImageButtonHours.setImageDrawable(DrawableUtils.changeColorDrawable(this, R.mipmap.ic_add_black_24dp, R.color.primary));
@@ -283,6 +289,10 @@ public class SettingsNotificationActivity extends AppCompatActivity implements S
         mRecyclerViewDays.setItemAnimator(null);
         mRecyclerViewHours.setItemAnimator(null);
         mRecyclerViewLines.setItemAnimator(null);
+    }
+
+    private void setupBanner() {
+        AdViewUtils.requestAd(adViewBanner);
     }
 
     // ONCLICK
