@@ -30,6 +30,8 @@ public class SharedPreferenceManager {
     private static final String SHARED_PREFERENCES_SETTINGS = "SHARED_PREFERENCES_SETTINGS";
     private static final String SHARED_PREFERENCES_PRICE = "SHARED_PREFERENCES_PRICE";
     private static final String SHARED_PREFERENCES_METROPOLITAN_MAP = "SHARED_PREFERENCES_METROPOLITAN_MAP";
+    private static final String SHOW_STATUS_NOTIFICATION_OPTION = "SHOW_STATUS_NOTIFICATION_OPTION";
+    private static final String SHOW_STATUS_EDIT_TOOLTIP = "SHOW_STATUS_EDIT_TOOLTIP";
 
     public static void saveDeviceToken(Device device) {
 
@@ -82,6 +84,32 @@ public class SharedPreferenceManager {
         Context context = ActivityUtils.getTopActivity();
         SharedPreferences preferences = context.getSharedPreferences(context.getPackageName(), 0);
         return preferences.getString(type == LINE_OFFICIAL ? StatusLineOfficialAdapter.STATUS_LINE_OFFICIAL_ADAPTER_KEY_PREFERENCE_OFFICIAL : StatusLineOfficialAdapter.STATUS_LINE_OFFICIAL_ADAPTER_KEY_PREFERENCE_BY_USER, "");
+    }
+
+    public static void saveStatusNotificationOption(boolean isShow) {
+        Context context = ActivityUtils.getTopActivity();
+        SharedPreferences.Editor editor = context.getSharedPreferences(context.getPackageName(), 0).edit();
+        editor.putBoolean(SHOW_STATUS_NOTIFICATION_OPTION, isShow);
+        editor.apply();
+    }
+
+    public static boolean getStatusNotificationOption() {
+        Context context = ActivityUtils.getTopActivity();
+        SharedPreferences preferences = context.getSharedPreferences(context.getPackageName(), 0);
+        return preferences.getBoolean(SHOW_STATUS_NOTIFICATION_OPTION, false);
+    }
+
+    public static void saveStatusEditTooltip(boolean isShow) {
+        Context context = ActivityUtils.getTopActivity();
+        SharedPreferences.Editor editor = context.getSharedPreferences(context.getPackageName(), 0).edit();
+        editor.putBoolean(SHOW_STATUS_EDIT_TOOLTIP, isShow);
+        editor.apply();
+    }
+
+    public static boolean getStatusEditTooltip() {
+        Context context = ActivityUtils.getTopActivity();
+        SharedPreferences preferences = context.getSharedPreferences(context.getPackageName(), 0);
+        return preferences.getBoolean(SHOW_STATUS_EDIT_TOOLTIP, false);
     }
 
     public static void saveSettings(Setting settings) {

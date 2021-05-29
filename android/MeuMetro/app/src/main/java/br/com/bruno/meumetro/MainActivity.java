@@ -3,6 +3,7 @@ package br.com.bruno.meumetro;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -67,6 +68,7 @@ public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerIt
         setupTabLayout();
         setupChangeRealmToPreference();
         verifyVersionApp();
+        showStatusNotificationOptionDialog();
     }
 
     private void setupChangeRealmToPreference() {
@@ -156,7 +158,7 @@ public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerIt
         mViewPagerAdapter.addFragment(new StatusLineByUserFragment(), getString(R.string.activity_main_tab_layout_user).toUpperCase());
         mViewPager.setAdapter(mViewPagerAdapter);
         mTabLayout.setupWithViewPager(mViewPager);
-//        mTabLayout.addOnTabSelectedListener(this);
+        mTabLayout.addOnTabSelectedListener(this);
         if (mTabLayout.getTabAt(mPositionTab) != null)
             mTabLayout.getTabAt(mPositionTab).select();
     }
@@ -198,6 +200,55 @@ public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerIt
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url + appPackageName)));
         }
     }
+
+    private void showStatusNotificationOptionDialog() {
+        Setting setting = SharedPreferenceManager.getSetting(this);
+        boolean statusNotificationOption = SharedPreferenceManager.getStatusNotificationOption();
+        if ((setting == null || !setting.getIsNotificationOfficial() && !setting.getIsNotificationByUser()) && !statusNotificationOption) {
+            SharedPreferenceManager.saveStatusNotificationOption(true);
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    new MaterialDialog.Builder(MainActivity.this)
+                            .title(R.string.activity_main_dialog_status_notification_title)
+                            .content(R.string.activity_main_dialog_status_notification_content)
+                            .negativeColor(ContextCompat.getColor(MainActivity.this, R.color.red_status_stopped))
+                            .negativeText(R.string.activity_main_dialog_status_notification_negative)
+                            .positiveText(R.string.activity_main_dialog_status_notification_positive)
+                            .onPositive(new MaterialDialog.SingleButtonCallback() {
+                                @Override
+                                public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
+                                    startActivity(new Intent(MainActivity.this, SettingsNotificationActivity.class));
+                                }
+                            })
+                            .show();
+                }
+            }, 500);
+
+        }
+
+    }
+
+    private void showInfoEditStatusDialog() {
+        boolean statusEditTooltip = SharedPreferenceManager.getStatusEditTooltip();
+
+        if (!statusEditTooltip) {
+            SharedPreferenceManager.saveStatusEditTooltip(true);
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    new MaterialDialog.Builder(MainActivity.this)
+                            .title(R.string.activity_main_dialog_edit_status_tooltip_title)
+                            .content(R.string.activity_main_dialog_edit_status_tooltip_content)
+                            .negativeColor(ContextCompat.getColor(MainActivity.this, R.color.red_status_stopped))
+                            .positiveText(R.string.meu_metro_message_positive)
+                            .show();
+                }
+            }, 500);
+
+        }
+    }
+
 
     @Override
     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
@@ -252,6 +303,9 @@ public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerIt
     @Override
     public void onTabSelected(TabLayout.Tab tab) {
         mPositionTab = tab.getPosition();
+        if (tab.getPosition() == 1) {
+            showInfoEditStatusDialog();
+        }
     }
 
     @Override
