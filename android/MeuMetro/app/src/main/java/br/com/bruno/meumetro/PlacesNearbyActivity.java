@@ -3,15 +3,15 @@ package br.com.bruno.meumetro;
 import android.location.Address;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.crashlytics.android.Crashlytics;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
+import androidx.viewpager.widget.ViewPager;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.android.material.tabs.TabLayout;
 
 import java.io.IOException;
 
@@ -22,6 +22,8 @@ import br.com.bruno.meumetro.managers.GeoLocationManager;
 import br.com.bruno.meumetro.models.Station;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+
+//import com.crashlytics.android.Crashlytics;
 
 /**
  * Created by Bruno on 03/12/2017.
@@ -71,7 +73,7 @@ public class PlacesNearbyActivity extends AppCompatActivity {
                 if (getSupportActionBar() != null)
                     getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             } catch (IOException e) {
-                Crashlytics.logException(e);
+//                Crashlytics.logException(e);
                 e.printStackTrace();
             }
             if (Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT_WATCH) {

@@ -1,17 +1,18 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Default App -->
-    <string name="meu_metro_name">Meu Metro</string>
+    <string name="meu_metro_name">Status Metrô</string>
     <string name="meu_metro_metro">Metrô</string>
     <string name="meu_metro_cptm">CPTM</string>
     <string name="meu_metro_snack_bar_action_try_again">Tentar novamente</string>
     <string name="meu_metro_message_positive">OK</string>
     <string name="meu_metro_message_negative">Cancelar</string>
-    <string name="meu_metro_message_no_connection">Você está sem conexão no momento!</string>
+    <string name="meu_metro_message_no_connection" tools:ignore="Typos">Você está sem conexão no momento!</string>
     <string name="meu_metro_progress_dialog_title_wait">Aguarde</string>
+    <string name="ad_mob_banner_default_id">ca-app-pub-6868544844277272/3413724457</string>
 
-    <string name="meu_metro_integer_price">4,00</string>
-    <string name="meu_metro_half_price">2,00</string>
-    <string name="meu_metro_integration_price">2,96</string>
+    <string name="meu_metro_integer_price">4,30</string>
+    <string name="meu_metro_half_price">2,15</string>
+    <string name="meu_metro_integration_price">3,18</string>
 
     <!-- Navigation Drawer -->
     <string name="navigation_drawer_text_view_price">Tarifas</string>
@@ -24,9 +25,16 @@
     <string name="activity_main_tab_layout_official">Oficial</string>
     <string name="activity_main_tab_layout_user">Usuário</string>
     <string name="activity_main_dialog_app_version_title">Versão desatualizada</string>
-    <string name="activity_main_dialog_app_version_content">Está disponível uma nova versão do Meu Metro, clique em atualizar para receber uma versão mais recente com novidades e correções.</string>
+    <string name="activity_main_dialog_app_version_content">Está disponível uma nova versão do Status Metrô, clique em atualizar para receber uma versão mais recente com novidades e correções.</string>
     <string name="activity_main_dialog_app_version_positive">Atualizar</string>
     <string name="activity_main_dialog_app_version_negative">Depois</string>
+    <string name="activity_main_dialog_status_notification_title">Crie notificações</string>
+    <string name="activity_main_dialog_status_notification_content">Você pode escolher os dias e horários para que o Status Metrô informe se a(s) linha(s) que você costuma pegar está com algum problema, de uma forma prática. É só você abrir o menu lateral e ir em configurações.\n\nMas se desejar configurar as notificações agora é só apertar o \"Configurar agora\" abaixo:</string>
+    <string name="activity_main_dialog_status_notification_positive">Configurar agora</string>
+    <string name="activity_main_dialog_status_notification_negative">Depois</string>
+
+    <string name="activity_main_dialog_edit_status_tooltip_title">Altere o status de uma linha</string>
+    <string name="activity_main_dialog_edit_status_tooltip_content">Você está em uma linha que está com \"velocidade reduzida\" ou outro problema e o site do Metrô e da CPTM informam que a linha está com \"operação normal\"?\n\nAjude outros usuários a se informar da situação atual alterando o status da linha. É só você apertar no \"lápis\" na linha em que você deseja alterar.</string>
 
     <!-- Navigation Drawer -->
     <string name="navigation_drawer_transport_map">Mapa</string>
@@ -176,5 +184,8 @@
     <string name="activity_places_nearby_toolbar_title">Locais próximos da estação</string>
     <string name="activity_places_nearby_tab_layout_tab_map">Mapa</string>
     <string name="activity_places_nearby_tab_layout_tab_list">Lista</string>
+
+    <!-- Notification Status Manager -->
+    <string name="notification_status_manager">Locais próximos da estação</string>
 
 </resources>

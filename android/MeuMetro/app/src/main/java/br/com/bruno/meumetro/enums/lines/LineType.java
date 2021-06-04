@@ -1,6 +1,7 @@
 package br.com.bruno.meumetro.enums.lines;
 
-import android.support.annotation.ArrayRes;
+
+import androidx.annotation.ArrayRes;
 
 import br.com.bruno.meumetro.R;
 

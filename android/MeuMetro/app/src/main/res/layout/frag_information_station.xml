@@ -38,8 +38,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:text="@string/frag_information_station_text_view_localization"
             android:textColor="@android:color/black"
             android:textSize="18sp"
@@ -55,14 +55,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:text="@string/frag_information_station_text_view_has_in_the_station"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@id/meu_metro_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -75,9 +75,9 @@
         android:id="@id/frag_information_station_floating_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
         android:src="@mipmap/ic_place_white_24dp"
         app:fab_colorNormal="@color/primary"
         app:fab_colorPressed="@color/primary_dark"

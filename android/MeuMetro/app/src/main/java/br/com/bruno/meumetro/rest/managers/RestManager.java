@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import br.com.bruno.meumetro.enums.ConnectionType;
 import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.jackson.JacksonConverterFactory;
 
@@ -15,7 +16,7 @@ public class RestManager {
 
     private static final int SECONDS_TIMEOUT = 40;
 
-    public static final String BASE_URL = ConnectionType.HOMOLOGATION.getUrl();
+    public static final String BASE_URL = ConnectionType.PRODUCTION.getUrl();
 
     private static final String BASIC_AUTHENTICATE_USER_NAME = "50722f1edc4efb34a5adb1ebd7af0a9c"; // meumetro
     private static final String BASIC_AUTHENTICATE_PASSWORD = "e871f5a73c097ec22f27ebe917ed9f87"; // meumetrosecurity
@@ -31,11 +32,14 @@ public class RestManager {
     }
 
     public static OkHttpClient clientTimeout() {
+        HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
+        logging.setLevel(HttpLoggingInterceptor.Level.BODY);
         return new OkHttpClient()
                 .newBuilder()
                 .connectTimeout(SECONDS_TIMEOUT, TimeUnit.SECONDS)
                 .readTimeout(SECONDS_TIMEOUT, TimeUnit.SECONDS)
                 .writeTimeout(SECONDS_TIMEOUT, TimeUnit.SECONDS)
+                .addInterceptor(logging)
                 .build();
     }
 

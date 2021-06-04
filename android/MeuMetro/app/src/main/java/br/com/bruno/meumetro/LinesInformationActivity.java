@@ -1,19 +1,21 @@
 package br.com.bruno.meumetro;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.crashlytics.android.Crashlytics;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.android.gms.ads.AdView;
 
 import java.io.IOException;
 
 import br.com.bruno.meumetro.fragments.StationsOfTheLineFragment;
 import br.com.bruno.meumetro.models.Line;
+import br.com.bruno.meumetro.utils.AdViewUtils;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -24,6 +26,8 @@ public class LinesInformationActivity extends AppCompatActivity {
 
     @BindView(R.id.meu_metro_toolbar)
     Toolbar mToolbar;
+    @BindView(R.id.adViewBanner)
+    AdView adViewBanner;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -31,6 +35,7 @@ public class LinesInformationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_lines_information);
         ButterKnife.bind(this);
 
+        setupBanner();
         setupToolbar();
         setupFragment();
     }
@@ -47,7 +52,7 @@ public class LinesInformationActivity extends AppCompatActivity {
         try {
             line = new ObjectMapper().readValue(getIntent().getStringExtra(LinesInformationActivity.class.getName()), Line.class);
         } catch (IOException e) {
-            Crashlytics.logException(e);
+//            Crashlytics.logException(e);
             e.printStackTrace();
         }
         getSupportFragmentManager().beginTransaction()
@@ -57,6 +62,10 @@ public class LinesInformationActivity extends AppCompatActivity {
 
     public Toolbar getToolbar() {
         return mToolbar;
+    }
+
+    private void setupBanner() {
+        AdViewUtils.requestAd(adViewBanner);
     }
 
     @Override

@@ -2,10 +2,11 @@ package br.com.bruno.meumetro;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+
+import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.view.MenuItem;
 import android.webkit.WebView;
 
@@ -32,11 +33,12 @@ public class TransportMapActivity extends AppCompatActivity {
 
         setupToolbar();
         setupWebView();
+
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
+    protected void onStart() {
+        super.onStart();
         AnalyticsManager.generateLogScreenOpen(getString(R.string.activity_transport_map));
     }
 
@@ -46,6 +48,41 @@ public class TransportMapActivity extends AppCompatActivity {
         if (getSupportActionBar() != null)
             getSupportActionBar().setTitle(R.string.activity_transport_map_toolbar_title);
     }
+
+//    private void loadMetropolitanMap() {
+//        try {
+//            Long dateTime = null;
+//            MetropolitanMap metropolitanMap = SharedPreferenceManager.getMetropolitanMap();
+//            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ss", Locale.getDefault());
+//            if (metropolitanMap != null) {
+//                dateTime = dateFormat.parse(metropolitanMap.getModificationDate()).getTime();
+//            }
+//            new MetropolitanMapService().getMetropolitanMap(dateTime, new IServiceResponse<MetropolitanMap>() {
+//                @Override
+//                public void onSuccess(MetropolitanMap metropolitanMap) {
+//                    SharedPreferenceManager.saveMetropolitanMap(metropolitanMap);
+//                    setupMetropolitanMapImage();
+//                }
+//
+//                @Override
+//                public void onError() {
+//                    progressBar.setVisibility(View.GONE);
+//                }
+//            });
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
+//
+//    private void setupMetropolitanMapImage() {
+//        MetropolitanMap metropolitanMap = SharedPreferenceManager.getMetropolitanMap();
+//        if (metropolitanMap != null) {
+//            progressBar.setVisibility(View.GONE);
+//            imageView.setVisibility(View.VISIBLE);
+//            Bitmap bitmap = BitmapUtils.base64ToBitmap(metropolitanMap.getMap());
+//            imageView.setImageBitmap(bitmap);
+//        }
+//    }
 
     private void setupWebView() {
         if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {

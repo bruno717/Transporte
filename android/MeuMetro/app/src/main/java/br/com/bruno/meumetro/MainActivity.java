@@ -3,19 +3,23 @@ package br.com.bruno.meumetro;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.TabLayout;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import android.os.Handler;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.core.content.ContextCompat;
+import androidx.viewpager.widget.ViewPager;
+
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.google.android.gms.ads.AdView;
+import com.google.android.material.tabs.TabLayout;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
@@ -29,8 +33,11 @@ import br.com.bruno.meumetro.fragments.StatusLineByUserFragment;
 import br.com.bruno.meumetro.fragments.StatusLineOfficialFragment;
 import br.com.bruno.meumetro.interfaces.IServiceResponse;
 import br.com.bruno.meumetro.managers.SharedPreferenceManager;
+import br.com.bruno.meumetro.models.Price;
 import br.com.bruno.meumetro.models.settings.Setting;
 import br.com.bruno.meumetro.rest.AppVersionService;
+import br.com.bruno.meumetro.rest.PriceService;
+import br.com.bruno.meumetro.utils.AdViewUtils;
 import br.com.bruno.meumetro.utils.DrawableUtils;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -47,6 +54,8 @@ public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerIt
     TabLayout mTabLayout;
     @BindView(R.id.meu_metro_view_pager)
     ViewPager mViewPager;
+    @BindView(R.id.adViewBanner)
+    AdView adViewBanner;
 
     private Drawer mDrawer;
     private TabsViewPagerAdapter mViewPagerAdapter;
@@ -63,6 +72,8 @@ public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerIt
         setupTabLayout();
         setupChangeRealmToPreference();
         verifyVersionApp();
+        showStatusNotificationOptionDialog();
+        setupBanner();
     }
 
     private void setupChangeRealmToPreference() {
@@ -110,15 +121,39 @@ public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerIt
 
     private View getHeaderNavigationDrawer() {
         View header = getLayoutInflater().inflate(R.layout.navigation_drawer_header, mViewMain, false);
-        TextView textViewIntegerPrice = (TextView) header.findViewById(R.id.navigation_drawer_header_text_view_integer_price);
-        TextView textViewHalfPrice = (TextView) header.findViewById(R.id.navigation_drawer_header_text_view_half_price);
-        TextView textViewIntegrationPrice = (TextView) header.findViewById(R.id.navigation_drawer_header_text_view_integration_price);
-
-        textViewIntegerPrice.setText(String.format(Locale.getDefault(), getString(R.string.navigation_drawer_text_view_integer_price), getString(R.string.meu_metro_integer_price)));
-        textViewHalfPrice.setText(String.format(Locale.getDefault(), getString(R.string.navigation_drawer_text_view_half_price), getString(R.string.meu_metro_half_price)));
-        textViewIntegrationPrice.setText(String.format(Locale.getDefault(), getString(R.string.navigation_drawer_text_view_integration_price), getString(R.string.meu_metro_integration_price)));
-
+        loadPriceInHeaderMenu(header);
         return header;
+    }
+
+    private void loadPriceInHeaderMenu(View header) {
+        if (header != null) {
+            final TextView textViewIntegerPrice = (TextView) header.findViewById(R.id.navigation_drawer_header_text_view_integer_price);
+            final TextView textViewHalfPrice = (TextView) header.findViewById(R.id.navigation_drawer_header_text_view_half_price);
+            final TextView textViewIntegrationPrice = (TextView) header.findViewById(R.id.navigation_drawer_header_text_view_integration_price);
+
+
+            Price price = SharedPreferenceManager.getPrice();
+            if (price != null) {
+                textViewIntegerPrice.setText(String.format(Locale.getDefault(), getString(R.string.navigation_drawer_text_view_integer_price), price.getEntire()));
+                textViewHalfPrice.setText(String.format(Locale.getDefault(), getString(R.string.navigation_drawer_text_view_half_price), price.getHalf()));
+                textViewIntegrationPrice.setText(String.format(Locale.getDefault(), getString(R.string.navigation_drawer_text_view_integration_price), price.getIntegration()));
+            }
+
+            new PriceService().loadPrice(new IServiceResponse<Price>() {
+                @Override
+                public void onSuccess(Price price) {
+                    SharedPreferenceManager.savePrice(price);
+                    textViewIntegerPrice.setText(String.format(Locale.getDefault(), getString(R.string.navigation_drawer_text_view_integer_price), price.getEntire()));
+                    textViewHalfPrice.setText(String.format(Locale.getDefault(), getString(R.string.navigation_drawer_text_view_half_price), price.getHalf()));
+                    textViewIntegrationPrice.setText(String.format(Locale.getDefault(), getString(R.string.navigation_drawer_text_view_integration_price), price.getIntegration()));
+                }
+
+                @Override
+                public void onError() {
+                    Log.i("", "");
+                }
+            });
+        }
     }
 
     private void setupTabLayout() {
@@ -170,6 +205,59 @@ public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerIt
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url + appPackageName)));
         }
     }
+
+    private void showStatusNotificationOptionDialog() {
+        Setting setting = SharedPreferenceManager.getSetting(this);
+        boolean statusNotificationOption = SharedPreferenceManager.getStatusNotificationOption();
+        if ((setting == null || !setting.getIsNotificationOfficial() && !setting.getIsNotificationByUser()) && !statusNotificationOption) {
+            SharedPreferenceManager.saveStatusNotificationOption(true);
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    new MaterialDialog.Builder(MainActivity.this)
+                            .title(R.string.activity_main_dialog_status_notification_title)
+                            .content(R.string.activity_main_dialog_status_notification_content)
+                            .negativeColor(ContextCompat.getColor(MainActivity.this, R.color.red_status_stopped))
+                            .negativeText(R.string.activity_main_dialog_status_notification_negative)
+                            .positiveText(R.string.activity_main_dialog_status_notification_positive)
+                            .onPositive(new MaterialDialog.SingleButtonCallback() {
+                                @Override
+                                public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
+                                    startActivity(new Intent(MainActivity.this, SettingsNotificationActivity.class));
+                                }
+                            })
+                            .show();
+                }
+            }, 500);
+
+        }
+
+    }
+
+    private void showInfoEditStatusDialog() {
+        boolean statusEditTooltip = SharedPreferenceManager.getStatusEditTooltip();
+
+        if (!statusEditTooltip) {
+            SharedPreferenceManager.saveStatusEditTooltip(true);
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    new MaterialDialog.Builder(MainActivity.this)
+                            .title(R.string.activity_main_dialog_edit_status_tooltip_title)
+                            .content(R.string.activity_main_dialog_edit_status_tooltip_content)
+                            .negativeColor(ContextCompat.getColor(MainActivity.this, R.color.red_status_stopped))
+                            .positiveText(R.string.meu_metro_message_positive)
+                            .show();
+                }
+            }, 500);
+
+        }
+    }
+
+    private void setupBanner() {
+        AdViewUtils.requestAd(adViewBanner);
+    }
+
 
     @Override
     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
@@ -224,8 +312,8 @@ public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerIt
     @Override
     public void onTabSelected(TabLayout.Tab tab) {
         mPositionTab = tab.getPosition();
-        if (mPositionTab == 1) {
-            ((StatusLineByUserFragment) mViewPagerAdapter.getItem(tab.getPosition())).setupRecyclerView();
+        if (tab.getPosition() == 1) {
+            showInfoEditStatusDialog();
         }
     }
 

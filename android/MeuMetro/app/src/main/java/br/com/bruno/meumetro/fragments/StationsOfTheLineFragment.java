@@ -2,18 +2,18 @@ package br.com.bruno.meumetro.fragments;
 
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.ActionBar;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.crashlytics.android.Crashlytics;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -54,7 +54,7 @@ public class StationsOfTheLineFragment extends Fragment {
                 bundle.putString(STATIONS_OF_THE_LINE_FRAGMENT_LINE_INTENT_KEY, json);
                 fragment.setArguments(bundle);
             } catch (JsonProcessingException e) {
-                Crashlytics.logException(e);
+//                Crashlytics.logException(e);
                 e.printStackTrace();
             }
         }
@@ -75,8 +75,8 @@ public class StationsOfTheLineFragment extends Fragment {
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
+    public void onStart() {
+        super.onStart();
         AnalyticsManager.generateLogScreenOpen(getString(R.string.frag_stations_of_the_line_screen));
     }
 
@@ -97,7 +97,7 @@ public class StationsOfTheLineFragment extends Fragment {
                     getActivity().getWindow().setStatusBarColor(ContextCompat.getColor(getActivity(), mLine.getColorBackground()));
                 }
             } catch (IOException e) {
-                Crashlytics.logException(e);
+//                Crashlytics.logException(e);
                 e.printStackTrace();
             }
         }

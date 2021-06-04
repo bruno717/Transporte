@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@id/meu_metro_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
@@ -15,54 +15,58 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
     <RelativeLayout
+        android:id="@+id/status_official_relative"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/meu_metro_toolbar"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
             android:layout_centerInParent="true"
-            android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="12dp"
             android:text="@string/activity_settings_notification_hint_switch_official"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
 
-        <android.support.v7.widget.SwitchCompat
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@id/activity_config_notification_switch_official"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="16dp" />
+            android:layout_marginRight="16dp" />
 
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/status_user_relative"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status_official_relative">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
             android:layout_centerInParent="true"
-            android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/activity_settings_notification_hint_switch_by_user"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
 
-        <android.support.v7.widget.SwitchCompat
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@id/activity_config_notification_switch_by_user"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
@@ -77,8 +81,9 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/status_user_relative"
         android:clipToPadding="false"
-        android:paddingBottom="32dp">
+        android:paddingBottom="72dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -96,16 +101,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
                     android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:paddingStart="16dp">
+                    android:paddingEnd="16dp"
+                    android:paddingRight="16dp">
 
                     <TextView
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
                         android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
                         android:layout_centerInParent="true"
                         android:text="@string/activity_settings_notification_hint_lines_days_utilization"
                         android:textColor="@android:color/black"
@@ -123,16 +128,16 @@
 
                 </RelativeLayout>
 
-                <android.support.v4.widget.NestedScrollView
+                <androidx.core.widget.NestedScrollView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <android.support.v7.widget.RecyclerView
+                    <androidx.recyclerview.widget.RecyclerView
                         android:id="@id/activity_config_notification_recycler_view_days"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
-                </android.support.v4.widget.NestedScrollView>
+                </androidx.core.widget.NestedScrollView>
 
             </LinearLayout>
 
@@ -146,16 +151,16 @@
                     android:id="@id/activity_config_notification_relative_layout_hours"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
                     android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:paddingStart="16dp">
+                    android:paddingEnd="16dp"
+                    android:paddingRight="16dp">
 
                     <TextView
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
                         android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
                         android:layout_centerInParent="true"
                         android:text="@string/activity_settings_notification_hint_lines_hours_utilization"
                         android:textColor="@android:color/black"
@@ -173,16 +178,16 @@
 
                 </RelativeLayout>
 
-                <android.support.v4.widget.NestedScrollView
+                <androidx.core.widget.NestedScrollView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <android.support.v7.widget.RecyclerView
+                    <androidx.recyclerview.widget.RecyclerView
                         android:id="@id/activity_config_notification_recycler_view_hours"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
-                </android.support.v4.widget.NestedScrollView>
+                </androidx.core.widget.NestedScrollView>
 
 
             </LinearLayout>
@@ -197,16 +202,16 @@
                     android:id="@id/activity_config_notification_relative_layout_lines"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
                     android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:paddingStart="16dp">
+                    android:paddingEnd="16dp"
+                    android:paddingRight="16dp">
 
                     <TextView
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
                         android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
                         android:layout_centerInParent="true"
                         android:text="@string/activity_settings_notification_hint_lines"
                         android:textColor="@android:color/black"
@@ -224,21 +229,31 @@
 
                 </RelativeLayout>
 
-                <android.support.v4.widget.NestedScrollView
+                <androidx.core.widget.NestedScrollView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <android.support.v7.widget.RecyclerView
+                    <androidx.recyclerview.widget.RecyclerView
                         android:id="@id/activity_config_notification_recycler_view_lines"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
-                </android.support.v4.widget.NestedScrollView>
+                </androidx.core.widget.NestedScrollView>
 
 
             </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
-</LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        app:adSize="BANNER"
+        app:adUnitId="@string/ad_mob_banner_default_id" />
+</RelativeLayout>
 

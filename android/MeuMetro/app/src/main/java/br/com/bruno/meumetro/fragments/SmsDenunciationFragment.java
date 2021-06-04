@@ -1,30 +1,18 @@
 package br.com.bruno.meumetro.fragments;
 
-import android.Manifest;
-import android.app.Activity;
-import android.app.PendingIntent;
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
-import android.content.pm.PackageManager;
-import android.os.Build;
+import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.Snackbar;
-import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.telephony.SmsManager;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.fragment.app.Fragment;
+
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -36,9 +24,10 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
-import com.crashlytics.android.Crashlytics;
+//import com.crashlytics.android.Crashlytics;
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
+import com.google.android.material.textfield.TextInputLayout;
 
 import java.util.Locale;
 
@@ -58,8 +47,6 @@ public class SmsDenunciationFragment extends Fragment implements View.OnFocusCha
 
     private final String NUMBER_METRO = "11973332252";
     private final String NUMBER_CPTM = "11971504949";
-
-    private final static int REQUEST_SEND_SMS = 101;
 
     @BindView(R.id.meu_metro_main_view)
     CoordinatorLayout mMainView;
@@ -92,9 +79,6 @@ public class SmsDenunciationFragment extends Fragment implements View.OnFocusCha
     private int mCountLengthSubject = 0;
     private int mCountLengthDetails = 0;
     private String mNumberSend;
-    private MaterialDialog mProgressDialog;
-    private boolean isScreenShow = true;
-    private boolean isNeedBackScreen = false;
 
     @Nullable
     @Override
@@ -105,44 +89,14 @@ public class SmsDenunciationFragment extends Fragment implements View.OnFocusCha
 
         setupToolbar();
         setupWatcherListeners();
-        hasPermissionSendSms();
 
         return view;
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
-        isScreenShow = true;
+    public void onStart() {
+        super.onStart();
         AnalyticsManager.generateLogScreenOpen(getString(R.string.frag_sms_denunciation));
-        if (isNeedBackScreen) {
-            new Handler().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    getActivity().onBackPressed();
-                }
-            }, 200);
-        }
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-        isScreenShow = false;
-        Log.i("EINSTEIN", "onStop");
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        if (requestCode == REQUEST_SEND_SMS) {
-            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                if (verifyFields()) {
-                    sendSmsDenunciation();
-                }
-            } else {
-                Toast.makeText(getActivity(), "Permissão não concedida!", Toast.LENGTH_SHORT).show();
-            }
-        }
     }
 
     // UTILS
@@ -154,17 +108,7 @@ public class SmsDenunciationFragment extends Fragment implements View.OnFocusCha
         }
     }
 
-    private void showProgressDialog() {
-        mProgressDialog = new MaterialDialog.Builder(getActivity())
-                .title(R.string.meu_metro_progress_dialog_title_wait)
-                .content(R.string.frag_sms_denunciation_dialog_content)
-                .progress(true, 0)
-                .cancelable(false)
-                .show();
-    }
-
     private void sendSmsDenunciation() {
-        showProgressDialog();
         String message = String.format(Locale.US, "L: %s\n", mInputLayoutLine.getEditText().getText().toString());
         message += String.format(Locale.US, "S: %s\n", mInputLayoutDirectionTrain.getEditText().getText().toString());
         message += String.format(Locale.US, "P: %s\n", mInputLayoutNextStation.getEditText().getText().toString());
@@ -173,72 +117,11 @@ public class SmsDenunciationFragment extends Fragment implements View.OnFocusCha
         message += String.format(Locale.US, "Cm: %s", mInputLayoutDetails.getEditText().getText().toString());
         message = StringUtils.removeAccent(message);
 
-        try {
-            String SENT = "sent";
-            String DELIVERED = "delivered";
-            Intent sentIntent = new Intent(SENT);
-            Intent deliveryIntent = new Intent(DELIVERED);
-            PendingIntent sentPI = PendingIntent.getBroadcast(getActivity(), 0, sentIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-            PendingIntent deliverPI = PendingIntent.getBroadcast(getActivity(), 0, deliveryIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-
-            getActivity().registerReceiver(new BroadcastReceiver() {
-                @Override
-                public void onReceive(Context context, Intent intent) {
-                    getActivity().unregisterReceiver(this);
-                    switch (getResultCode()) {
-                        case Activity.RESULT_OK:
-                            Toast.makeText(context, R.string.frag_sms_denunciation_message_success, Toast.LENGTH_LONG).show();
-                            if (getActivity() != null && isScreenShow) {
-                                getActivity().onBackPressed();
-                            } else if (!isNeedBackScreen) {
-                                isNeedBackScreen = true;
-                            }
-                            break;
-
-                        case SmsManager.RESULT_ERROR_GENERIC_FAILURE:
-                        case SmsManager.RESULT_ERROR_RADIO_OFF:
-                        case SmsManager.RESULT_ERROR_NULL_PDU:
-                        case SmsManager.RESULT_ERROR_NO_SERVICE:
-                            if (getActivity() != null)
-                                Snackbar.make(mMainView, R.string.frag_sms_denunciation_message_error_send_sms, Snackbar.LENGTH_INDEFINITE)
-                                        .setActionTextColor(ContextCompat.getColor(getActivity(), android.R.color.holo_red_light))
-                                        .setAction(R.string.meu_metro_message_positive, SmsDenunciationFragment.this)
-                                        .show();
-                            break;
-
-                        default:
-                            if (getActivity() != null)
-                                Snackbar.make(mMainView, R.string.frag_sms_denunciation_message_error_send_sms, Snackbar.LENGTH_INDEFINITE)
-                                        .setActionTextColor(ContextCompat.getColor(getActivity(), android.R.color.holo_red_light))
-                                        .setAction(R.string.meu_metro_message_positive, SmsDenunciationFragment.this)
-                                        .show();
-                            break;
-                    }
-                    if (mProgressDialog != null)
-                        mProgressDialog.dismiss();
-                }
-            }, new IntentFilter(SENT));
-
-            SmsManager smsManager = SmsManager.getDefault();
-            smsManager.sendTextMessage(mNumberSend, null, message, sentPI, deliverPI);
-        } catch (Exception e) {
-            Crashlytics.logException(e);
-            e.printStackTrace();
-            if (getActivity() != null)
-                Snackbar.make(mMainView, R.string.frag_sms_denunciation_message_error_send_sms, Snackbar.LENGTH_INDEFINITE)
-                        .setActionTextColor(ContextCompat.getColor(getActivity(), android.R.color.holo_red_light))
-                        .setAction(R.string.meu_metro_message_positive, SmsDenunciationFragment.this)
-                        .show();
-        }
-    }
-
-    private boolean hasPermissionSendSms() {
-        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP_MR1) {
-            if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.SEND_SMS) != PackageManager.PERMISSION_GRANTED) {
-                requestPermissions(new String[]{Manifest.permission.SEND_SMS}, REQUEST_SEND_SMS);
-            }
-        }
-        return true;
+        Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+        sendIntent.setData(Uri.parse("sms:"));
+        sendIntent.putExtra("address", mNumberSend);
+        sendIntent.putExtra("sms_body", message);
+        startActivity(sendIntent);
     }
 
     private boolean verifyFields() {
@@ -343,16 +226,16 @@ public class SmsDenunciationFragment extends Fragment implements View.OnFocusCha
         LineType lineType = LineType.getLineTypeByPosition(mIndexLine);
         if (lineType != null) {
             new MaterialDialog.Builder(getActivity())
-                .title(getString(R.string.frag_sms_denunciation_input_hint_next_station).replace("*", ""))
-                .items(getResources().getStringArray(lineType.getSeasonsRes()))
-                .itemsCallbackSingleChoice(mIndexNextStation, new MaterialDialog.ListCallbackSingleChoice() {
-                    @Override
-                    public boolean onSelection(MaterialDialog dialog, View itemView, int which, CharSequence text) {
-                        mIndexNextStation = which;
-                        mInputLayoutNextStation.getEditText().setText(text);
-                        return false;
-                    }
-                }).show();
+                    .title(getString(R.string.frag_sms_denunciation_input_hint_next_station).replace("*", ""))
+                    .items(getResources().getStringArray(lineType.getSeasonsRes()))
+                    .itemsCallbackSingleChoice(mIndexNextStation, new MaterialDialog.ListCallbackSingleChoice() {
+                        @Override
+                        public boolean onSelection(MaterialDialog dialog, View itemView, int which, CharSequence text) {
+                            mIndexNextStation = which;
+                            mInputLayoutNextStation.getEditText().setText(text);
+                            return false;
+                        }
+                    }).show();
         } else {
             Toast.makeText(getContext(), R.string.frag_sms_denunciation_empty_field_line, Toast.LENGTH_SHORT).show();
         }
@@ -386,7 +269,7 @@ public class SmsDenunciationFragment extends Fragment implements View.OnFocusCha
 
         switch (item.getItemId()) {
             case R.id.menu_done:
-                if (hasPermissionSendSms() && verifyFields()) {
+                if (verifyFields()) {
                     sendSmsDenunciation();
                 }
                 return true;

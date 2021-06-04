@@ -1,15 +1,15 @@
 package br.com.bruno.meumetro.services.managers;
 
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.media.RingtoneManager;
 import android.os.Build;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.content.ContextCompat;
 
-import com.crashlytics.android.Crashlytics;
+import androidx.core.app.NotificationCompat;
+import androidx.core.content.ContextCompat;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -33,6 +33,8 @@ import br.com.bruno.meumetro.models.settings.DaySetting;
 import br.com.bruno.meumetro.models.settings.HourSetting;
 import br.com.bruno.meumetro.models.settings.Setting;
 
+//import com.crashlytics.android.Crashlytics;
+
 /**
  * Created by Bruno on 06/05/2017.
  */
@@ -42,6 +44,7 @@ public class NotificationStatusManager {
     public Boolean mHasLoop = true;
     public long mSleepTime = 0;
 
+    private static final String NOTIFICATION_CHANNEL_ID = "10001";
     private Context mContext;
 
     public NotificationStatusManager(Context context) {
@@ -135,7 +138,7 @@ public class NotificationStatusManager {
             }
 
             NotificationManager notifyManager = (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
-            NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(mContext);
+            NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(mContext, NOTIFICATION_CHANNEL_ID);
             notificationBuilder
                     .setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION))
                     .setVibrate(new long[]{100, 300, 100, 300})
@@ -151,12 +154,18 @@ public class NotificationStatusManager {
                 notificationBuilder.setStyle(inboxStyle)
                         .setContentText(mContext.getResources().getString(R.string.service_notification_status_change_status));
             } else {
-                notificationBuilder.setContentText(message.getSimpleDescription());
+                notificationBuilder.setContentText(message.getLines().get(0).getSituation());
+            }
+
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+                NotificationChannel notificationChannel = new NotificationChannel(NOTIFICATION_CHANNEL_ID, mContext.getString(R.string.notification_status_manager), NotificationManager.IMPORTANCE_DEFAULT);
+                notificationBuilder.setChannelId(NOTIFICATION_CHANNEL_ID);
+                notifyManager.createNotificationChannel(notificationChannel);
             }
 
             notifyManager.notify(notificationType.getValue(), notificationBuilder.build());
         } catch (ParseException e) {
-            Crashlytics.logException(e);
+//            Crashlytics.logException(e);
             e.printStackTrace();
         }
     }

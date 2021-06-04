@@ -4,7 +4,7 @@ import android.content.Context;
 import android.location.Address;
 import android.location.Geocoder;
 
-import com.crashlytics.android.Crashlytics;
+//import com.crashlytics.android.Crashlytics;
 
 import java.io.IOException;
 import java.util.List;
@@ -24,7 +24,7 @@ public class GeoLocationManager {
             if (!address.isEmpty())
                 return address.get(0);
         } catch (IOException e) {
-            Crashlytics.logException(e);
+//            Crashlytics.logException(e);
             e.printStackTrace();
         }
         return null;

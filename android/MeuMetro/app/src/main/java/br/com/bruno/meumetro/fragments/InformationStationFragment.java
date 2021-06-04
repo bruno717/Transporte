@@ -3,19 +3,19 @@ package br.com.bruno.meumetro.fragments;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.crashlytics.android.Crashlytics;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.clans.fab.FloatingActionButton;
@@ -71,7 +71,7 @@ public class InformationStationFragment extends Fragment {
                 args.putInt(INFORMATION_STATION_FRAGMENT_COLOR_KEY, colorLine);
                 fragment.setArguments(args);
             } catch (JsonProcessingException e) {
-                Crashlytics.logException(e);
+//                Crashlytics.logException(e);
                 e.printStackTrace();
             }
         }
@@ -96,8 +96,8 @@ public class InformationStationFragment extends Fragment {
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
+    public void onStart() {
+        super.onStart();
         AnalyticsManager.generateLogScreenOpen(getString(R.string.frag_information_station_screen));
     }
 
@@ -108,7 +108,7 @@ public class InformationStationFragment extends Fragment {
                 mStation = mapper.readValue(getArguments().getString(INFORMATION_STATION_FRAGMENT_STATION_KEY), Station.class);
                 mColorLine = getArguments().getInt(INFORMATION_STATION_FRAGMENT_COLOR_KEY);
             } catch (IOException e) {
-                Crashlytics.logException(e);
+//                Crashlytics.logException(e);
                 e.printStackTrace();
             }
         }
@@ -157,7 +157,7 @@ public class InformationStationFragment extends Fragment {
             intent.putExtra(PlacesNearbyActivity.PLACES_NEARBY_ACTIVITY_COLOR_INTENT_KEY, mColorLine);
             startActivity(intent);
         } catch (JsonProcessingException e) {
-            Crashlytics.logException(e);
+//            Crashlytics.logException(e);
             e.printStackTrace();
         }
     }
