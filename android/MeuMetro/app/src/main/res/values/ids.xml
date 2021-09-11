@@ -20,6 +20,7 @@
     <item name="navigation_drawer_header_text_view_integration_price" type="id" />
     <item name="navigation_drawer_item_transport_map" type="id" />
     <item name="navigation_drawer_item_sms_denunciation" type="id" />
+    <item name="navigation_drawer_item_share" type="id" />
     <item name="navigation_drawer_item_settings" type="id" />
 
     <!-- Status Line Official Adapter -->

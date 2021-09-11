@@ -20,6 +20,7 @@ import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.google.android.gms.ads.AdView;
 import com.google.android.material.tabs.TabLayout;
+import com.google.firebase.crashlytics.FirebaseCrashlytics;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
@@ -111,6 +112,10 @@ public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerIt
                                 .withIdentifier(R.id.navigation_drawer_item_sms_denunciation)
                                 .withName(R.string.navigation_drawer_sms_denunciation)
                                 .withIcon(DrawableUtils.changeColorDrawable(this, R.mipmap.ic_sms_white_24dp, R.color.primary)),
+                        new PrimaryDrawerItem()
+                                .withIdentifier(R.id.navigation_drawer_item_share)
+                                .withName(R.string.navigation_drawer_share)
+                                .withIcon(DrawableUtils.changeColorDrawable(this, R.drawable.ic_share, R.color.primary)),
                         new PrimaryDrawerItem()
                                 .withIdentifier(R.id.navigation_drawer_item_settings)
                                 .withName(R.string.navigation_drawer_settings)
@@ -258,6 +263,29 @@ public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerIt
         AdViewUtils.requestAd(adViewBanner);
     }
 
+    private void shareApp() {
+        try {
+            String url = "https://play.google.com/store/apps/details?id=";
+            Intent shareIntent = new Intent(Intent.ACTION_SEND);
+            shareIntent.setType("text/plain");
+            shareIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.app_name));
+            String shareMessage = "Você já acessou o site ou um aplicativo do Metrô ou dá CPTM e eles informavam que a situação da linha que você costuma pegar estava normal e não era bem a realidade?\n" +
+                    "\n" +
+                    "Acredito que sim, então deixo o Status Metrô te ajudar!\n\n";
+            shareMessage = shareMessage + url + BuildConfig.APPLICATION_ID;
+            shareMessage = shareMessage.trim();
+
+            shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
+            startActivity(
+                    Intent.createChooser(
+                            shareIntent,
+                            getString(R.string.app_name)
+                    )
+            );
+        } catch (Exception e) {
+            FirebaseCrashlytics.getInstance().log(e.getMessage());
+        }
+    }
 
     @Override
     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
@@ -266,6 +294,10 @@ public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerIt
         switch (Integer.parseInt(String.valueOf(drawerItem.getIdentifier()))) {
             case R.id.navigation_drawer_item_transport_map:
                 startActivity(new Intent(this, TransportMapActivity.class));
+                break;
+
+            case R.id.navigation_drawer_item_share:
+                shareApp();
                 break;
 
             case R.id.navigation_drawer_item_sms_denunciation:

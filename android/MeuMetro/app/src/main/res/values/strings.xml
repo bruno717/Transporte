@@ -39,6 +39,7 @@
     <!-- Navigation Drawer -->
     <string name="navigation_drawer_transport_map">Mapa</string>
     <string name="navigation_drawer_sms_denunciation">SMS denúncia</string>
+    <string name="navigation_drawer_share">Compartilhar o Status Metrô</string>
     <string name="navigation_drawer_settings">Configurações</string>
 
     <!-- Information Station Fragment -->
