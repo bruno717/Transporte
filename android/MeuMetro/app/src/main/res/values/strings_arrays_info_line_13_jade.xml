@@ -2,65 +2,65 @@
 <resources>
 
     <!-- Line 13 Jade -->
-    <string-array name="line_13_jade_luz_information">
-        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
-        <item>04h40 às 01h00 SÁBADOS</item>
-        <item>Praça da Luz, nº 01</item>
-        <item></item>
-    </string-array>
+<!--    <string-array name="line_13_jade_luz_information">-->
+<!--        <item>04h00 às 23h59 DOMINGO A SEXTA</item>-->
+<!--        <item>04h40 às 01h00 SÁBADOS</item>-->
+<!--        <item>Praça da Luz, nº 01</item>-->
+<!--        <item></item>-->
+<!--    </string-array>-->
 
-    <string-array name="line_13_jade_luz_at_the_station">
-        <item>Banheiro masculino e feminino</item>
-        <item>Transferência interna gratuita</item>
-        <item>Transferência gratuita CPTM-Metro</item>
-        <item>Telefone adaptado para PCR</item>
-        <item>Rampa</item>
-        <item>Sanitário masculino e feminino acessível</item>
-        <item>Telefone para surdos</item>
-        <item>Acesso elevador</item>
-    </string-array>
+<!--    <string-array name="line_13_jade_luz_at_the_station">-->
+<!--        <item>Banheiro masculino e feminino</item>-->
+<!--        <item>Transferência interna gratuita</item>-->
+<!--        <item>Transferência gratuita CPTM-Metro</item>-->
+<!--        <item>Telefone adaptado para PCR</item>-->
+<!--        <item>Rampa</item>-->
+<!--        <item>Sanitário masculino e feminino acessível</item>-->
+<!--        <item>Telefone para surdos</item>-->
+<!--        <item>Acesso elevador</item>-->
+<!--    </string-array>-->
 
-    <string-array name="line_13_jade_bras_information">
-        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
-        <item>04h40 às 01h00 SÁBADOS</item>
-        <item>Praça Agente Cícero, s/nº</item>
-        <item></item>
-    </string-array>
+<!--    <string-array name="line_13_jade_bras_information">-->
+<!--        <item>04h00 às 23h59 DOMINGO A SEXTA</item>-->
+<!--        <item>04h40 às 01h00 SÁBADOS</item>-->
+<!--        <item>Praça Agente Cícero, s/nº</item>-->
+<!--        <item></item>-->
+<!--    </string-array>-->
 
-    <string-array name="line_13_jade_bras_at_the_station">
-        <item>Programa Acessa São Paulo de Inclusão Social</item>
-        <item>Transferência interna gratuita</item>
-        <item>Banheiro masculino e feminino</item>
-        <item>Transferência gratuita CPTM-Metro</item>
-        <item>Estação Adaptada para Pessoas com Deficiência</item>
-        <item>Telefone adaptado para PCR</item>
-        <item>Transposição de plataformas</item>
-        <item>Escadas Rolantes</item>
-        <item>Sanitário masculino e feminino acessível</item>
-        <item>Rampa</item>
-        <item>Acesso elevador</item>
-    </string-array>
+<!--    <string-array name="line_13_jade_bras_at_the_station">-->
+<!--        <item>Programa Acessa São Paulo de Inclusão Social</item>-->
+<!--        <item>Transferência interna gratuita</item>-->
+<!--        <item>Banheiro masculino e feminino</item>-->
+<!--        <item>Transferência gratuita CPTM-Metro</item>-->
+<!--        <item>Estação Adaptada para Pessoas com Deficiência</item>-->
+<!--        <item>Telefone adaptado para PCR</item>-->
+<!--        <item>Transposição de plataformas</item>-->
+<!--        <item>Escadas Rolantes</item>-->
+<!--        <item>Sanitário masculino e feminino acessível</item>-->
+<!--        <item>Rampa</item>-->
+<!--        <item>Acesso elevador</item>-->
+<!--    </string-array>-->
 
-    <string-array name="line_13_jade_tatuape_information">
-        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
-        <item>04h40 às 01h00 SÁBADOS</item>
-        <item>Rua Catiguá, s/nº</item>
-        <item></item>
-    </string-array>
+<!--    <string-array name="line_13_jade_tatuape_information">-->
+<!--        <item>04h00 às 23h59 DOMINGO A SEXTA</item>-->
+<!--        <item>04h40 às 01h00 SÁBADOS</item>-->
+<!--        <item>Rua Catiguá, s/nº</item>-->
+<!--        <item></item>-->
+<!--    </string-array>-->
 
-    <string-array name="line_13_jade_tatuape_at_the_station">
-        <item>Terminal Urbano de Ônibus</item>
-        <item>Programa Acessa São Paulo de Inclusão Social</item>
-        <item>Transferência paga entre CPTM e Metrô</item>
-        <item>Transferência interna gratuita</item>
-        <item>Piso Tátil</item>
-        <item>Telefone para surdos</item>
-        <item>Transposição de plataformas</item>
-        <item>Escadas Rolantes</item>
-        <item>Estação Adaptada para Pessoas com Deficiência</item>
-        <item>Rampa</item>
-        <item>Acesso elevador</item>
-    </string-array>
+<!--    <string-array name="line_13_jade_tatuape_at_the_station">-->
+<!--        <item>Terminal Urbano de Ônibus</item>-->
+<!--        <item>Programa Acessa São Paulo de Inclusão Social</item>-->
+<!--        <item>Transferência paga entre CPTM e Metrô</item>-->
+<!--        <item>Transferência interna gratuita</item>-->
+<!--        <item>Piso Tátil</item>-->
+<!--        <item>Telefone para surdos</item>-->
+<!--        <item>Transposição de plataformas</item>-->
+<!--        <item>Escadas Rolantes</item>-->
+<!--        <item>Estação Adaptada para Pessoas com Deficiência</item>-->
+<!--        <item>Rampa</item>-->
+<!--        <item>Acesso elevador</item>-->
+<!--    </string-array>-->
 
     <string-array name="line_13_jade_eng_goulart_information">
         <item>04h00 às 23h59 DOMINGO A SEXTA</item>

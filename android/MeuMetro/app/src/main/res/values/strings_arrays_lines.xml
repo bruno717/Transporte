@@ -90,6 +90,7 @@
         <item>Alto da Boa Vista</item>
         <item>Borba Gato</item>
         <item>Brooklin</item>
+        <item>Campo Belo</item>
         <item>Eucaliptos</item>
         <item>Moema</item>
         <item>AACD - Servidor</item>
@@ -105,10 +106,15 @@
         <item>Camilo Haddad</item>
         <item>Vila Tolstói</item>
         <item>Vila União</item>
+        <item>Jardim Planalto</item>
+        <item>Sapopemba</item>
+        <item>Fazenda da Juta</item>
+        <item>São Mateus</item>
     </string-array>
 
     <!-- CPTM -->
     <string-array name="line_7_ruby">
+        <item>Brás</item>
         <item>Luz</item>
         <item>Palmeiras-Barra Funda</item>
         <item>Água Branca</item>
@@ -167,12 +173,14 @@
         <item>Berrini</item>
         <item>Morumbi</item>
         <item>Granja Julieta</item>
+        <item>João Dias</item>
         <item>Santo Amaro</item>
         <item>Socorro</item>
         <item>Jurubatuba</item>
         <item>Autódromo</item>
         <item>Primavera-Interlagos</item>
         <item>Grajaú</item>
+        <item>Bruno Covas-Mendes-Vila Natal</item>
     </string-array>
 
     <string-array name="line_10_turquoise">
@@ -227,9 +235,10 @@
     </string-array>
 
     <string-array name="line_13_jade">
-        <item>Luz</item>
-        <item>Brás</item>
-        <item>Tatuapé</item>
+<!--        <item>Luz</item>-->
+<!--        <item>Brás</item>-->
+<!--        <item>Tatuapé</item>-->
+        <item>Engenheiro Goulart</item>
         <item>Guarulhos CECAP</item>
         <item>Aeroporto Guarulhos</item>
     </string-array>

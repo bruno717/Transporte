@@ -27,6 +27,7 @@ import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
 import java.util.Locale;
+import java.util.concurrent.ExecutionException;
 
 import br.com.bruno.meumetro.adapters.TabsViewPagerAdapter;
 import br.com.bruno.meumetro.database.RealmDbHelper;
@@ -38,6 +39,7 @@ import br.com.bruno.meumetro.models.Price;
 import br.com.bruno.meumetro.models.settings.Setting;
 import br.com.bruno.meumetro.rest.AppVersionService;
 import br.com.bruno.meumetro.rest.PriceService;
+import br.com.bruno.meumetro.rest.managers.VersionChecker;
 import br.com.bruno.meumetro.utils.AdViewUtils;
 import br.com.bruno.meumetro.utils.DrawableUtils;
 import butterknife.BindView;

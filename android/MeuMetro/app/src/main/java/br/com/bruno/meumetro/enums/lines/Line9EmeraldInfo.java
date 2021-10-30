@@ -19,12 +19,14 @@ public enum Line9EmeraldInfo {
     berrini(9, R.array.line_9_emerald_berrini_information, R.array.line_9_emerald_berrini_at_the_station),
     morumbi(10, R.array.line_9_emerald_morumbi_information, R.array.line_9_emerald_morumbi_at_the_station),
     granja_julieta(11, R.array.line_9_emerald_granja_julieta_information, R.array.line_9_emerald_granja_julieta_at_the_station),
-    santo_amaro(12, R.array.line_9_emerald_santo_amaro_information, R.array.line_9_emerald_santo_amaro_at_the_station),
-    socorro(13, R.array.line_9_emerald_socorro_information, R.array.line_9_emerald_socorro_at_the_station),
-    jurubatuba(14, R.array.line_9_emerald_jurubatuba_information, R.array.line_9_emerald_jurubatuba_at_the_station),
-    autodromo(15, R.array.line_9_emerald_autodromo_information, R.array.line_9_emerald_autodromo_at_the_station),
-    primavera_interlagos(16, R.array.line_9_emerald_primavera_interlagos_information, R.array.line_9_emerald_primavera_interlagos_at_the_station),
-    grajau(17, R.array.line_9_emerald_grajau_information, R.array.line_9_emerald_grajau_at_the_station);
+    joao_dias(12, R.array.line_9_emerald_joao_dias_information, R.array.line_9_emerald_joao_dias_at_the_station),
+    santo_amaro(13, R.array.line_9_emerald_santo_amaro_information, R.array.line_9_emerald_santo_amaro_at_the_station),
+    socorro(14, R.array.line_9_emerald_socorro_information, R.array.line_9_emerald_socorro_at_the_station),
+    jurubatuba(15, R.array.line_9_emerald_jurubatuba_information, R.array.line_9_emerald_jurubatuba_at_the_station),
+    autodromo(16, R.array.line_9_emerald_autodromo_information, R.array.line_9_emerald_autodromo_at_the_station),
+    primavera_interlagos(17, R.array.line_9_emerald_primavera_interlagos_information, R.array.line_9_emerald_primavera_interlagos_at_the_station),
+    grajau(18, R.array.line_9_emerald_grajau_information, R.array.line_9_emerald_grajau_at_the_station),
+    bruno_covas(19, R.array.line_9_emerald_bruno_covas_information, R.array.line_9_emerald_bruno_covas_at_the_station);
 
     private int index;
     private int resArrayInformation;

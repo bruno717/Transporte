@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string-array name="line_7_ruby_bras_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Praça Agente Cícero, s/nº</item>
+    </string-array>
+
+    <string-array name="line_7_ruby_bras_at_the_station">
+        <item>Programa Acessa São Paulo de Inclusão Social</item>
+        <item>Transferência interna gratuita</item>
+        <item>Banheiro masculino e feminino</item>
+        <item>Transferência gratuita CPTM-Metro</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Rampa</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
     <string-array name="line_7_ruby_luz_information">
         <item>04h00 às 23h59 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
@@ -256,8 +276,7 @@
     </string-array>
 
     <string-array name="line_7_ruby_direction">
-        <item>Luz</item>
-        <item>Francisco Morato</item>
+        <item>Brás</item>
         <item>Jundiaí</item>
     </string-array>
 

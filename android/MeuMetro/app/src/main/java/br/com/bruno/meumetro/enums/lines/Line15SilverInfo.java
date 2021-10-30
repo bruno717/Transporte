@@ -12,7 +12,11 @@ public enum Line15SilverInfo {
     sao_lucas(2, R.array.line_15_silver_sao_lucas_information, R.array.line_15_silver_sao_lucas_at_the_station),
     camilo_haddad(3, R.array.line_15_silver_camilo_haddad_information, R.array.line_15_silver_camilo_haddad_at_the_station),
     vila_tolstoi(4, R.array.line_15_silver_vila_tolstoi_information, R.array.line_15_silver_vila_tolstoi_at_the_station),
-    vila_uniao(5, R.array.line_15_silver_vila_uniao_information, R.array.line_15_silver_vila_uniao_at_the_station);
+    vila_uniao(5, R.array.line_15_silver_vila_uniao_information, R.array.line_15_silver_vila_uniao_at_the_station),
+    jardim_planalto(6, R.array.line_15_silver_jardim_planalto_information, R.array.line_15_silver_jardim_planalto_at_the_station),
+    sapopemba(7, R.array.line_15_silver_sapopemba_information, R.array.line_15_silver_sapopemba_at_the_station),
+    fazenda_da_juta(8, R.array.line_15_silver_fazenda_da_juta_information, R.array.line_15_silver_fazenda_da_juta_at_the_station),
+    sao_mateus(9, R.array.line_15_silver_sao_mateus_information, R.array.line_15_silver_sao_mateus_at_the_station);
 
     private int index;
     private int resArrayInformation;

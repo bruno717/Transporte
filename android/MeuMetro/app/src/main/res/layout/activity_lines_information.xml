@@ -17,7 +17,9 @@
         android:id="@id/meu_metro_container_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/meu_metro_toolbar" />
+        android:layout_below="@+id/meu_metro_toolbar"
+        android:background="@color/md_white_1000"
+        android:paddingBottom="54dp" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adViewBanner"

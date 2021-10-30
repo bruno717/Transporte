@@ -7,7 +7,8 @@
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@id/meu_metro_main_view"
         android:layout_width="match_parent"
-        android:background="@android:color/transparent"
+        android:paddingBottom="54dp"
+        android:background="@color/md_white_1000"
         android:layout_height="match_parent">
 
         <com.google.android.material.appbar.AppBarLayout

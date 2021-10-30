@@ -37,45 +37,109 @@
     </string-array>
 
     <string-array name="line_15_silver_sao_lucas_at_the_station">
-        <!-- TODO: verificar informações -->
+        <item>Elevador</item>
+        <item>Paraciclos</item>
+        <item>Caixa de Sugestões</item>
+        <item>Sanitários (área paga)</item>
     </string-array>
 
     <string-array name="line_15_silver_camilo_haddad_information">
         <item>04h40 às 00h00 DOMINGO A SÁBADO</item>
         <item></item>
-        <item>Av. Professor Luiz Ignácio Anhaia Mello, 6494</item>
+        <item>Av. Professor Luiz Ignácio Anhaia Mello, 6620</item>
         <item></item>
     </string-array>
 
-    <string-array name="line_15_silver_vila_tolstoi_at_the_station">
-        <!-- TODO: verificar informações -->
+    <string-array name="line_15_silver_camilo_haddad_at_the_station">
+        <item>Elevador</item>
+        <item>Paraciclos</item>
+        <item>Caixa de Sugestões</item>
+        <item>Sanitários (área paga)</item>
     </string-array>
 
     <string-array name="line_15_silver_vila_tolstoi_information">
         <item>04h40 às 00h00 DOMINGO A SÁBADO</item>
         <item></item>
-        <item>Av. Professor Luiz Ignácio Anhaia Mello, 7753</item>
+        <item>Av. Professor Luiz Ignácio Anhaia Mello, 7712</item>
         <item></item>
     </string-array>
 
-    <string-array name="line_15_silver_camilo_haddad_at_the_station">
-        <!-- TODO: verificar informações -->
+    <string-array name="line_15_silver_vila_tolstoi_at_the_station">
+        <item>Elevador</item>
+        <item>Paraciclos</item>
+        <item>Caixa de Sugestões</item>
+        <item>Sanitários (área paga)</item>
     </string-array>
 
     <string-array name="line_15_silver_vila_uniao_information">
         <item>04h40 às 00h00 DOMINGO A SÁBADO</item>
         <item></item>
-        <item>Av. Professor Luiz Ignácio Anhaia Mello, 9121</item>
+        <item>Av. Professor Luiz Ignácio Anhaia Mello, 9109</item>
         <item></item>
     </string-array>
 
     <string-array name="line_15_silver_vila_uniao_at_the_station">
-        <!-- TODO: verificar informações -->
+        <item>Elevador</item>
+        <item>Paraciclos</item>
+        <item>Caixa de Sugestões</item>
+        <item>Sanitários (área paga)</item>
+    </string-array>
+
+    <string-array name="line_15_silver_jardim_planalto_information">
+        <item>04h40 às 00h00 DOMINGO A SÁBADO</item>
+        <item></item>
+        <item>Av. Sapopemba, 9930</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_15_silver_jardim_planalto_at_the_station">
+        <item>Elevador</item>
+        <item>Paraciclos</item>
+        <item>Sanitários (área paga)</item>
+    </string-array>
+
+    <string-array name="line_15_silver_sapopemba_information">
+        <item>04h40 às 00h00 DOMINGO A SÁBADO</item>
+        <item></item>
+        <item>Av. Sapopemba, 11260</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_15_silver_sapopemba_at_the_station">
+        <item>Elevador</item>
+        <item>Paraciclos</item>
+        <item>Sanitários (área paga)</item>
+    </string-array>
+
+    <string-array name="line_15_silver_fazenda_da_juta_information">
+        <item>04h40 às 00h00 DOMINGO A SÁBADO</item>
+        <item></item>
+        <item>Av. Sapopemba, 12780</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_15_silver_fazenda_da_juta_at_the_station">
+        <item>Elevador</item>
+        <item>Paraciclos</item>
+        <item>Sanitários (área paga)</item>
+    </string-array>
+
+    <string-array name="line_15_silver_sao_mateus_information">
+        <item>04h40 às 00h00 DOMINGO A SÁBADO</item>
+        <item></item>
+        <item>Av. Sapopemba, 15126</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_15_silver_sao_mateus_at_the_station">
+        <item>Elevador</item>
+        <item>Paraciclos</item>
+        <item>Sanitários (área paga)</item>
     </string-array>
 
     <string-array name="line_15_silver_direction">
         <item>Vila Prudente</item>
-        <item>Oratório</item>
+        <item>São Mateus</item>
     </string-array>
 
 </resources>

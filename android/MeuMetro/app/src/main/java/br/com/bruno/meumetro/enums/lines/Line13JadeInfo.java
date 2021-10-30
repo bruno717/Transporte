@@ -7,12 +7,12 @@ import br.com.bruno.meumetro.R;
  */
 public enum Line13JadeInfo {
 
-    luz(0, R.array.line_13_jade_luz_information, R.array.line_13_jade_luz_at_the_station),
-    bras(1, R.array.line_13_jade_bras_information, R.array.line_13_jade_bras_at_the_station),
-    tatuape(2, R.array.line_13_jade_tatuape_information, R.array.line_13_jade_tatuape_at_the_station),
-    eng_goulart(3, R.array.line_13_jade_eng_goulart_information, R.array.line_13_jade_eng_goulart_at_the_station),
-    guarulhos_cecap(4, R.array.line_13_jade_guarulhos_cecap_information, R.array.line_13_jade_guarulhos_cecap_at_the_station),
-    aeroporto_guarulhos(5, R.array.line_13_jade_aeroporto_guarulhos_information, R.array.line_13_jade_aeroporto_guarulhos_at_the_station);
+//    luz(0, R.array.line_13_jade_luz_information, R.array.line_13_jade_luz_at_the_station),
+//    bras(1, R.array.line_13_jade_bras_information, R.array.line_13_jade_bras_at_the_station),
+//    tatuape(2, R.array.line_13_jade_tatuape_information, R.array.line_13_jade_tatuape_at_the_station),
+    eng_goulart(0, R.array.line_13_jade_eng_goulart_information, R.array.line_13_jade_eng_goulart_at_the_station),
+    guarulhos_cecap(1, R.array.line_13_jade_guarulhos_cecap_information, R.array.line_13_jade_guarulhos_cecap_at_the_station),
+    aeroporto_guarulhos(2, R.array.line_13_jade_aeroporto_guarulhos_information, R.array.line_13_jade_aeroporto_guarulhos_at_the_station);
 
     private int index;
     private int resArrayInformation;

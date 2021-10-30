@@ -228,6 +228,16 @@
         <item>Acesso elevador</item>
     </string-array>
 
+    <string-array name="line_9_emerald_joao_dias_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Avenida das Nações Unidas (Marginal Pinheiros), 17007</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_joao_dias_at_the_station">
+       <!--TODO: Validar informçãoes no site da cptm posteirormente https://www.cptm.sp.gov.br/sua-viagem/Pages/Linhas.aspx-->
+    </string-array>
+
     <string-array name="line_9_emerald_santo_amaro_information">
         <item>04h00 às 23h59 DOMINGO A SEXTA</item>
         <item>04h40 às 01h00 SÁBADOS</item>
@@ -343,9 +353,26 @@
         <item>Acesso elevador</item>
     </string-array>
 
+    <string-array name="line_9_emerald_bruno_covas_information">
+        <item>04h00 às 23h59 DOMINGO A SEXTA</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>Rua dos Mendes, 30</item>
+    </string-array>
+
+    <string-array name="line_9_emerald_bruno_covas_at_the_station">
+        <item>Bicicletário</item>
+        <item>Estação Adaptada para Pessoas com Deficiência</item>
+        <item>Telefone adaptado para PCR</item>
+        <item>Transposição de plataformas</item>
+        <item>Escadas Rolantes</item>
+        <item>Piso Tátil</item>
+        <item>Sanitário masculino e feminino acessível</item>
+        <item>Acesso elevador</item>
+    </string-array>
+
     <string-array name="line_9_emerald_direction">
         <item>Osasco</item>
-        <item>Grajaú</item>
+        <item>Bruno Covas-Mendes-Vila Natal</item>
     </string-array>
 
 </resources>

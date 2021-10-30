@@ -17,12 +17,13 @@ public enum Line5LilacInfo {
     alto_da_boa_vista(7, R.array.line_5_lilac_alto_da_boa_vista_information, R.array.line_5_lilac_alto_da_boa_vista_at_the_station),
     borba_gato(8, R.array.line_5_lilac_borba_gato_information, R.array.line_5_lilac_borba_gato_at_the_station),
     brooklin(9, R.array.line_5_lilac_brooklin_information, R.array.line_5_lilac_brooklin_at_the_station),
-    eucaliptos(10, R.array.line_5_lilac_eucaliptos_information, R.array.line_5_lilac_eucaliptos_at_the_station),
-    moema(11, R.array.line_5_lilac_moema_information, R.array.line_5_lilac_moema_at_the_station),
-    aacd_servidor(12, R.array.line_5_lilac_aacd_servidor_information, R.array.line_5_lilac_aacd_servidor_at_the_station),
-    hospital_sao_paulo(13, R.array.line_5_lilac_hospital_sao_paulo_information, R.array.line_5_lilac_hospital_sao_paulo_at_the_station),
-    santa_cruz(14, R.array.line_5_lilac_santa_cruz_information, R.array.line_5_lilac_santa_cruz_at_the_station),
-    chacara_klabin(15, R.array.line_5_lilac_chacara_klabin_information, R.array.line_5_lilac_chacara_klabin_at_the_station);
+    campo_belo(10, R.array.line_5_lilac_campo_belo_information, R.array.line_5_lilac_campo_belo_at_the_station),
+    eucaliptos(11, R.array.line_5_lilac_eucaliptos_information, R.array.line_5_lilac_eucaliptos_at_the_station),
+    moema(12, R.array.line_5_lilac_moema_information, R.array.line_5_lilac_moema_at_the_station),
+    aacd_servidor(13, R.array.line_5_lilac_aacd_servidor_information, R.array.line_5_lilac_aacd_servidor_at_the_station),
+    hospital_sao_paulo(14, R.array.line_5_lilac_hospital_sao_paulo_information, R.array.line_5_lilac_hospital_sao_paulo_at_the_station),
+    santa_cruz(15, R.array.line_5_lilac_santa_cruz_information, R.array.line_5_lilac_santa_cruz_at_the_station),
+    chacara_klabin(16, R.array.line_5_lilac_chacara_klabin_information, R.array.line_5_lilac_chacara_klabin_at_the_station);
 
     private int index;
     private int resArrayInformation;

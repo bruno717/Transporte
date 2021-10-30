@@ -126,6 +126,17 @@
         <item>Paraciclos</item>
     </string-array>
 
+    <string-array name="line_5_lilac_campo_belo_information">
+        <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
+        <item>04h40 às 01h00 SÁBADOS</item>
+        <item>AV. SANTO AMARO</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="line_5_lilac_campo_belo_at_the_station">
+        <item>Elevador</item>
+    </string-array>
+
     <string-array name="line_5_lilac_eucaliptos_information">
         <item>04h40 às 00h10 DOMINGO A SÁBADO</item>
         <item>04h40 às 01h00 SÁBADOS</item>
